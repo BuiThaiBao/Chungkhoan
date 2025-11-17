@@ -1,0 +1,5487 @@
+﻿
+      a,
+      abbr,
+      acronym,
+      address,
+      applet,
+      article,
+      aside,
+      audio,
+      b,
+      big,
+      blockquote,
+      body,
+      button,
+      canvas,
+      caption,
+      center,
+      cite,
+      code,
+      dd,
+      del,
+      details,
+      dfn,
+      div,
+      dl,
+      dt,
+      em,
+      embed,
+      fieldset,
+      figcaption,
+      figure,
+      footer,
+      form,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      header,
+      hgroup,
+      html,
+      i,
+      iframe,
+      img,
+      input,
+      ins,
+      kbd,
+      label,
+      legend,
+      li,
+      mark,
+      menu,
+      nav,
+      object,
+      ol,
+      output,
+      p,
+      pre,
+      q,
+      ruby,
+      s,
+      samp,
+      section,
+      select,
+      small,
+      span,
+      strike,
+      strong,
+      sub,
+      summary,
+      sup,
+      table,
+      tbody,
+      td,
+      textarea,
+      tfoot,
+      th,
+      thead,
+      time,
+      tr,
+      tt,
+      u,
+      ul,
+      var,
+      video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+        box-sizing: border-box;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      article,
+      aside,
+      details,
+      figcaption,
+      figure,
+      footer,
+      header,
+      hgroup,
+      menu,
+      nav,
+      section {
+        display: block;
+      }
+      body {
+        line-height: 1;
+      }
+      a {
+        text-decoration: none;
+      }
+      ol,
+      ul {
+        list-style: none;
+      }
+      blockquote,
+      q {
+        quotes: none;
+      }
+      blockquote:after,
+      blockquote:before,
+      q:after,
+      q:before {
+        content: "";
+        content: none;
+      }
+      table {
+        border-collapse: collapse;
+        border-spacing: 0;
+      }
+      .ladi-loading {
+        z-index: 900000000000;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.1);
+      }
+      .ladi-loading .loading {
+        width: 80px;
+        height: 80px;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        overflow: hidden;
+        position: absolute;
+      }
+      .ladi-loading .loading div {
+        position: absolute;
+        width: 6px;
+        height: 6px;
+        background: #fff;
+        border-radius: 50%;
+        animation: ladi-loading 1.2s linear infinite;
+      }
+      .ladi-loading .loading div:nth-child(1) {
+        animation-delay: 0s;
+        top: 37px;
+        left: 66px;
+      }
+      .ladi-loading .loading div:nth-child(2) {
+        animation-delay: -0.1s;
+        top: 22px;
+        left: 62px;
+      }
+      .ladi-loading .loading div:nth-child(3) {
+        animation-delay: -0.2s;
+        top: 11px;
+        left: 52px;
+      }
+      .ladi-loading .loading div:nth-child(4) {
+        animation-delay: -0.3s;
+        top: 7px;
+        left: 37px;
+      }
+      .ladi-loading .loading div:nth-child(5) {
+        animation-delay: -0.4s;
+        top: 11px;
+        left: 22px;
+      }
+      .ladi-loading .loading div:nth-child(6) {
+        animation-delay: -0.5s;
+        top: 22px;
+        left: 11px;
+      }
+      .ladi-loading .loading div:nth-child(7) {
+        animation-delay: -0.6s;
+        top: 37px;
+        left: 7px;
+      }
+      .ladi-loading .loading div:nth-child(8) {
+        animation-delay: -0.7s;
+        top: 52px;
+        left: 11px;
+      }
+      .ladi-loading .loading div:nth-child(9) {
+        animation-delay: -0.8s;
+        top: 62px;
+        left: 22px;
+      }
+      .ladi-loading .loading div:nth-child(10) {
+        animation-delay: -0.9s;
+        top: 66px;
+        left: 37px;
+      }
+      .ladi-loading .loading div:nth-child(11) {
+        animation-delay: -1s;
+        top: 62px;
+        left: 52px;
+      }
+      .ladi-loading .loading div:nth-child(12) {
+        animation-delay: -1.1s;
+        top: 52px;
+        left: 62px;
+      }
+      @keyframes ladi-loading {
+        0%,
+        100%,
+        20%,
+        80% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.5);
+        }
+      }
+      .ladipage-message {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 10000000000;
+        background: rgba(0, 0, 0, 0.3);
+      }
+      .ladipage-message .ladipage-message-box {
+        width: 400px;
+        max-width: calc(100% - 50px);
+        height: 160px;
+        border: 1px solid rgba(0, 0, 0, 0.3);
+        background-color: #fff;
+        position: fixed;
+        top: calc(50% - 155px);
+        left: 0;
+        right: 0;
+        margin: auto;
+        border-radius: 10px;
+      }
+      .ladipage-message .ladipage-message-box span {
+        display: block;
+        background-color: rgba(6, 21, 40, 0.05);
+        color: #000;
+        padding: 12px 15px;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 16px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+      }
+      .ladipage-message .ladipage-message-box .ladipage-message-text {
+        display: -webkit-box;
+        font-size: 14px;
+        padding: 0 20px;
+        margin-top: 10px;
+        line-height: 18px;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        word-break: break-word;
+      }
+      .ladipage-message .ladipage-message-box .ladipage-message-close {
+        display: block;
+        position: absolute;
+        right: 15px;
+        bottom: 10px;
+        margin: 0 auto;
+        padding: 10px 0;
+        border: none;
+        width: 80px;
+        text-transform: uppercase;
+        text-align: center;
+        color: #000;
+        background-color: #e6e6e6;
+        border-radius: 5px;
+        text-decoration: none;
+        font-size: 14px;
+        line-height: 14px;
+        font-weight: 600;
+        cursor: pointer;
+        outline: 0;
+      }
+      .lightbox-screen {
+        display: none;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        z-index: 9000000080;
+        background: rgba(0, 0, 0, 0.5);
+      }
+      .lightbox-screen .lightbox-close {
+        position: absolute;
+        z-index: 9000000090;
+        cursor: pointer;
+      }
+      .lightbox-screen .lightbox-hidden {
+        display: none;
+      }
+      .lightbox-screen .lightbox-close {
+        width: 16px;
+        height: 16px;
+        margin: 10px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-image: url("data:image/svg+xml;utf8, %3Csvg%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20fill%3D%22%23fff%22%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M23.4144%202.00015L2.00015%2023.4144L0.585938%2022.0002L22.0002%200.585938L23.4144%202.00015Z%22%3E%3C%2Fpath%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M2.00015%200.585938L23.4144%2022.0002L22.0002%2023.4144L0.585938%202.00015L2.00015%200.585938Z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
+      }
+      body {
+        font-size: 12px;
+        -ms-text-size-adjust: none;
+        -moz-text-size-adjust: none;
+        -o-text-size-adjust: none;
+        -webkit-text-size-adjust: none;
+        background-color: #fff;
+      }
+      .overflow-hidden {
+        overflow: hidden;
+      }
+      .ladi-transition {
+        transition: all 150ms linear 0s;
+      }
+      .z-index-1 {
+        z-index: 1;
+      }
+      .opacity-0 {
+        opacity: 0;
+      }
+      .height-0 {
+        height: 0 !important;
+      }
+      .pointer-events-none {
+        pointer-events: none;
+      }
+      .transition-parent-collapse-height {
+        transition: height 150ms linear 0s;
+      }
+      .transition-parent-collapse-top {
+        transition: top 150ms linear 0s;
+      }
+      .transition-readmore {
+        transition: height 350ms linear 0s;
+      }
+      .transition-collapse {
+        transition: height 150ms linear 0s;
+      }
+      body.grab {
+        cursor: grab;
+      }
+      .ladi-wraper {
+        width: 100%;
+        min-height: 100%;
+        overflow: hidden;
+      }
+      .ladi-container {
+        position: relative;
+        margin: 0 auto;
+        height: 100%;
+      }
+      .ladi-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        pointer-events: none;
+      }
+      .ladi-element {
+        position: absolute;
+      }
+      @media (hover: hover) {
+        .ladi-check-hover {
+          opacity: 0;
+        }
+      }
+      .ladi-section {
+        margin: 0 auto;
+        position: relative;
+      }
+      .ladi-section[data-tab-id] {
+        display: none;
+      }
+      .ladi-section.selected[data-tab-id] {
+        display: block;
+      }
+      .ladi-section .ladi-section-background {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        pointer-events: none;
+        overflow: hidden;
+      }
+      .ladi-carousel {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+      }
+      .ladi-carousel .ladi-carousel-content {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        transition: top 350ms ease-in-out, left 350ms ease-in-out;
+      }
+      .ladi-carousel .ladi-carousel-arrow {
+        position: absolute;
+        top: calc(50% - (33px) / 2);
+        cursor: pointer;
+        z-index: 90000040;
+        width: 33px;
+        height: 33px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-image: url("data:image/svg+xml;utf8, %3Csvg%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20fill%3D%22%23000%22%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M7.00015%200.585938L18.4144%2012.0002L7.00015%2023.4144L5.58594%2022.0002L15.5859%2012.0002L5.58594%202.00015L7.00015%200.585938Z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
+      }
+      .ladi-carousel .ladi-carousel-arrow-left {
+        left: 5px;
+        transform: rotateY(180deg);
+        -webkit-transform: rotateY(180deg);
+      }
+      .ladi-carousel .ladi-carousel-arrow-right {
+        right: 5px;
+      }
+      .ladi-carousel-indicators-circle {
+        display: inline-flex;
+        gap: 10px;
+        position: absolute;
+        bottom: -20px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: fit-content;
+      }
+      .ladi-carousel-indicators-circle .item {
+        width: 10px;
+        height: 10px;
+        background-color: #d6d6d6;
+        border-radius: 100%;
+        cursor: pointer;
+        outline: 1px solid #fff;
+      }
+      .ladi-carousel-indicators-circle .item.selected,
+      .ladi-carousel-indicators-circle .item:hover {
+        background-color: #808080;
+      }
+      .ladi-carousel-indicators-number {
+        display: inline-flex;
+        gap: 10px;
+        position: absolute;
+        bottom: -20px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: fit-content;
+      }
+      .ladi-carousel-indicators-number .item {
+        width: 15px;
+        height: 15px;
+        background-color: #d6d6d6;
+        border-radius: 100%;
+        cursor: pointer;
+        font-size: 10px;
+        text-align: center;
+        line-height: 15px;
+        outline: 1px solid #fff;
+      }
+      .ladi-carousel-indicators-number .item.selected,
+      .ladi-carousel-indicators-number .item:hover {
+        background-color: #808080;
+        color: #fff;
+      }
+      .ladi-box {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+      }
+      .ladi-frame {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+      }
+      .ladi-frame-bg .ladi-frame-background {
+        height: 100%;
+        width: 100%;
+        pointer-events: none;
+        transition: inherit;
+      }
+      .ladi-frame-bg:not(.ladi-frame) {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+      }
+      #SECTION_POPUP .ladi-container {
+        z-index: 90000070;
+      }
+      #SECTION_POPUP .ladi-container > .ladi-element {
+        z-index: 90000070;
+        position: fixed;
+        display: none;
+      }
+      #SECTION_POPUP .ladi-container > .ladi-element[data-fixed-close="true"] {
+        position: relative !important;
+      }
+      #SECTION_POPUP .ladi-container > .ladi-element.hide-visibility {
+        display: block !important;
+        visibility: hidden !important;
+      }
+      #SECTION_POPUP .popup-close {
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        z-index: 9000000080;
+        cursor: pointer;
+        width: 16px;
+        height: 16px;
+        margin: 10px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-image: url("data:image/svg+xml;utf8, %3Csvg%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20fill%3D%22%23000%22%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M23.4144%202.00015L2.00015%2023.4144L0.585938%2022.0002L22.0002%200.585938L23.4144%202.00015Z%22%3E%3C%2Fpath%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M2.00015%200.585938L23.4144%2022.0002L22.0002%2023.4144L0.585938%202.00015L2.00015%200.585938Z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
+      }
+      .ladi-popup {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+      }
+      .ladi-popup .ladi-popup-background {
+        height: 100%;
+        width: 100%;
+        pointer-events: none;
+      }
+      .ladi-button {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+      }
+      .ladi-button:active {
+        transform: translateY(2px);
+        transition: transform 0.2s linear;
+      }
+      .ladi-button .ladi-button-background {
+        height: 100%;
+        width: 100%;
+        pointer-events: none;
+        transition: inherit;
+      }
+      .ladi-button > .ladi-button-headline,
+      .ladi-button > .ladi-button-shape {
+        width: 100% !important;
+        height: 100% !important;
+        top: 0 !important;
+        left: 0 !important;
+        display: table;
+        user-select: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+      }
+      .ladi-button > .ladi-button-shape .ladi-shape {
+        margin: auto;
+        top: 0;
+        bottom: 0;
+      }
+      .ladi-button > .ladi-button-headline .ladi-headline {
+        display: table-cell;
+        vertical-align: middle;
+      }
+      .ladi-button-group {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+      }
+      .ladi-button-group > .ladi-element {
+        transition: inherit;
+      }
+      .ladi-button-group > .ladi-element > .ladi-button {
+        transition: inherit;
+      }
+      .ladi-form {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+      }
+      .ladi-form > .ladi-element {
+        text-transform: inherit;
+        text-decoration: inherit;
+        text-align: inherit;
+        letter-spacing: inherit;
+        color: inherit;
+        background-size: inherit;
+        background-attachment: inherit;
+        background-origin: inherit;
+      }
+      .ladi-form .ladi-button > .ladi-button-headline {
+        color: initial;
+        font-size: initial;
+        font-weight: initial;
+        text-transform: initial;
+        text-decoration: initial;
+        font-style: initial;
+        text-align: initial;
+        letter-spacing: initial;
+        line-height: initial;
+      }
+      .ladi-form > .ladi-element .ladi-form-item-container {
+        text-transform: inherit;
+        text-decoration: inherit;
+        text-align: inherit;
+        letter-spacing: inherit;
+        color: inherit;
+        background-size: inherit;
+        background-attachment: inherit;
+        background-origin: inherit;
+      }
+      .ladi-form > [data-quantity="true"] .ladi-form-item-container {
+        overflow: hidden;
+      }
+      .ladi-form > .ladi-element .ladi-form-item-container .ladi-form-item {
+        text-transform: inherit;
+        text-decoration: inherit;
+        text-align: inherit;
+        letter-spacing: inherit;
+        color: inherit;
+      }
+      .ladi-form
+        > .ladi-element
+        .ladi-form-item-container
+        .ladi-form-item-background {
+        background-size: inherit;
+        background-attachment: inherit;
+        background-origin: inherit;
+      }
+      .ladi-form
+        > .ladi-element
+        .ladi-form-item-container
+        .ladi-form-item
+        .ladi-form-control-select {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background-size: 9px 6px !important;
+        background-position: right 0.5rem center;
+        background-repeat: no-repeat;
+        padding-right: 24px;
+      }
+      .ladi-form
+        > .ladi-element
+        .ladi-form-item-container
+        .ladi-form-item
+        .ladi-form-control-select-2 {
+        width: calc(100% / 2 - 5px);
+        max-width: calc(100% / 2 - 5px);
+        min-width: calc(100% / 2 - 5px);
+      }
+      .ladi-form
+        > .ladi-element
+        .ladi-form-item-container
+        .ladi-form-item
+        .ladi-form-control-select-2:nth-child(3) {
+        margin-left: 7.5px;
+      }
+      .ladi-form
+        > .ladi-element
+        .ladi-form-item-container
+        .ladi-form-item
+        .ladi-form-control-select-3 {
+        width: calc(100% / 3 - 5px);
+        max-width: calc(100% / 3 - 5px);
+        min-width: calc(100% / 3 - 5px);
+      }
+      .ladi-form
+        > .ladi-element
+        .ladi-form-item-container
+        .ladi-form-item
+        .ladi-form-control-select-3:nth-child(3) {
+        margin-left: 7.5px;
+      }
+      .ladi-form
+        > .ladi-element
+        .ladi-form-item-container
+        .ladi-form-item
+        .ladi-form-control-select-3:nth-child(4) {
+        margin-left: 7.5px;
+      }
+      .ladi-form
+        > .ladi-element
+        .ladi-form-item-container
+        .ladi-form-item
+        .ladi-form-control-select
+        option {
+        color: initial;
+      }
+      .ladi-form
+        > .ladi-element
+        .ladi-form-item-container
+        .ladi-form-item
+        .ladi-form-control:not(.ladi-form-control-select) {
+        text-transform: inherit;
+        text-decoration: inherit;
+        text-align: inherit;
+        letter-spacing: inherit;
+        color: inherit;
+        background-size: inherit;
+        background-attachment: inherit;
+        background-origin: inherit;
+      }
+      .ladi-form
+        > .ladi-element
+        .ladi-form-item-container
+        .ladi-form-item
+        .ladi-form-control-select {
+        text-transform: inherit;
+        text-align: inherit;
+        letter-spacing: inherit;
+        color: inherit;
+        background-size: inherit;
+        background-attachment: inherit;
+        background-origin: inherit;
+      }
+      .ladi-form
+        > .ladi-element
+        .ladi-form-item-container
+        .ladi-form-item
+        .ladi-form-control-select:not([data-selected=""]) {
+        text-decoration: inherit;
+      }
+      .ladi-form
+        > .ladi-element
+        .ladi-form-item-container
+        .ladi-form-item
+        .ladi-form-checkbox-item {
+        text-transform: inherit;
+        text-decoration: inherit;
+        text-align: inherit;
+        letter-spacing: inherit;
+        color: inherit;
+        background-size: inherit;
+        background-attachment: inherit;
+        background-origin: inherit;
+        vertical-align: middle;
+      }
+      .ladi-form
+        > .ladi-element
+        .ladi-form-item-container
+        .ladi-form-item
+        .ladi-form-checkbox-box-item {
+        display: inline-block;
+        width: fit-content;
+      }
+      .ladi-form
+        > .ladi-element
+        .ladi-form-item-container
+        .ladi-form-item
+        .ladi-form-checkbox-item
+        span {
+        user-select: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+      }
+      .ladi-form
+        > .ladi-element
+        .ladi-form-item-container
+        .ladi-form-item
+        .ladi-form-checkbox-item
+        span[data-checked="true"] {
+        text-transform: inherit;
+        text-decoration: inherit;
+        text-align: inherit;
+        letter-spacing: inherit;
+        color: inherit;
+        background-size: inherit;
+        background-attachment: inherit;
+        background-origin: inherit;
+      }
+      .ladi-form
+        > .ladi-element
+        .ladi-form-item-container
+        .ladi-form-item
+        .ladi-form-checkbox-item
+        span[data-checked="false"] {
+        text-transform: inherit;
+        text-align: inherit;
+        letter-spacing: inherit;
+        color: inherit;
+        background-size: inherit;
+        background-attachment: inherit;
+        background-origin: inherit;
+      }
+      .ladi-form .ladi-form-item-container {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+      }
+      .ladi-form .ladi-form-item-title-value {
+        font-weight: bold;
+        word-break: break-word;
+      }
+      .ladi-form .ladi-form-label-container {
+        position: relative;
+        width: 100%;
+      }
+      .ladi-form .ladi-form-control-file {
+        background-repeat: no-repeat;
+        background-position: calc(100% - 5px) center;
+      }
+      .ladi-form .ladi-form-label-container .ladi-form-label-item {
+        display: inline-block;
+        cursor: pointer;
+        position: relative;
+        border-radius: 0px !important;
+        user-select: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+      }
+      .ladi-form .ladi-form-label-container .ladi-form-label-item.image {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+      .ladi-form .ladi-form-label-container .ladi-form-label-item.no-value {
+        display: none !important;
+      }
+      .ladi-form
+        .ladi-form-label-container
+        .ladi-form-label-item.text.disabled {
+        opacity: 0.35;
+      }
+      .ladi-form
+        .ladi-form-label-container
+        .ladi-form-label-item.image.disabled {
+        opacity: 0.2;
+      }
+      .ladi-form
+        .ladi-form-label-container
+        .ladi-form-label-item.color.disabled {
+        opacity: 0.15;
+      }
+      .ladi-form
+        .ladi-form-label-container
+        .ladi-form-label-item.selected:before {
+        content: "";
+        width: 0;
+        height: 0;
+        bottom: -1px;
+        right: -1px;
+        position: absolute;
+        border-width: 0 0 15px 15px;
+        border-color: transparent;
+        border-style: solid;
+      }
+      .ladi-form
+        .ladi-form-label-container
+        .ladi-form-label-item.selected:after {
+        content: "";
+        background-image: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' enable-background='new 0 0 12 12' viewBox='0 0 12 12' x='0' fill='%23fff' y='0'%3E%3Cg%3E%3Cpath d='m5.2 10.9c-.2 0-.5-.1-.7-.2l-4.2-3.7c-.4-.4-.5-1-.1-1.4s1-.5 1.4-.1l3.4 3 5.1-7c .3-.4 1-.5 1.4-.2s.5 1 .2 1.4l-5.7 7.9c-.2.2-.4.4-.7.4 0-.1 0-.1-.1-.1z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-position: bottom right;
+        width: 7px;
+        height: 7px;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+      }
+      .ladi-form .ladi-form-item {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+      }
+      .ladi-form .ladi-form-item-background {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        pointer-events: none;
+      }
+      .ladi-form .ladi-form-item.ladi-form-checkbox {
+        height: auto;
+      }
+      .ladi-form .ladi-form-item .ladi-form-control {
+        background-color: transparent;
+        min-width: 100%;
+        min-height: 100%;
+        max-width: 100%;
+        max-height: 100%;
+        width: 100%;
+        height: 100%;
+        padding: 0 5px;
+        color: inherit;
+        font-size: inherit;
+        border: none;
+      }
+      .ladi-form .ladi-form-item.ladi-form-checkbox {
+        padding: 0 5px;
+      }
+      .ladi-form
+        .ladi-form-item.ladi-form-checkbox.ladi-form-checkbox-vertical
+        .ladi-form-checkbox-item {
+        margin-top: 0 !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        display: flex;
+        align-items: center;
+        border: none;
+      }
+      .ladi-form
+        .ladi-form-item.ladi-form-checkbox.ladi-form-checkbox-horizontal
+        .ladi-form-checkbox-item {
+        margin-top: 0 !important;
+        margin-left: 0 !important;
+        margin-right: 10px !important;
+        display: inline-flex;
+        align-items: center;
+        border: none;
+        position: relative;
+      }
+      .ladi-form
+        .ladi-form-item.ladi-form-checkbox
+        .ladi-form-checkbox-item
+        input {
+        margin-right: 5px;
+        display: block;
+      }
+      .ladi-form
+        .ladi-form-item.ladi-form-checkbox
+        .ladi-form-checkbox-item
+        span {
+        cursor: default;
+        word-break: break-word;
+      }
+      .ladi-form .ladi-form-item textarea.ladi-form-control {
+        resize: none;
+        padding: 5px;
+      }
+      .ladi-form .ladi-button {
+        cursor: pointer;
+      }
+      .ladi-form .ladi-button .ladi-headline {
+        cursor: pointer;
+        user-select: none;
+      }
+      .ladi-form .ladi-element .ladi-form-otp::-webkit-outer-spin-button,
+      .ladi-form .ladi-element .ladi-form-otp::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+      .ladi-form .ladi-element .ladi-form-item .button-get-code {
+        display: none;
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto 0;
+        line-height: initial;
+        padding: 5px 10px;
+        height: max-content;
+        cursor: pointer;
+        user-select: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+      }
+      .ladi-form
+        .ladi-element
+        .ladi-form-item
+        .button-get-code.hide-visibility {
+        display: block !important;
+        visibility: hidden !important;
+      }
+      .ladi-form .ladi-form-item.otp-resend .button-get-code {
+        display: block;
+      }
+      .ladi-form .ladi-form-item.otp-countdown:before {
+        content: attr(data-countdown-time) "s";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto 0;
+        height: max-content;
+        line-height: initial;
+      }
+      .ladi-form [data-variant="true"] select option[disabled] {
+        background: #fff;
+        color: #b8b8b8 !important;
+      }
+      .ladi-google-recaptcha-checkbox {
+        position: absolute;
+        display: inline-block;
+        transform: translateY(-100%);
+        margin-top: -5px;
+        z-index: 90000010;
+      }
+      .ladi-element[data-form-checkout-item] {
+        padding: 0;
+      }
+      .ladi-form .ladi-form-checkout-title {
+        margin-bottom: 8px;
+      }
+      .ladi-form
+        .ladi-element[data-form-checkout-item]
+        .ladi-form-item-container,
+      .ladi-form .ladi-element[data-form-checkout-item] .ladi-form-item {
+        height: auto !important;
+        position: unset !important;
+      }
+      .ladi-form .ladi-form-checkout-box {
+        gap: 12px;
+        display: flex;
+        flex-flow: column;
+        margin: 8px 12px;
+        margin-top: 14px !important;
+        padding-bottom: 14px;
+        border-left: none !important;
+        border-right: none !important;
+        border-top: none !important;
+        border-radius: 0 !important;
+      }
+      .ladi-form .ladi-form-checkout-box:last-child {
+        border: none !important;
+        padding-bottom: 4px;
+      }
+      .ladi-form .ladi-form-checkout-box:first-child {
+        margin-top: 0;
+      }
+      .ladi-form .ladi-form-checkout-payment-item {
+        display: flex;
+        flex-flow: row;
+        gap: 12px;
+        align-items: center;
+      }
+      .ladi-form .ladi-form-checkout-payment-check {
+        width: 18px;
+        height: 18px;
+        border: 1px solid;
+        border-radius: 100%;
+        display: block;
+        position: relative;
+      }
+      .ladi-form .ladi-form-checkout-payment-check.checked:before {
+        content: "";
+        width: 7px;
+        height: 8px;
+        border-radius: inherit;
+        display: block;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+      }
+      .ladi-form .ladi-form-checkout-payment-check.multiple {
+        border-radius: 4px;
+      }
+      .ladi-form .ladi-form-checkout-payment-check.multiple.checked:before {
+        content: "";
+        --url: url("data:image/svg+xml,%0A%3Csvg%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20d%3D%22M18.71%207.20998C18.617%207.11625%2018.5064%207.04186%2018.3846%206.99109C18.2627%206.94032%2018.132%206.91418%2018%206.91418C17.868%206.91418%2017.7373%206.94032%2017.6154%206.99109C17.4936%207.04186%2017.383%207.11625%2017.29%207.20998L9.84%2014.67L6.71%2011.53C6.61348%2011.4367%206.49954%2011.3634%206.37468%2011.3142C6.24983%2011.265%206.1165%2011.2409%205.98232%2011.2432C5.84814%2011.2455%205.71573%2011.2743%205.59265%2011.3278C5.46957%2011.3812%205.35824%2011.4585%205.265%2011.555C5.17176%2011.6515%205.09845%2011.7654%205.04924%2011.8903C5.00004%2012.0152%204.97591%2012.1485%204.97823%2012.2827C4.98055%2012.4168%205.00928%2012.5492%205.06277%2012.6723C5.11627%2012.7954%205.19348%2012.9067%205.29%2013L9.13%2016.84C9.22296%2016.9337%209.33356%2017.0081%209.45542%2017.0589C9.57728%2017.1096%209.70799%2017.1358%209.84%2017.1358C9.97201%2017.1358%2010.1027%2017.1096%2010.2246%2017.0589C10.3464%2017.0081%2010.457%2016.9337%2010.55%2016.84L18.71%208.67998C18.8115%208.58634%2018.8925%208.47269%2018.9479%208.34619C19.0033%208.21969%2019.0319%208.08308%2019.0319%207.94498C19.0319%207.80688%2019.0033%207.67028%2018.9479%207.54378C18.8925%207.41728%2018.8115%207.30363%2018.71%207.20998Z%22%20fill%3D%22%231852FA%22%2F%3E%0A%3C%2Fsvg%3E%0A");
+        -webkit-mask-image: var(--url);
+        mask-image: var(--url);
+        width: 18px;
+        height: 18px;
+        -webkit-mask-size: 100%;
+        mask-size: 100%;
+        pointer-events: none;
+        background-color: #fff;
+        position: absolute;
+        top: 0px;
+        left: -1px;
+      }
+      .ladi-form .ladi-form-checkout-payment-content {
+        display: flex;
+        flex-flow: row;
+        gap: 10px;
+        align-items: center;
+        width: calc(100% - 70px - 18px - 10px * 2);
+      }
+      .ladi-form .ladi-form-checkout-payment-content img {
+        width: 36px;
+        height: 36px;
+        border-radius: 4px;
+      }
+      .ladi-form .ladi-form-checkout-payment-content div {
+        display: flex;
+        flex-flow: column;
+      }
+      .ladi-form .ladi-form-checkout-payment-content div > span {
+        font-size: inherit;
+      }
+      .ladi-form .ladi-form-checkout-payment-content div > span:last-child {
+        font-size: 80%;
+        opacity: 0.8;
+      }
+      .ladi-form .ladi-form-checkout-payment-content div .price.price-compare {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        flex-direction: row !important;
+      }
+      .ladi-form .ladi-form-checkout-payment-quantity {
+        position: relative;
+        font-size: 18px;
+      }
+      .ladi-form .ladi-form-checkout-payment-quantity input {
+        padding: 4px 28px 4px 8px;
+        width: 70px;
+        border-radius: 8px;
+        position: relative;
+        height: 100%;
+        border: 1px solid;
+      }
+      .ladi-form
+        .ladi-form-checkout-payment-quantity
+        input::-webkit-outer-spin-button,
+      .ladi-form
+        .ladi-form-checkout-payment-quantity
+        input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+      .ladi-form .ladi-form-checkout-payment-quantity .up {
+        width: 16px;
+        height: 16px;
+        top: 0px;
+        right: 5px;
+        cursor: pointer;
+        display: block;
+        position: absolute;
+      }
+      .ladi-form .ladi-form-checkout-payment-quantity .up:before {
+        content: "";
+        --url: url("data:image/svg+xml,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M3.14645%206.14645C3.34171%205.95118%203.65829%205.95118%203.85355%206.14645L8%2010.2929L12.1464%206.14645C12.3417%205.95118%2012.6583%205.95118%2012.8536%206.14645C13.0488%206.34171%2013.0488%206.65829%2012.8536%206.85355L8.35355%2011.3536C8.15829%2011.5488%207.84171%2011.5488%207.64645%2011.3536L3.14645%206.85355C2.95118%206.65829%202.95118%206.34171%203.14645%206.14645Z%22%20fill%3D%22black%22%20transform%3D%22rotate(180%208%208)%22%2F%3E%3C%2Fsvg%3E");
+        -webkit-mask-image: var(--url);
+        mask-image: var(--url);
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        top: 4px;
+        left: 2px;
+        mask-size: 100%;
+      }
+      .ladi-form .ladi-form-checkout-payment-quantity .down {
+        width: 16px;
+        height: 16px;
+        right: 5px;
+        cursor: pointer;
+        display: block;
+        position: absolute;
+        bottom: 2px;
+      }
+      .ladi-form .ladi-form-checkout-payment-quantity .down:before {
+        content: "";
+        --url: url("data:image/svg+xml,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M3.14645%206.14645C3.34171%205.95118%203.65829%205.95118%203.85355%206.14645L8%2010.2929L12.1464%206.14645C12.3417%205.95118%2012.6583%205.95118%2012.8536%206.14645C13.0488%206.34171%2013.0488%206.65829%2012.8536%206.85355L8.35355%2011.3536C8.15829%2011.5488%207.84171%2011.5488%207.64645%2011.3536L3.14645%206.85355C2.95118%206.65829%202.95118%206.34171%203.14645%206.14645Z%22%20fill%3D%22black%22%2F%3E%0A%3C%2Fsvg%3E");
+        -webkit-mask-image: var(--url);
+        mask-image: var(--url);
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        left: 2px;
+        mask-size: 100%;
+      }
+      .ladi-form [data-form-checkout-item="payment"] .ladi-form-item {
+        display: table;
+      }
+      .ladi-form
+        [data-form-checkout-item="payment"]
+        .ladi-form-item
+        .ladi-form-checkout-payment-content {
+        width: calc(100% - 18px);
+      }
+      .ladi-form
+        [data-form-checkout-item="payment"]
+        .ladi-form-checkout-payment-content
+        div
+        > span {
+        display: block;
+      }
+      .ladi-form
+        [data-form-checkout-item="payment"]
+        .ladi-form-item
+        .ladi-form-checkout-payment-content
+        div {
+        display: table-cell;
+        vertical-align: middle;
+        padding: 0 6px;
+        cursor: pointer;
+        width: 100%;
+        position: relative;
+      }
+      .ladi-form
+        [data-form-checkout-item="payment"]
+        .ladi-form-item
+        .ladi-form-checkout-payment-content
+        div.arrow:before {
+        content: "";
+        --url: url("data:image/svg+xml,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M6.14645%203.14645C6.34171%202.95118%206.65829%202.95118%206.85355%203.14645L11.3536%207.64645C11.5488%207.84171%2011.5488%208.15829%2011.3536%208.35355L6.85355%2012.8536C6.65829%2013.0488%206.34171%2013.0488%206.14645%2012.8536C5.95118%2012.6583%205.95118%2012.3417%206.14645%2012.1464L10.2929%208L6.14645%203.85355C5.95118%203.65829%205.95118%203.34171%206.14645%203.14645Z%22%20fill%3D%22black%22%2F%3E%0A%3C%2Fsvg%3E");
+        -webkit-mask-image: var(--url);
+        mask-image: var(--url);
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        display: block;
+        margin: auto;
+        -webkit-mask-size: 100%;
+        mask-size: 100%;
+      }
+      .ladi-video {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        overflow: hidden;
+      }
+      .ladi-video .ladi-video-background {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        pointer-events: none;
+      }
+      .button-unmute {
+        cursor: pointer;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+      }
+      .button-unmute div {
+        background-image: url("data:image/svg+xml;utf8, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2036%2036%22%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23fff%22%3E%3Cpath%20d%3D%22m%2021.48%2C17.98%20c%200%2C-1.77%20-1.02%2C-3.29%20-2.5%2C-4.03%20v%202.21%20l%202.45%2C2.45%20c%20.03%2C-0.2%20.05%2C-0.41%20.05%2C-0.63%20z%20m%202.5%2C0%20c%200%2C.94%20-0.2%2C1.82%20-0.54%2C2.64%20l%201.51%2C1.51%20c%20.66%2C-1.24%201.03%2C-2.65%201.03%2C-4.15%200%2C-4.28%20-2.99%2C-7.86%20-7%2C-8.76%20v%202.05%20c%202.89%2C.86%205%2C3.54%205%2C6.71%20z%20M%209.25%2C8.98%20l%20-1.27%2C1.26%204.72%2C4.73%20H%207.98%20v%206%20H%2011.98%20l%205%2C5%20v%20-6.73%20l%204.25%2C4.25%20c%20-0.67%2C.52%20-1.42%2C.93%20-2.25%2C1.18%20v%202.06%20c%201.38%2C-0.31%202.63%2C-0.95%203.69%2C-1.81%20l%202.04%2C2.05%201.27%2C-1.27%20-9%2C-9%20-7.72%2C-7.72%20z%20m%207.72%2C.99%20-2.09%2C2.08%202.09%2C2.09%20V%209.98%20z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 100%;
+        background-size: 90%;
+        background-repeat: no-repeat;
+        background-position: center center;
+      }
+      .ladi-group {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+      }
+      .ladi-shape {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+      }
+      .ladi-cart-number {
+        position: absolute;
+        top: -2px;
+        right: -7px;
+        background: #f36e36;
+        text-align: center;
+        width: 18px;
+        height: 18px;
+        line-height: 18px;
+        font-size: 12px;
+        font-weight: bold;
+        color: #fff;
+        border-radius: 100%;
+      }
+      .ladi-image {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+      }
+      .ladi-image .ladi-image-background {
+        background-repeat: no-repeat;
+        background-position: left top;
+        background-size: cover;
+        background-attachment: scroll;
+        background-origin: content-box;
+        position: absolute;
+        margin: 0 auto;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+      }
+      .ladi-headline {
+        width: 100%;
+        display: inline-block;
+        word-break: break-word;
+        background-size: cover;
+        background-position: center center;
+      }
+      .ladi-headline a {
+        text-decoration: underline;
+      }
+      .ladi-paragraph {
+        width: 100%;
+        display: inline-block;
+        word-break: break-word;
+      }
+      .ladi-paragraph a {
+        text-decoration: underline;
+      }
+      .ladi-list-paragraph {
+        width: 100%;
+        display: inline-block;
+      }
+      .ladi-list-paragraph a {
+        text-decoration: underline;
+      }
+      .ladi-list-paragraph ul li {
+        position: relative;
+        counter-increment: linum;
+      }
+      .ladi-list-paragraph ul li:before {
+        position: absolute;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        left: 0;
+      }
+      .ladi-list-paragraph ul li:last-child {
+        padding-bottom: 0 !important;
+      }
+      .ladi-line {
+        position: relative;
+      }
+      .ladi-line .ladi-line-container {
+        border-bottom: 0 !important;
+        border-right: 0 !important;
+        width: 100%;
+        height: 100%;
+      }
+      a[data-action] {
+        user-select: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        cursor: pointer;
+      }
+      a:visited {
+        color: inherit;
+      }
+      a:link {
+        color: inherit;
+      }
+      [data-opacity="0"] {
+        opacity: 0;
+      }
+      [data-hidden="true"] {
+        display: none;
+      }
+      [data-action="true"] {
+        cursor: pointer;
+      }
+      .ladi-hidden {
+        display: none;
+      }
+      .ladi-animation-hidden {
+        visibility: hidden !important;
+        opacity: 0 !important;
+      }
+      .element-click-selected {
+        cursor: pointer;
+      }
+      .is-2nd-click {
+        cursor: pointer;
+      }
+      .ladi-button-shape.is-2nd-click,
+      .ladi-accordion-shape.is-2nd-click {
+        z-index: 1;
+      }
+      .backdrop-popup {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 90000060;
+      }
+      .backdrop-dropbox {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 90000040;
+      }
+      .ladi-lazyload {
+        background-image: none !important;
+      }
+      .ladi-list-paragraph ul li.ladi-lazyload:before {
+        background-image: none !important;
+      }
+      @media (min-width: 768px) {
+        .ladi-carousel-fullwidth {
+          width: 100vw !important;
+          left: calc(-50vw + 50%) !important;
+          box-sizing: border-box !important;
+          transform: none !important;
+        }
+      }
+      @media (max-width: 767px) {
+        .ladi-element.ladi-auto-scroll {
+          overflow-x: auto;
+          overflow-y: hidden;
+          width: 100% !important;
+          left: 0 !important;
+          -webkit-overflow-scrolling: touch;
+        }
+        [data-hint]:not([data-timeout-id-copied]):before,
+        [data-hint]:not([data-timeout-id-copied]):after {
+          display: none !important;
+        }
+        .ladi-section.ladi-auto-scroll {
+          overflow-x: auto;
+          overflow-y: hidden;
+          -webkit-overflow-scrolling: touch;
+        }
+        .ladi-carousel .ladi-carousel-content {
+          transition: top 300ms ease-in-out, left 300ms ease-in-out;
+        }
+      }
+    
+
+/* ===== NEXT STYLE SECTION ===== */
+
+
+      @media (min-width: 768px) {
+        #BOX272,
+        #IMAGE307,
+        #IMAGE308,
+        #IMAGE313,
+        #IMAGE314,
+        #PARAGRAPH304,
+        #BUTTON301,
+        #IMAGE318,
+        #IMAGE325,
+        #IMAGE330,
+        #IMAGE331,
+        #BOX301,
+        #BOX302,
+        #IMAGE332,
+        #IMAGE333,
+        #IMAGE334,
+        #IMAGE344,
+        #IMAGE348,
+        #IMAGE349,
+        #IMAGE350,
+        #IMAGE352,
+        #IMAGE353 {
+          opacity: 0 !important;
+          pointer-events: none !important;
+        }
+      }
+      @media (max-width: 767px) {
+        #BOX272,
+        #IMAGE307,
+        #IMAGE308,
+        #IMAGE313,
+        #IMAGE314,
+        #PARAGRAPH304,
+        #BUTTON301,
+        #IMAGE318,
+        #IMAGE325,
+        #IMAGE330,
+        #IMAGE331,
+        #BOX301,
+        #BOX302,
+        #IMAGE332,
+        #IMAGE333,
+        #IMAGE334,
+        #IMAGE344,
+        #IMAGE348,
+        #IMAGE349,
+        #IMAGE350,
+        #IMAGE352,
+        #IMAGE353 {
+          opacity: 0 !important;
+          pointer-events: none !important;
+        }
+      }
+    
+
+/* ===== NEXT STYLE SECTION ===== */
+
+
+      body {
+        direction: ltr;
+      }
+      @media (min-width: 768px) {
+        .ladi-section .ladi-container {
+          width: 1200px;
+        }
+      }
+      @media (max-width: 767px) {
+        .ladi-section .ladi-container {
+          width: 420px;
+        }
+      }
+      @font-face {
+        font-family: "RGVzaWduZXJWTiQbBwaWzLVJlZVsYXIudHRm";
+        src: url("https://w.ladicdn.com/5e51ff6161a254079fc6d2ed/designervn-poppins-regular-20240106111937-covdi.ttf")
+          format("truetype");
+      }
+      @font-face {
+        font-family: "UZOLVBPUFBJTlMtQkMRCUVEY";
+        src: url("https://w.ladicdn.com/5e51ff6161a254079fc6d2ed/svn-poppins-bold-20240812161300-7mgnd.ttf")
+          format("truetype");
+      }
+      body {
+        font-family: RGVzaWduZXJWTiQbBwaWzLVJlZVsYXIudHRm;
+      }
+    
+
+/* ===== NEXT STYLE SECTION ===== */
+
+
+      #BOX223 > .ladi-box,
+      #BOX303 > .ladi-box,
+      #BOX304 > .ladi-box,
+      #BOX305 > .ladi-box,
+      #BOX307 > .ladi-box,
+      #BOX308 > .ladi-box,
+      #BOX309 > .ladi-box,
+      #BOX310 > .ladi-box,
+      #BOX311 > .ladi-box,
+      #BOX312 > .ladi-box,
+      #BOX314 > .ladi-box,
+      #POPUP > .ladi-popup > .ladi-popup-background,
+      #FORM301 .ladi-form-item-background {
+        background-color: rgb(255, 255, 255);
+      }
+      #BOX223 > .ladi-box {
+        box-shadow: rgb(0, 0, 0) 0px 15px 20px -15px;
+      }
+      #BOX223 > .ladi-box:hover,
+      #BUTTON225 > .ladi-button:hover,
+      #BUTTON_TEXT225 > .ladi-headline:hover,
+      #BUTTON237 > .ladi-button:hover,
+      #BUTTON_TEXT237 > .ladi-headline:hover,
+      #SHAPE299:hover > .ladi-shape,
+      #PARAGRAPH302 > .ladi-paragraph:hover,
+      #HEADLINE83 > .ladi-headline:hover,
+      #BOX302 > .ladi-box:hover,
+      #BOX301 > .ladi-box:hover,
+      #CAROUSEL_ITEM305 > .ladi-frame:hover,
+      #CAROUSEL_ITEM305 > .ladi-frame:hover ~ .ladi-frame-bg,
+      #BOX303 > .ladi-box:hover,
+      #IMAGE335:hover > .ladi-image,
+      #CAROUSEL_ITEM306 > .ladi-frame:hover,
+      #CAROUSEL_ITEM306 > .ladi-frame:hover ~ .ladi-frame-bg,
+      #BOX304 > .ladi-box:hover,
+      #IMAGE339:hover > .ladi-image,
+      #CAROUSEL_ITEM307 > .ladi-frame:hover,
+      #CAROUSEL_ITEM307 > .ladi-frame:hover ~ .ladi-frame-bg,
+      #BOX305 > .ladi-box:hover,
+      #IMAGE340:hover > .ladi-image,
+      #BOX306 > .ladi-box:hover,
+      #BOX307 > .ladi-box:hover,
+      #BOX308 > .ladi-box:hover,
+      #BOX309 > .ladi-box:hover,
+      #BOX310 > .ladi-box:hover,
+      #BOX311 > .ladi-box:hover,
+      #BOX312 > .ladi-box:hover,
+      #BOX314 > .ladi-box:hover,
+      #BOX300 > .ladi-box:hover,
+      #HEADLINE243 > .ladi-headline:hover,
+      #IMAGE245:hover > .ladi-image,
+      #BOX270 > .ladi-box:hover,
+      #BOX272 > .ladi-box:hover,
+      #BOX273 > .ladi-box:hover,
+      #SHAPE274:hover > .ladi-shape,
+      #PARAGRAPH275 > .ladi-paragraph:hover,
+      #IMAGE279:hover > .ladi-image,
+      #SHAPE250:hover > .ladi-shape,
+      #HEADLINE251 > .ladi-headline:hover,
+      #SHAPE253:hover > .ladi-shape,
+      #HEADLINE254 > .ladi-headline:hover,
+      #SHAPE256:hover > .ladi-shape,
+      #HEADLINE257 > .ladi-headline:hover,
+      #SHAPE259:hover > .ladi-shape,
+      #HEADLINE260 > .ladi-headline:hover,
+      #BUTTON312 > .ladi-button:hover,
+      #BUTTON_TEXT312 > .ladi-headline:hover,
+      #BUTTON313 > .ladi-button:hover,
+      #BUTTON_TEXT313 > .ladi-headline:hover {
+        opacity: 1;
+      }
+      #BUTTON_GROUP224 {
+        height: 39.25px;
+      }
+      #BUTTON_GROUP224
+        > .ladi-button-group
+        > .ladi-element:hover
+        > .ladi-button {
+        opacity: 1 !important;
+        filter: blur(0px) grayscale(0%) !important;
+      }
+      #BUTTON225,
+      #BUTTON237 {
+        width: 109px;
+        height: 39.25px;
+      }
+      #BUTTON225,
+      #IMAGE300 > .ladi-image > .ladi-image-background,
+      #IMAGE301,
+      #IMAGE301 > .ladi-image > .ladi-image-background,
+      #IMAGE302 > .ladi-image > .ladi-image-background,
+      #IMAGE304 > .ladi-image > .ladi-image-background,
+      #IMAGE306 > .ladi-image > .ladi-image-background,
+      #IMAGE307 > .ladi-image > .ladi-image-background,
+      #IMAGE308 > .ladi-image > .ladi-image-background,
+      #IMAGE311 > .ladi-image > .ladi-image-background,
+      #IMAGE312 > .ladi-image > .ladi-image-background,
+      #IMAGE314 > .ladi-image > .ladi-image-background,
+      #IMAGE315 > .ladi-image > .ladi-image-background,
+      #IMAGE313 > .ladi-image > .ladi-image-background,
+      #IMAGE303 > .ladi-image > .ladi-image-background,
+      #IMAGE310 > .ladi-image > .ladi-image-background,
+      #IMAGE309 > .ladi-image > .ladi-image-background,
+      #IMAGE330 > .ladi-image > .ladi-image-background,
+      #IMAGE331 > .ladi-image > .ladi-image-background,
+      #IMAGE333 > .ladi-image > .ladi-image-background,
+      #IMAGE334 > .ladi-image > .ladi-image-background,
+      #CAROUSEL_ITEM305,
+      #IMAGE335 > .ladi-image > .ladi-image-background,
+      #IMAGE342 > .ladi-image > .ladi-image-background,
+      #IMAGE339 > .ladi-image > .ladi-image-background,
+      #IMAGE341 > .ladi-image > .ladi-image-background,
+      #IMAGE340 > .ladi-image > .ladi-image-background,
+      #IMAGE343 > .ladi-image > .ladi-image-background,
+      #IMAGE344 > .ladi-image > .ladi-image-background,
+      #IMAGE328 > .ladi-image > .ladi-image-background,
+      #IMAGE332 > .ladi-image > .ladi-image-background,
+      #IMAGE347 > .ladi-image > .ladi-image-background,
+      #IMAGE329 > .ladi-image > .ladi-image-background,
+      #IMAGE348 > .ladi-image > .ladi-image-background,
+      #IMAGE364 > .ladi-image > .ladi-image-background,
+      #IMAGE363 > .ladi-image > .ladi-image-background,
+      #IMAGE360 > .ladi-image > .ladi-image-background,
+      #IMAGE349 > .ladi-image > .ladi-image-background,
+      #IMAGE350 > .ladi-image > .ladi-image-background,
+      #IMAGE365,
+      #IMAGE365 > .ladi-image > .ladi-image-background,
+      #IMAGE366,
+      #IMAGE366 > .ladi-image > .ladi-image-background,
+      #IMAGE367,
+      #IMAGE367 > .ladi-image > .ladi-image-background,
+      #IMAGE368,
+      #IMAGE368 > .ladi-image > .ladi-image-background,
+      #IMAGE369,
+      #IMAGE369 > .ladi-image > .ladi-image-background,
+      #IMAGE370,
+      #IMAGE370 > .ladi-image > .ladi-image-background,
+      #IMAGE351 > .ladi-image > .ladi-image-background,
+      #IMAGE327 > .ladi-image > .ladi-image-background,
+      #IMAGE358 > .ladi-image > .ladi-image-background,
+      #IMAGE357 > .ladi-image > .ladi-image-background,
+      #IMAGE359 > .ladi-image > .ladi-image-background,
+      #IMAGE352 > .ladi-image > .ladi-image-background,
+      #IMAGE353 > .ladi-image > .ladi-image-background,
+      #IMAGE354 > .ladi-image > .ladi-image-background,
+      #BOX307,
+      #PARAGRAPH337,
+      #IMAGE356 > .ladi-image > .ladi-image-background,
+      #IMAGE355 > .ladi-image > .ladi-image-background,
+      #BOX308,
+      #BOX309,
+      #BOX310,
+      #BOX311,
+      #BOX312,
+      #BOX314,
+      #IMAGE317 > .ladi-image > .ladi-image-background,
+      #IMAGE318 > .ladi-image > .ladi-image-background,
+      #IMAGE319 > .ladi-image > .ladi-image-background,
+      #IMAGE320 > .ladi-image > .ladi-image-background,
+      #IMAGE321 > .ladi-image > .ladi-image-background,
+      #IMAGE322 > .ladi-image > .ladi-image-background,
+      #IMAGE323 > .ladi-image > .ladi-image-background,
+      #IMAGE324 > .ladi-image > .ladi-image-background,
+      #IMAGE325 > .ladi-image > .ladi-image-background,
+      #IMAGE326 > .ladi-image > .ladi-image-background,
+      #IMAGE245 > .ladi-image > .ladi-image-background,
+      #GROUP271,
+      #BOX272,
+      #IMAGE279 > .ladi-image > .ladi-image-background,
+      #IMAGE316 > .ladi-image > .ladi-image-background,
+      #SHAPE250,
+      #SHAPE253,
+      #SHAPE256,
+      #SHAPE259,
+      #POPUP,
+      #IMAGE371 > .ladi-image > .ladi-image-background,
+      #BUTTON312,
+      #POPUP301,
+      #FORM_ITEM301 {
+        top: 0px;
+        left: 0px;
+      }
+      #BUTTON_TEXT225,
+      #BUTTON_TEXT237 {
+        width: 109px;
+      }
+      #BUTTON_TEXT225,
+      #BUTTON_TEXT237,
+      #BUTTON_TEXT302,
+      #BUTTON_TEXT303,
+      #BUTTON_TEXT307,
+      #BUTTON_TEXT304,
+      #BUTTON_TEXT308,
+      #BUTTON_TEXT312,
+      #BUTTON_TEXT313 {
+        top: 9px;
+        left: 0px;
+      }
+      #BUTTON_TEXT225 > .ladi-headline,
+      #BUTTON_TEXT237 > .ladi-headline,
+      #BUTTON_TEXT312 > .ladi-headline,
+      #BUTTON_TEXT313 > .ladi-headline {
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 1.6;
+        color: rgb(0, 0, 0);
+        text-align: center;
+      }
+      #BUTTON237,
+      #GROUP301,
+      #IMAGE311,
+      #PARAGRAPH354,
+      #PARAGRAPH358,
+      #PARAGRAPH362,
+      #PARAGRAPH364,
+      #PARAGRAPH366,
+      #PARAGRAPH368,
+      #GROUP249 {
+        top: 0px;
+      }
+      #SHAPE299 svg:last-child,
+      #SHAPE311 svg:last-child {
+        fill: rgb(0, 0, 0);
+      }
+      #IMAGE300 {
+        left: 8px;
+      }
+      #BUTTON302 {
+        height: 40px;
+      }
+      #BUTTON_TEXT302 > .ladi-headline,
+      #PARAGRAPH318 > .ladi-paragraph,
+      #PARAGRAPH320 > .ladi-paragraph,
+      #PARAGRAPH316 > .ladi-paragraph {
+        font-weight: bold;
+        line-height: 1.6;
+        color: rgb(0, 0, 0);
+        text-align: center;
+      }
+      #trang-chu > .ladi-section-background,
+      #SECTION282 > .ladi-section-background,
+      #SECTION305 > .ladi-section-background,
+      #SECTION301 > .ladi-section-background,
+      #SECTION302 > .ladi-section-background,
+      #BOX300 > .ladi-box,
+      #POPUP301 > .ladi-popup > .ladi-popup-background {
+        background-size: cover;
+        background-origin: content-box;
+        background-position: 50% 0%;
+        background-repeat: repeat;
+        background-attachment: scroll;
+      }
+      #PARAGRAPH302 > .ladi-paragraph {
+        font-family: Roboto, sans-serif;
+        font-size: 16px;
+        line-height: 1.6;
+        color: rgb(0, 0, 0);
+      }
+      #HEADLINE83,
+      #FORM_ITEM_LABEL301,
+      #FORM_ITEM_LABEL302,
+      #FORM_ITEM_LABEL303 {
+        display: none !important;
+      }
+      #HEADLINE83 > .ladi-headline,
+      #PARAGRAPH330 > .ladi-paragraph,
+      #PARAGRAPH331 > .ladi-paragraph,
+      #PARAGRAPH332 > .ladi-paragraph,
+      #LIST_PARAGRAPH304 > .ladi-list-paragraph,
+      #LIST_PARAGRAPH302 > .ladi-list-paragraph,
+      #LIST_PARAGRAPH303 > .ladi-list-paragraph,
+      #PARAGRAPH345 > .ladi-paragraph,
+      #PARAGRAPH346 > .ladi-paragraph,
+      #PARAGRAPH347 > .ladi-paragraph,
+      #FORM301 > .ladi-form {
+        font-size: 16px;
+        line-height: 1.6;
+        color: rgb(0, 0, 0);
+      }
+      #IMAGE306 > .ladi-image > .ladi-image-background {
+        background-image: url("https://w.ladicdn.com/s350x350/5e51ff6161a254079fc6d2ed/rectangle-1477-20240812155233-trgk3.png");
+      }
+      #IMAGE307.ladi-animation > .ladi-image {
+        animation-name: pulse;
+        animation-delay: 6s;
+        animation-duration: 0s;
+        animation-iteration-count: infinite;
+      }
+      #IMAGE308 > .ladi-image > .ladi-image-background {
+        background-image: url("https://w.ladicdn.com/s350x350/5e51ff6161a254079fc6d2ed/rectangle-1475-20240812155233-kjxsk.png");
+      }
+      #IMAGE308.ladi-animation > .ladi-image {
+        animation-name: pulse;
+        animation-delay: 7s;
+        animation-duration: 0s;
+        animation-iteration-count: infinite;
+      }
+      #IMAGE314.ladi-animation > .ladi-image,
+      #BOX302.ladi-animation > .ladi-box {
+        animation-name: shake;
+        animation-delay: 0s;
+        animation-duration: 9s;
+        animation-iteration-count: infinite;
+      }
+      #IMAGE313.ladi-animation > .ladi-image {
+        animation-name: pulse;
+        animation-delay: 4s;
+        animation-duration: 0s;
+        animation-iteration-count: infinite;
+      }
+      #HEADLINE302 > .ladi-headline {
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 1.6;
+        color: rgb(0, 0, 0);
+        text-align: left;
+      }
+      #IMAGE310 > .ladi-image > .ladi-image-background,
+      #IMAGE334 > .ladi-image > .ladi-image-background,
+      #IMAGE328 > .ladi-image > .ladi-image-background,
+      #IMAGE329 > .ladi-image > .ladi-image-background,
+      #IMAGE350 > .ladi-image > .ladi-image-background,
+      #IMAGE327 > .ladi-image > .ladi-image-background,
+      #IMAGE352 > .ladi-image > .ladi-image-background,
+      #IMAGE353 > .ladi-image > .ladi-image-background,
+      #IMAGE324 > .ladi-image > .ladi-image-background {
+        background-image: url("https://w.ladicdn.com/s400x400/5e51ff6161a254079fc6d2ed/image-46-1-20240812155233-e_cjm.png");
+      }
+      #PARAGRAPH321 > .ladi-paragraph {
+        font-family: UZOLVBPUFBJTlMtQkMRCUVEY;
+        line-height: 1.6;
+        color: rgb(34, 62, 129);
+        text-align: left;
+      }
+      #LIST_PARAGRAPH300 > .ladi-list-paragraph,
+      #LIST_PARAGRAPH301 > .ladi-list-paragraph {
+        font-weight: bold;
+        line-height: 1.6;
+        color: rgb(0, 0, 0);
+      }
+      #LIST_PARAGRAPH300 ul li {
+        padding-bottom: 8px;
+        padding-left: 34px;
+      }
+      #LIST_PARAGRAPH300 ul li:before {
+        width: 26px;
+        height: 26px;
+        background-image: url("data:image/svg+xml;utf8, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2255.896279813044906px%22%20height%3D%2269px%22%20%20viewBox%3D%220%200%201536%201896.0833%22%20class%3D%22%22%20fill%3D%22rgba(26%2C%2057%2C%20132%2C%201)%22%3E%20%3Cpath%20d%3D%22M1284%20734q0-28-18-46l-91-90q-19-19-45-19t-45%2019l-408%20407-226-226q-19-19-45-19t-45%2019l-91%2090q-18%2018-18%2046%200%2027%2018%2045l362%20362q19%2019%2045%2019%2027%200%2046-19l543-543q18-18%2018-45zm252%20162q0%20209-103%20385.5T1153.5%201561%20768%201664t-385.5-103T103%201281.5%200%20896t103-385.5T382.5%20231%20768%20128t385.5%20103T1433%20510.5%201536%20896z%22%3E%3C%2Fpath%3E%20%3C%2Fsvg%3E");
+        content: "";
+      }
+      #LIST_PARAGRAPH300 ul li:before,
+      #HEADLINE254,
+      #HEADLINE257,
+      #HEADLINE260 {
+        top: 2px;
+      }
+      #BOX302 > .ladi-box {
+        border-width: 4px;
+        border-radius: 8px;
+        border-style: solid;
+        border-color: rgb(230, 180, 0);
+      }
+      #IMAGE330.ladi-animation > .ladi-image {
+        animation-name: pulse;
+        animation-delay: 0s;
+        animation-duration: 6s;
+        animation-iteration-count: infinite;
+      }
+      #IMAGE331.ladi-animation > .ladi-image {
+        animation-name: shake;
+        animation-delay: 0s;
+        animation-duration: 8s;
+        animation-iteration-count: infinite;
+      }
+      #BOX301 > .ladi-box,
+      #FORM301 .ladi-form-item-background {
+        border-radius: 8px;
+      }
+      #BOX301 > .ladi-box {
+        background-color: rgb(26, 57, 132);
+      }
+      #BOX301.ladi-animation > .ladi-box {
+        animation-name: pulse;
+        animation-delay: 0s;
+        animation-duration: 7s;
+        animation-iteration-count: infinite;
+      }
+      #IMAGE333.ladi-animation > .ladi-image,
+      #IMAGE344.ladi-animation > .ladi-image,
+      #IMAGE332.ladi-animation > .ladi-image,
+      #IMAGE348.ladi-animation > .ladi-image,
+      #IMAGE349.ladi-animation > .ladi-image,
+      #IMAGE318.ladi-animation > .ladi-image,
+      #IMAGE325.ladi-animation > .ladi-image {
+        animation-name: pulse;
+        animation-delay: 0s;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+      }
+      #GROUP303,
+      #PARAGRAPH315,
+      #FRAME309,
+      #PARAGRAPH340,
+      #HEADLINE243,
+      #GROUP258,
+      #BUTTON_TEXT301,
+      #FORM_ITEM_LABEL301,
+      #FORM_ITEM302,
+      #FORM_ITEM_LABEL302,
+      #FORM_ITEM303,
+      #FORM_ITEM_LABEL303,
+      #FORM_ITEM305,
+      #FORM_ITEM306 {
+        left: 0px;
+      }
+      #PARAGRAPH322 > .ladi-paragraph,
+      #PARAGRAPH333 > .ladi-paragraph,
+      #PARAGRAPH336 > .ladi-paragraph,
+      #PARAGRAPH338 > .ladi-paragraph {
+        font-family: UZOLVBPUFBJTlMtQkMRCUVEY;
+        font-weight: bold;
+        line-height: 1.6;
+        color: rgb(255, 255, 255);
+        text-transform: uppercase;
+        text-align: center;
+      }
+      #PARAGRAPH322 > .ladi-paragraph,
+      #PARAGRAPH333 > .ladi-paragraph,
+      #PARAGRAPH336 > .ladi-paragraph,
+      #PARAGRAPH338 > .ladi-paragraph,
+      #PARAGRAPH313 > .ladi-paragraph {
+        -webkit-text-stroke: 1px rgb(230, 180, 0);
+      }
+      #IMAGE334.ladi-animation > .ladi-image,
+      #IMAGE350.ladi-animation > .ladi-image,
+      #IMAGE352.ladi-animation > .ladi-image,
+      #IMAGE353.ladi-animation > .ladi-image {
+        animation-name: pulse;
+        animation-delay: 0s;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+      }
+      #PARAGRAPH323,
+      #PARAGRAPH334 {
+        width: 420px;
+      }
+      #PARAGRAPH323 > .ladi-paragraph,
+      #PARAGRAPH334 > .ladi-paragraph {
+        font-weight: bold;
+        line-height: 1.6;
+        color: rgb(255, 255, 255);
+        text-align: center;
+      }
+      #CAROUSEL300 .ladi-carousel .ladi-carousel-content {
+        width: 1199px;
+      }
+      #CAROUSEL_ITEM305,
+      #CAROUSEL_ITEM306,
+      #CAROUSEL_ITEM307 {
+        width: 393px;
+      }
+      #BOX303,
+      #BOX304,
+      #BOX305 {
+        width: 369.778px;
+        height: 200px;
+        top: 277px;
+        left: 13.222px;
+      }
+      #BOX303 > .ladi-box,
+      #BOX304 > .ladi-box,
+      #BOX305 > .ladi-box {
+        border-width: 2px;
+        border-radius: 24px;
+        border-style: solid;
+        border-color: rgb(230, 180, 0);
+      }
+      #VIDEO301,
+      #VIDEO303,
+      #VIDEO304 {
+        width: 369.778px;
+        height: 208px;
+        top: 10.75px;
+        left: 13.222px;
+      }
+      #VIDEO301 > .ladi-video > .ladi-video-background,
+      #VIDEO303 > .ladi-video > .ladi-video-background,
+      #VIDEO304 > .ladi-video > .ladi-video-background {
+        background-image: url("https://w.ladicdn.com/s369x208/5e51ff6161a254079fc6d2ed/9cd62508ec2c44721d3d-20240812160825-ebzxw.jpg");
+        background-size: cover;
+        background-origin: content-box;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+      }
+      #SHAPE301,
+      #SHAPE303,
+      #SHAPE304 {
+        width: 40px;
+        height: 40px;
+        top: 84px;
+        left: 164.889px;
+      }
+      #SHAPE301 svg:last-child,
+      #SHAPE303 svg:last-child,
+      #SHAPE304 svg:last-child {
+        fill: rgba(0, 0, 0, 0.5);
+      }
+      #PARAGRAPH324,
+      #PARAGRAPH325,
+      #PARAGRAPH326 {
+        width: 209px;
+        top: 287px;
+        left: 131.5px;
+      }
+      #PARAGRAPH324 > .ladi-paragraph,
+      #PARAGRAPH325 > .ladi-paragraph,
+      #PARAGRAPH326 > .ladi-paragraph {
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 1.6;
+        color: rgb(26, 57, 132);
+      }
+      #PARAGRAPH327,
+      #PARAGRAPH328,
+      #PARAGRAPH329 {
+        width: 222px;
+        top: 316px;
+        left: 131.5px;
+      }
+      #PARAGRAPH327 > .ladi-paragraph,
+      #PARAGRAPH328 > .ladi-paragraph,
+      #PARAGRAPH329 > .ladi-paragraph {
+        font-size: 15px;
+        font-weight: bold;
+        line-height: 1.6;
+        color: rgb(0, 0, 0);
+      }
+      #PARAGRAPH330,
+      #PARAGRAPH331,
+      #PARAGRAPH332 {
+        width: 336px;
+        top: 354px;
+        left: 31.222px;
+      }
+      #IMAGE335,
+      #IMAGE339,
+      #IMAGE340 {
+        top: 236px;
+      }
+      #IMAGE335 > .ladi-image,
+      #IMAGE339 > .ladi-image,
+      #IMAGE340 > .ladi-image {
+        border-width: 2px;
+        border-radius: 269px;
+        border-color: rgb(26, 57, 132);
+      }
+      #IMAGE342,
+      #IMAGE342 > .ladi-image > .ladi-image-background,
+      #IMAGE341,
+      #IMAGE341 > .ladi-image > .ladi-image-background,
+      #IMAGE343,
+      #IMAGE343 > .ladi-image > .ladi-image-background {
+        width: 31px;
+        height: 20px;
+      }
+      #IMAGE342,
+      #IMAGE341,
+      #IMAGE343 {
+        top: 444px;
+        left: 331px;
+      }
+      #IMAGE342 > .ladi-image > .ladi-image-background,
+      #IMAGE341 > .ladi-image > .ladi-image-background,
+      #IMAGE343 > .ladi-image > .ladi-image-background {
+        background-image: url("https://w.ladicdn.com/s350x350/5e51ff6161a254079fc6d2ed/group1292-20240813061908-hygnf.png");
+      }
+      #CAROUSEL_ITEM306 {
+        top: 0px;
+        left: 403px;
+      }
+      #CAROUSEL_ITEM307 {
+        top: 0px;
+        left: 806px;
+      }
+      #PARAGRAPH317 > .ladi-paragraph,
+      #PARAGRAPH319 > .ladi-paragraph,
+      #PARAGRAPH315 > .ladi-paragraph {
+        font-family: UZOLVBPUFBJTlMtQkMRCUVEY;
+        line-height: 1.6;
+        color: rgb(34, 62, 129);
+        text-align: center;
+      }
+      #LIST_PARAGRAPH301 ul li {
+        padding-bottom: 8px;
+        padding-left: 23px;
+      }
+      #LIST_PARAGRAPH301 ul li:before {
+        top: -3px;
+        font-size: 23px;
+        color: rgb(26, 57, 132);
+        content: counter(linum);
+      }
+      #GROUP308 {
+        width: 1170.5px;
+        height: 721.901px;
+      }
+      #FRAME314,
+      #FRAME313,
+      #FRAME312 {
+        width: 369px;
+        height: 719px;
+      }
+      #FRAME314 {
+        top: 2.901px;
+        left: 801.5px;
+      }
+      #FRAME314 > .ladi-frame-bg > .ladi-frame-background,
+      #FRAME313 > .ladi-frame-bg > .ladi-frame-background,
+      #FRAME312 > .ladi-frame-bg > .ladi-frame-background,
+      #FRAME309 > .ladi-frame-bg > .ladi-frame-background,
+      #FRAME310 > .ladi-frame-bg > .ladi-frame-background,
+      #FRAME311 > .ladi-frame-bg > .ladi-frame-background {
+        background-color: rgb(248, 252, 254);
+      }
+      #FRAME314 > .ladi-frame,
+      #FRAME313 > .ladi-frame,
+      #FRAME312 > .ladi-frame {
+        border-radius: 13px;
+      }
+      #FRAME314 > .ladi-frame,
+      #FRAME313 > .ladi-frame,
+      #FRAME312 > .ladi-frame,
+      #FRAME309 > .ladi-frame,
+      #FRAME310 > .ladi-frame,
+      #FRAME311 > .ladi-frame {
+        box-shadow: rgb(0, 0, 0) 0px 7px 26px -15px;
+      }
+      #FRAME314 > .ladi-frame:hover,
+      #FRAME314 > .ladi-frame:hover ~ .ladi-frame-bg,
+      #FRAME313 > .ladi-frame:hover,
+      #FRAME313 > .ladi-frame:hover ~ .ladi-frame-bg,
+      #FRAME312 > .ladi-frame:hover,
+      #FRAME312 > .ladi-frame:hover ~ .ladi-frame-bg,
+      #FRAME309 > .ladi-frame:hover,
+      #FRAME309 > .ladi-frame:hover ~ .ladi-frame-bg,
+      #FRAME310 > .ladi-frame:hover,
+      #FRAME310 > .ladi-frame:hover ~ .ladi-frame-bg,
+      #FRAME311 > .ladi-frame:hover,
+      #FRAME311 > .ladi-frame:hover ~ .ladi-frame-bg {
+        transform: scale(1.04);
+        opacity: 1;
+      }
+      #PARAGRAPH352,
+      #LIST_PARAGRAPH304,
+      #PARAGRAPH350,
+      #LIST_PARAGRAPH302,
+      #PARAGRAPH348,
+      #LIST_PARAGRAPH303 {
+        width: 317px;
+      }
+      #PARAGRAPH352,
+      #PARAGRAPH350,
+      #PARAGRAPH348 {
+        top: 32.5px;
+        left: 26px;
+      }
+      #PARAGRAPH352 > .ladi-paragraph,
+      #PARAGRAPH350 > .ladi-paragraph,
+      #PARAGRAPH348 > .ladi-paragraph {
+        font-family: UZOLVBPUFBJTlMtQkMRCUVEY;
+        font-size: 20px;
+        font-weight: bold;
+        line-height: 1.6;
+        color: rgb(26, 57, 132);
+        text-transform: uppercase;
+        text-align: center;
+      }
+      #IMAGE364,
+      #IMAGE364 > .ladi-image > .ladi-image-background {
+        width: 336.85px;
+        height: 196.664px;
+      }
+      #IMAGE364,
+      #IMAGE363,
+      #IMAGE360 {
+        top: 417.889px;
+        left: 16.075px;
+      }
+      #IMAGE364 > .ladi-image > .ladi-image-background {
+        background-image: url("https://w.ladicdn.com/s650x500/5e51ff6161a254079fc6d2ed/desire-3-20240813063935-ddnc-.png");
+      }
+      #LIST_PARAGRAPH304,
+      #LIST_PARAGRAPH302,
+      #LIST_PARAGRAPH303 {
+        top: 141.999px;
+        left: 26px;
+      }
+      #LIST_PARAGRAPH304 ul li,
+      #LIST_PARAGRAPH302 ul li,
+      #LIST_PARAGRAPH303 ul li {
+        padding-bottom: 11px;
+        padding-left: 15px;
+      }
+      #LIST_PARAGRAPH304 ul li:before,
+      #LIST_PARAGRAPH302 ul li:before,
+      #LIST_PARAGRAPH303 ul li:before {
+        top: -4px;
+        font-size: 20px;
+        content: counter(linum, disc);
+      }
+      #FRAME313 {
+        top: 0px;
+        left: 400.75px;
+      }
+      #IMAGE363,
+      #IMAGE363 > .ladi-image > .ladi-image-background {
+        width: 336.85px;
+        height: 302.923px;
+      }
+      #IMAGE363 > .ladi-image > .ladi-image-background {
+        background-image: url("https://w.ladicdn.com/s650x650/5e51ff6161a254079fc6d2ed/desire-2-20240813063935-ticgj.png");
+      }
+      #FRAME312 {
+        top: 2.901px;
+        left: 0px;
+      }
+      #IMAGE360,
+      #IMAGE360 > .ladi-image > .ladi-image-background {
+        width: 336.85px;
+        height: 216.471px;
+      }
+      #IMAGE360 > .ladi-image > .ladi-image-background {
+        background-image: url("https://w.ladicdn.com/s650x550/5e51ff6161a254079fc6d2ed/desire-1-20240813063935-sdhtl.png");
+      }
+      #PARAGRAPH349 > .ladi-paragraph,
+      #PARAGRAPH357 > .ladi-paragraph,
+      #PARAGRAPH361 > .ladi-paragraph,
+      #PARAGRAPH363 > .ladi-paragraph,
+      #PARAGRAPH365 > .ladi-paragraph,
+      #PARAGRAPH367 > .ladi-paragraph,
+      #PARAGRAPH314 > .ladi-paragraph,
+      #PARAGRAPH275 > .ladi-paragraph {
+        line-height: 1.6;
+        color: rgb(255, 255, 255);
+      }
+      #PARAGRAPH354 > .ladi-paragraph,
+      #PARAGRAPH358 > .ladi-paragraph,
+      #PARAGRAPH362 > .ladi-paragraph,
+      #PARAGRAPH364 > .ladi-paragraph,
+      #PARAGRAPH366 > .ladi-paragraph,
+      #PARAGRAPH368 > .ladi-paragraph {
+        font-family: UZOLVBPUFBJTlMtQkMRCUVEY;
+        line-height: 1.6;
+        color: rgb(255, 255, 255);
+      }
+      #IMAGE365 > .ladi-image > .ladi-image-background {
+        background-image: url("https://w.ladicdn.com/s400x400/5e51ff6161a254079fc6d2ed/group1388-20240813064626-yxb6n.png");
+      }
+      #IMAGE366 > .ladi-image > .ladi-image-background {
+        background-image: url("https://w.ladicdn.com/s400x400/5e51ff6161a254079fc6d2ed/group1359-20240813065226--kth7.png");
+      }
+      #IMAGE367 > .ladi-image > .ladi-image-background {
+        background-image: url("https://w.ladicdn.com/s400x400/5e51ff6161a254079fc6d2ed/group1357-20240813065225-hqy-r.png");
+      }
+      #IMAGE368 > .ladi-image > .ladi-image-background {
+        background-image: url("https://w.ladicdn.com/s400x400/5e51ff6161a254079fc6d2ed/group1360-20240813065226-ldgwo.png");
+      }
+      #IMAGE369 > .ladi-image > .ladi-image-background {
+        background-image: url("https://w.ladicdn.com/s400x400/5e51ff6161a254079fc6d2ed/group1358-20240813065226-yunym.png");
+      }
+      #IMAGE370 > .ladi-image > .ladi-image-background {
+        background-image: url("https://w.ladicdn.com/s400x400/5e51ff6161a254079fc6d2ed/group1384-20240813065226-ac2gt.png");
+      }
+      #SECTION306 > .ladi-section-background {
+        background-color: rgb(244, 245, 246);
+      }
+      #PARAGRAPH335 > .ladi-paragraph {
+        line-height: 1.6;
+        color: rgb(0, 0, 0);
+        text-align: justify;
+      }
+      #BUTTON303 {
+        width: 401px;
+        height: 49px;
+      }
+      #BUTTON303 > .ladi-button > .ladi-button-background,
+      #BUTTON307 > .ladi-button > .ladi-button-background,
+      #BUTTON304 > .ladi-button > .ladi-button-background,
+      #BUTTON308 > .ladi-button > .ladi-button-background,
+      #BUTTON301 > .ladi-button > .ladi-button-background {
+        background-color: rgb(230, 180, 0);
+      }
+      #BUTTON303 > .ladi-button {
+        border-radius: 124px;
+      }
+      #BUTTON_TEXT303 > .ladi-headline {
+        font-family: UZOLVBPUFBJTlMtQkMRCUVEY;
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 1.6;
+        color: rgb(255, 255, 255);
+        text-transform: uppercase;
+        text-align: center;
+      }
+      #GROUP310 {
+        width: 1171px;
+      }
+      #FRAME309,
+      #FRAME310,
+      #FRAME311 {
+        width: 369px;
+        height: 538px;
+      }
+      #FRAME309 > .ladi-frame,
+      #FRAME310 > .ladi-frame,
+      #FRAME311 > .ladi-frame {
+        border-radius: 15px;
+      }
+      #PARAGRAPH342,
+      #PARAGRAPH343,
+      #PARAGRAPH344 {
+        width: 278px;
+        top: 251.5px;
+        left: 18px;
+      }
+      #PARAGRAPH342 > .ladi-paragraph,
+      #PARAGRAPH343 > .ladi-paragraph,
+      #PARAGRAPH344 > .ladi-paragraph {
+        font-family: UZOLVBPUFBJTlMtQkMRCUVEY;
+        font-size: 22px;
+        font-weight: bold;
+        line-height: 1.6;
+        color: rgb(230, 180, 0);
+      }
+      #IMAGE358,
+      #IMAGE358 > .ladi-image > .ladi-image-background,
+      #IMAGE357,
+      #IMAGE357 > .ladi-image > .ladi-image-background,
+      #IMAGE359,
+      #IMAGE359 > .ladi-image > .ladi-image-background {
+        width: 336.85px;
+        height: 209.224px;
+      }
+      #IMAGE358,
+      #IMAGE357,
+      #IMAGE359 {
+        top: 19.8887px;
+        left: 18px;
+      }
+      #IMAGE358 > .ladi-image > .ladi-image-background {
+        background-image: url("https://w.ladicdn.com/s650x550/5e51ff6161a254079fc6d2ed/rectangle932-1-20240813063621-xqccy.png");
+      }
+      #PARAGRAPH345,
+      #PARAGRAPH346,
+      #PARAGRAPH347 {
+        width: 331px;
+        top: 297.001px;
+        left: 18px;
+      }
+      #BUTTON307,
+      #BUTTON304,
+      #BUTTON308 {
+        width: 212px;
+        height: 48px;
+        top: 466px;
+        left: 78.5px;
+      }
+      #BUTTON307 > .ladi-button,
+      #BUTTON304 > .ladi-button,
+      #BUTTON308 > .ladi-button {
+        border-radius: 5px;
+      }
+      #BUTTON_TEXT307,
+      #BUTTON_TEXT304,
+      #BUTTON_TEXT308 {
+        width: 212px;
+      }
+      #BUTTON_TEXT307 > .ladi-headline,
+      #BUTTON_TEXT304 > .ladi-headline,
+      #BUTTON_TEXT308 > .ladi-headline,
+      #PARAGRAPH304 > .ladi-paragraph {
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 1.6;
+        color: rgb(255, 255, 255);
+        text-align: center;
+      }
+      #FRAME310 {
+        top: 0px;
+        left: 401px;
+      }
+      #IMAGE357 > .ladi-image > .ladi-image-background {
+        background-image: url("https://w.ladicdn.com/s650x550/5e51ff6161a254079fc6d2ed/rectangle_934-20240813063621-yfe_1.png");
+      }
+      #FRAME311 {
+        left: 802px;
+      }
+      #IMAGE359 > .ladi-image > .ladi-image-background {
+        background-image: url("https://w.ladicdn.com/s650x550/5e51ff6161a254079fc6d2ed/rectangle_529-20240813063621-e2jxk.png");
+      }
+      #BOX306 > .ladi-box {
+        border-width: 1px;
+        border-radius: 15px;
+        border-style: solid;
+        border-color: rgb(255, 255, 255);
+        background-color: rgba(27, 58, 132, 0.6);
+      }
+      #BOX307 > .ladi-box,
+      #BOX308 > .ladi-box,
+      #BOX309 > .ladi-box,
+      #BOX310 > .ladi-box,
+      #BOX311 > .ladi-box,
+      #BOX312 > .ladi-box,
+      #BOX314 > .ladi-box {
+        border-width: 1px;
+        border-radius: 12px;
+        border-style: solid;
+        border-color: rgb(255, 255, 255);
+      }
+      #SHAPE300 svg:last-child,
+      #SHAPE302 svg:last-child,
+      #SHAPE305 svg:last-child,
+      #SHAPE306 svg:last-child,
+      #SHAPE307 svg:last-child,
+      #SHAPE308 svg:last-child,
+      #SHAPE310 svg:last-child {
+        fill: rgb(230, 180, 0);
+      }
+      #PARAGRAPH339 > .ladi-paragraph,
+      #PARAGRAPH360 > .ladi-paragraph,
+      #PARAGRAPH369 > .ladi-paragraph,
+      #PARAGRAPH370 > .ladi-paragraph,
+      #PARAGRAPH371 > .ladi-paragraph,
+      #PARAGRAPH372 > .ladi-paragraph,
+      #PARAGRAPH375 > .ladi-paragraph {
+        font-family: UZOLVBPUFBJTlMtQkMRCUVEY;
+        font-size: 16px;
+        line-height: 1.6;
+        color: rgb(26, 57, 132);
+      }
+      #PARAGRAPH337 > .ladi-paragraph,
+      #PARAGRAPH340 > .ladi-paragraph {
+        font-family: UZOLVBPUFBJTlMtQkMRCUVEY;
+        font-weight: bold;
+        line-height: 1.6;
+        color: rgb(230, 180, 0);
+        text-align: center;
+      }
+      #PARAGRAPH341 > .ladi-paragraph {
+        font-family: UZOLVBPUFBJTlMtQkMRCUVEY;
+        font-weight: bold;
+        color: rgb(230, 180, 0);
+        text-align: center;
+      }
+      #IMAGE356 > .ladi-image > .ladi-image-background {
+        background-image: url("https://diengia.edu.vn/Upload/editorimages/TiktokGlobal/Group1819.png");
+      }
+      #PARAGRAPH359 {
+        width: 416px;
+      }
+      #PARAGRAPH359 > .ladi-paragraph {
+        font-size: 26px;
+        font-style: italic;
+        line-height: 1.6;
+        color: rgb(255, 255, 255);
+        text-decoration-line: line-through;
+        text-align: center;
+      }
+      #SECTION281 > .ladi-section-background {
+        background-color: rgb(240, 240, 240);
+      }
+      #PARAGRAPH307 > .ladi-paragraph {
+        font-family: UZOLVBPUFBJTlMtQkMRCUVEY;
+        line-height: 1.6;
+        color: rgb(34, 62, 129);
+      }
+      #FRAME300,
+      #FRAME301,
+      #FRAME302,
+      #FRAME303,
+      #FRAME304 {
+        height: 432px;
+      }
+      #FRAME300 > .ladi-frame-bg > .ladi-frame-background,
+      #FRAME301 > .ladi-frame-bg > .ladi-frame-background,
+      #FRAME302 > .ladi-frame-bg > .ladi-frame-background,
+      #FRAME303 > .ladi-frame-bg > .ladi-frame-background,
+      #FRAME304 > .ladi-frame-bg > .ladi-frame-background {
+        background-color: rgb(231, 240, 246);
+      }
+      #FRAME300 > .ladi-frame,
+      #FRAME301 > .ladi-frame,
+      #FRAME302 > .ladi-frame,
+      #FRAME303 > .ladi-frame,
+      #FRAME304 > .ladi-frame {
+        border-radius: 21px;
+        box-shadow: rgb(84, 84, 84) 0px 10px 38px -15px;
+      }
+      #PARAGRAPH308 > .ladi-paragraph,
+      #PARAGRAPH309 > .ladi-paragraph,
+      #PARAGRAPH310 > .ladi-paragraph,
+      #PARAGRAPH311 > .ladi-paragraph,
+      #PARAGRAPH312 > .ladi-paragraph {
+        font-size: 16px;
+        line-height: 1.6;
+        color: rgb(0, 0, 0);
+        text-align: justify;
+      }
+      #IMAGE319,
+      #IMAGE320,
+      #IMAGE321,
+      #IMAGE322,
+      #IMAGE323 {
+        top: 19.9992px;
+        left: 17px;
+      }
+      #BOX300 > .ladi-box {
+        border-radius: 20px;
+      }
+      #PARAGRAPH313 > .ladi-paragraph {
+        font-family: UZOLVBPUFBJTlMtQkMRCUVEY;
+        font-weight: bold;
+        line-height: 1.6;
+        color: rgb(255, 255, 255);
+        text-transform: uppercase;
+      }
+      #lien-he > .ladi-section-background {
+        background-color: rgb(34, 62, 129);
+      }
+      #GROUP241,
+      #HEADLINE243 {
+        width: 398px;
+      }
+      #LINE242 {
+        width: 339px;
+        top: 0px;
+        left: 28.9651px;
+      }
+      #LINE242 > .ladi-line > .ladi-line-container {
+        border-top: 1px solid rgb(228, 228, 228);
+        border-right: 1px solid rgb(228, 228, 228);
+        border-bottom: 1px solid rgb(228, 228, 228);
+        border-left: 0px !important;
+      }
+      #LINE242 > .ladi-line {
+        width: 100%;
+        padding: 8px 0px;
+      }
+      #HEADLINE243 > .ladi-headline {
+        line-height: 1.2;
+        color: rgb(255, 255, 255);
+        text-align: center;
+      }
+      #IMAGE245,
+      #IMAGE279 {
+        top: auto;
+        left: auto;
+      }
+      #IMAGE245 {
+        position: fixed;
+        z-index: 90000050;
+        display: none !important;
+      }
+      #IMAGE245 > .ladi-image > .ladi-image-background {
+        background-image: url("https://w.ladicdn.com/s400x400/5ea845b95da1a2557f302daa/221-20210327111932.png");
+      }
+      #GROUP269 {
+        top: auto;
+        right: auto;
+        position: fixed;
+        z-index: 90000050;
+      }
+      #BOX270 > .ladi-box {
+        border-radius: 83px;
+        background-image: linear-gradient(
+          90deg,
+          rgb(232, 58, 48),
+          rgb(218, 22, 47)
+        );
+        background-color: initial;
+        background-size: initial;
+        background-origin: initial;
+        background-position: initial;
+        background-repeat: initial;
+        background-attachment: initial;
+        -webkit-background-clip: initial;
+      }
+      #BOX272 > .ladi-box {
+        border-width: 1px;
+        border-radius: 999px;
+        border-style: solid;
+        border-color: rgb(218, 22, 47);
+        background-color: rgba(253, 251, 251, 0);
+      }
+      #BOX272.ladi-animation > .ladi-box {
+        animation-name: pulse;
+        animation-delay: 1s;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+      }
+      #BOX273 > .ladi-box {
+        border-radius: 999px;
+        background-color: rgb(218, 22, 47);
+      }
+      #SHAPE274 svg:last-child,
+      #SHAPE250 svg:last-child,
+      #SHAPE253 svg:last-child,
+      #SHAPE256 svg:last-child,
+      #SHAPE259 svg:last-child {
+        fill: rgb(255, 255, 255);
+      }
+      #IMAGE279,
+      #IMAGE279 > .ladi-image > .ladi-image-background {
+        width: 57px;
+        height: 57px;
+      }
+      #IMAGE279 {
+        position: fixed;
+        z-index: 90000050;
+      }
+      #IMAGE279 > .ladi-image > .ladi-image-background {
+        background-image: url("https://w.ladicdn.com/s400x400/5ea845b95da1a2557f302daa/zalo-20200611052639.png");
+      }
+      #PARAGRAPH305 > .ladi-paragraph {
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 1.6;
+        color: rgb(255, 255, 255);
+      }
+      #PARAGRAPH306 {
+        width: 308px;
+      }
+      #PARAGRAPH306 > .ladi-paragraph {
+        font-size: 23px;
+        font-weight: bold;
+        line-height: 1.6;
+        color: rgb(255, 255, 255);
+      }
+      #SHAPE250,
+      #SHAPE253,
+      #SHAPE256,
+      #SHAPE259 {
+        height: 22.5469px;
+      }
+      #HEADLINE251 {
+        top: 4px;
+      }
+      #HEADLINE251 > .ladi-headline,
+      #HEADLINE254 > .ladi-headline,
+      #HEADLINE257 > .ladi-headline,
+      #HEADLINE260 > .ladi-headline {
+        font-size: 16px;
+        line-height: 1.4;
+        color: rgb(255, 255, 255);
+        text-align: left;
+      }
+      #GROUP252,
+      #GROUP255,
+      #GROUP258 {
+        height: 24px;
+      }
+      #SECTION_POPUP {
+        height: 0px;
+      }
+      #POPUP {
+        width: 203px;
+        height: 253px;
+        right: auto;
+        bottom: auto;
+        margin: auto;
+      }
+      #POPUP .popup-close {
+        background-image: url("data:image/svg+xml;utf8, %3Csvg%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20fill%3D%22%23fff%22%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M23.4144%202.00015L2.00015%2023.4144L0.585938%2022.0002L22.0002%200.585938L23.4144%202.00015Z%22%3E%3C%2Fpath%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M2.00015%200.585938L23.4144%2022.0002L22.0002%2023.4144L0.585938%202.00015L2.00015%200.585938Z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
+      }
+      #IMAGE371,
+      #IMAGE371 > .ladi-image > .ladi-image-background {
+        width: 150.361px;
+        height: 38.4645px;
+      }
+      #IMAGE371 {
+        top: 12.3181px;
+        left: 22.3195px;
+      }
+      #IMAGE371 > .ladi-image > .ladi-image-background {
+        background-image: url("https://w.ladicdn.com/s500x350/5e51ff6161a254079fc6d2ed/logo-tikmeta-header-20240812154851-8uqrt.png");
+      }
+      #BUTTON_GROUP300 {
+        width: 142px;
+        height: 82.25px;
+        top: 69.875px;
+        left: 26.5px;
+      }
+      #BUTTON_GROUP300
+        > .ladi-button-group
+        > .ladi-element:hover
+        > .ladi-button {
+        opacity: 1 !important;
+        transform: scale(1.03) rotate(0deg) !important;
+        filter: blur(0px) grayscale(0%) !important;
+      }
+      #BUTTON_GROUP300
+        > .ladi-button-group
+        > .ladi-element.selected
+        > .ladi-button {
+        transform: scale(1.03) !important;
+      }
+      #BUTTON312,
+      #BUTTON313 {
+        width: 142px;
+        height: 39.25px;
+      }
+      #BUTTON_TEXT312,
+      #BUTTON_TEXT313 {
+        width: 142px;
+      }
+      #BUTTON313 {
+        top: 43px;
+        left: 0px;
+      }
+      #SHAPE311 {
+        width: 37px;
+        height: 37px;
+        top: 209.5px;
+        left: 159px;
+      }
+      #POPUP301 {
+        right: 0px;
+        bottom: 0px;
+        margin: auto;
+      }
+      #POPUP301 > .ladi-popup > .ladi-overlay,
+      #POPUP301 > .ladi-popup > .ladi-popup-background,
+      #POPUP301 > .ladi-popup {
+        border-radius: 18px;
+      }
+      #PARAGRAPH303 > .ladi-paragraph {
+        font-size: 20px;
+        font-weight: bold;
+        line-height: 1.6;
+        color: rgb(230, 180, 0);
+        text-align: center;
+      }
+      #PARAGRAPH304.ladi-animation > .ladi-paragraph {
+        animation-name: pulse;
+        animation-delay: 0s;
+        animation-duration: 2s;
+        animation-iteration-count: 1;
+      }
+      #FORM301
+        .ladi-form
+        .ladi-form-item.ladi-form-checkbox
+        .ladi-form-checkbox-item
+        span[data-checked="false"],
+      #FORM301
+        .ladi-form
+        .ladi-form-item.ladi-form-checkbox
+        .ladi-form-checkbox-item
+        .ladi-editing,
+      #FORM301
+        .ladi-form
+        .ladi-form-item.ladi-form-checkbox
+        .ladi-form-checkbox-item
+        .ladi-editing::placeholder,
+      #FORM301 .ladi-form .ladi-survey-option .ladi-survey-option-label,
+      #FORM301 .ladi-form-item .ladi-form-control::placeholder,
+      #FORM301 .ladi-form-item select.ladi-form-control[data-selected=""],
+      #FORM301 .ladi-form-checkout-payment-quantity input {
+        color: rgb(0, 0, 0);
+      }
+      #FORM301 .ladi-form-item {
+        padding-left: 5px;
+        padding-right: 5px;
+      }
+      #FORM301 .ladi-form-item.otp-countdown:before {
+        right: 10px;
+      }
+      #FORM301 .ladi-form-item.ladi-form-checkbox {
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+      #FORM301
+        .ladi-form
+        [data-form-checkout-item="product"]
+        .ladi-form-checkout-payment-check.multiple.checked,
+      #FORM301
+        .ladi-form
+        [data-form-checkout-item="product"]
+        .ladi-form-checkout-payment-check:not(.multiple).checked:before,
+      #FORM301
+        .ladi-form
+        [data-form-checkout-item="payment"]
+        .ladi-form-checkout-payment-check.checked:before,
+      #FORM301 .ladi-form-checkout-payment-quantity .up:before,
+      #FORM301 .ladi-form-checkout-payment-quantity .down:before,
+      #FORM301
+        [data-form-checkout-item="payment"]
+        .ladi-form-item
+        .ladi-form-checkout-payment-content
+        div:before {
+        background-color: rgb(0, 0, 0);
+      }
+      #FORM301 .ladi-survey-option {
+        text-align: left;
+      }
+      #FORM301 .ladi-form-item-container,
+      #FORM301 .ladi-form-checkout-box,
+      #FORM301 .ladi-form-label-container .ladi-form-label-item {
+        border-width: 1px;
+        border-radius: 9px;
+        border-style: solid;
+        border-color: rgb(241, 243, 244);
+      }
+      #FORM301 .ladi-form-item-container .ladi-form-item.ladi-form-quantity {
+        width: calc(100% + 1px);
+      }
+      #FORM301 .ladi-form-item-container .ladi-form-quantity .button {
+        background-color: rgb(241, 243, 244);
+      }
+      #FORM301 .ladi-form-checkout-payment-quantity input {
+        border-color: rgb(0, 0, 0);
+      }
+      #BUTTON301 > .ladi-button {
+        border-radius: 100px;
+      }
+      #BUTTON301.ladi-animation > .ladi-button {
+        animation-name: pulse;
+        animation-delay: 0s;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+      }
+      #BUTTON_TEXT301 > .ladi-headline {
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 1.6;
+        color: rgb(255, 255, 255);
+        text-align: center;
+      }
+      #FORM_ITEM_LABEL301 > .ladi-headline,
+      #FORM_ITEM_LABEL302 > .ladi-headline,
+      #FORM_ITEM_LABEL303 > .ladi-headline {
+        font-size: 16px;
+        line-height: 1.6;
+        text-align: left;
+      }
+      #FORM_ITEM305 .ladi-form-checkbox-item,
+      #FORM_ITEM306 .ladi-form-checkbox-item {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        margin-left: 5px;
+        margin-right: 10px !important;
+      }
+      #FORM_ITEM305 .ladi-form-item.ladi-form-checkbox,
+      #FORM_ITEM306 .ladi-form-item.ladi-form-checkbox {
+        padding-top: 5px;
+        padding-bottom: 5px;
+      }
+      #FORM_ITEM305
+        .ladi-form-item.ladi-form-checkbox
+        .ladi-form-checkbox-item
+        input,
+      #FORM_ITEM306
+        .ladi-form-item.ladi-form-checkbox
+        .ladi-form-checkbox-item
+        input {
+        width: 24px;
+        height: 24px;
+      }
+      #FORM_ITEM305
+        .ladi-form-item.ladi-form-checkbox
+        .ladi-form-checkbox-item
+        span,
+      #FORM_ITEM306
+        .ladi-form-item.ladi-form-checkbox
+        .ladi-form-checkbox-item
+        span {
+        width: calc(100% - 28px);
+      }
+      #FORM_ITEM_LABEL305,
+      #FORM_ITEM_LABEL306 {
+        top: -25px;
+        left: 0px;
+      }
+      #FORM_ITEM_LABEL305 > .ladi-headline,
+      #FORM_ITEM_LABEL306 > .ladi-headline {
+        font-size: 16px;
+        line-height: 1.6;
+        color: rgb(255, 255, 255);
+        text-align: left;
+      }
+      @media (min-width: 768px) {
+        #SECTION222 {
+          height: 70.2165px;
+        }
+        #BOX223 {
+          width: 2866px;
+          height: 70.2134px;
+          top: 0.00315px;
+          left: -902px;
+        }
+        #BUTTON_GROUP224 {
+          width: 257.5px;
+          top: 15.4848px;
+          left: 494px;
+        }
+        #BUTTON_GROUP224
+          > .ladi-button-group
+          > .ladi-element:hover
+          > .ladi-button {
+          transform: scale(1.03) rotate(0deg) !important;
+        }
+        #BUTTON_GROUP224
+          > .ladi-button-group
+          > .ladi-element.selected
+          > .ladi-button {
+          transform: scale(1.03) !important;
+        }
+        #BUTTON237 {
+          left: 148.5px;
+        }
+        #SHAPE299 {
+          width: 31.395px;
+          height: 38.7548px;
+          top: 15.3115px;
+          left: 1224.61px;
+        }
+        #SHAPE299,
+        #PARAGRAPH302,
+        #HEADLINE302 {
+          display: none !important;
+        }
+        #IMAGE300,
+        #IMAGE300 > .ladi-image > .ladi-image-background {
+          width: 200px;
+          height: 51.1628px;
+        }
+        #IMAGE300 {
+          top: 9.52685px;
+        }
+        #IMAGE300 > .ladi-image > .ladi-image-background {
+          background-image: url("https://w.ladicdn.com/s550x400/5e51ff6161a254079fc6d2ed/logo-tikmeta-header-20240812154851-8uqrt.png");
+        }
+        #BUTTON302,
+        #BUTTON_TEXT302 {
+          width: 185px;
+        }
+        #BUTTON302 {
+          top: 15.4848px;
+          left: 998px;
+        }
+        #BUTTON_TEXT302 > .ladi-headline,
+        #PARAGRAPH349 > .ladi-paragraph,
+        #PARAGRAPH357 > .ladi-paragraph,
+        #PARAGRAPH361 > .ladi-paragraph,
+        #PARAGRAPH363 > .ladi-paragraph,
+        #PARAGRAPH365 > .ladi-paragraph,
+        #PARAGRAPH367 > .ladi-paragraph,
+        #PARAGRAPH335 > .ladi-paragraph {
+          font-size: 16px;
+        }
+        #trang-chu {
+          height: 652.333px;
+        }
+        #PARAGRAPH302 {
+          width: 585px;
+          top: 84px;
+          left: 1311px;
+        }
+        #GROUP301,
+        #IMAGE301 {
+          width: 1779.2px;
+          height: 652.333px;
+        }
+        #GROUP301 {
+          left: -278px;
+        }
+        #HEADLINE83 {
+          width: 150px;
+          top: 25.9999px;
+          left: 1510px;
+        }
+        #IMAGE301 > .ladi-image > .ladi-image-background {
+          width: 1779.2px;
+          height: 741.333px;
+          background-image: url("https://w.ladicdn.com/s2100x1050/5e51ff6161a254079fc6d2ed/group1799-20240812154851-dohmm.png");
+        }
+        #IMAGE302,
+        #IMAGE302 > .ladi-image > .ladi-image-background {
+          width: 658.1px;
+          height: 323.232px;
+        }
+        #IMAGE302 {
+          top: 109.884px;
+          left: 254px;
+        }
+        #IMAGE302 > .ladi-image > .ladi-image-background {
+          background-image: url("https://w.ladicdn.com/s1000x650/5e51ff6161a254079fc6d2ed/group1916-20240812154851-vrr5w.png");
+        }
+        #IMAGE304,
+        #IMAGE304 > .ladi-image > .ladi-image-background,
+        #IMAGE318,
+        #IMAGE318 > .ladi-image > .ladi-image-background,
+        #IMAGE325,
+        #IMAGE325 > .ladi-image > .ladi-image-background {
+          width: 200px;
+          height: 62.2356px;
+        }
+        #IMAGE304 {
+          top: 504.166px;
+          left: 280px;
+        }
+        #IMAGE304 > .ladi-image > .ladi-image-background,
+        #IMAGE318 > .ladi-image > .ladi-image-background,
+        #IMAGE325 > .ladi-image > .ladi-image-background {
+          background-image: url("https://w.ladicdn.com/s550x400/5e51ff6161a254079fc6d2ed/group-1763-20240812154850-10d4d.png");
+        }
+        #IMAGE306,
+        #IMAGE306 > .ladi-image > .ladi-image-background {
+          width: 33.1852px;
+          height: 32px;
+        }
+        #IMAGE306 {
+          top: 310.166px;
+          left: 185px;
+        }
+        #IMAGE307,
+        #IMAGE307 > .ladi-image > .ladi-image-background {
+          width: 116.832px;
+          height: 116.832px;
+        }
+        #IMAGE307 {
+          top: 301.284px;
+          left: 953px;
+        }
+        #IMAGE307 > .ladi-image > .ladi-image-background {
+          background-image: url("https://w.ladicdn.com/s450x450/5e51ff6161a254079fc6d2ed/rectangle-1476-20240812155233-ci1l2.png");
+        }
+        #IMAGE308,
+        #IMAGE308 > .ladi-image > .ladi-image-background {
+          width: 42px;
+          height: 42px;
+        }
+        #IMAGE308 {
+          top: 41.9999px;
+          left: 848px;
+        }
+        #IMAGE311,
+        #IMAGE311 > .ladi-image > .ladi-image-background {
+          width: 99.2115px;
+          height: 66.9999px;
+        }
+        #IMAGE311 {
+          left: 242.5px;
+        }
+        #IMAGE311 > .ladi-image > .ladi-image-background {
+          background-image: url("https://w.ladicdn.com/s400x400/5e51ff6161a254079fc6d2ed/group-1940-20240812155217-epupl.png");
+        }
+        #IMAGE312,
+        #IMAGE312 > .ladi-image > .ladi-image-background {
+          width: 61.7887px;
+          height: 107px;
+        }
+        #IMAGE312 {
+          top: 535.166px;
+          left: 0px;
+        }
+        #IMAGE312 > .ladi-image > .ladi-image-background {
+          background-image: url("https://w.ladicdn.com/s400x450/5e51ff6161a254079fc6d2ed/group-1939-20240812155217-jw94j.png");
+        }
+        #IMAGE314,
+        #IMAGE314 > .ladi-image > .ladi-image-background {
+          width: 125.231px;
+          height: 15.0741px;
+        }
+        #IMAGE314 {
+          top: 535.166px;
+          left: 681.769px;
+        }
+        #IMAGE314 > .ladi-image > .ladi-image-background {
+          background-image: url("https://w.ladicdn.com/s450x350/5e51ff6161a254079fc6d2ed/group-1796-20240812155217-kcp4x.png");
+        }
+        #IMAGE315,
+        #IMAGE315 > .ladi-image > .ladi-image-background {
+          width: 200px;
+          height: 53.4884px;
+        }
+        #IMAGE315 {
+          top: 468.539px;
+          left: 929px;
+        }
+        #IMAGE315 > .ladi-image > .ladi-image-background,
+        #IMAGE331 > .ladi-image > .ladi-image-background {
+          background-image: url("https://w.ladicdn.com/s550x400/5e51ff6161a254079fc6d2ed/group-1745-20240812155217-dmxvs.png");
+        }
+        #IMAGE313,
+        #IMAGE313 > .ladi-image > .ladi-image-background {
+          width: 104px;
+          height: 97px;
+        }
+        #IMAGE313 {
+          top: 277.667px;
+          left: 1277px;
+        }
+        #IMAGE313 > .ladi-image > .ladi-image-background {
+          background-image: url("https://w.ladicdn.com/s450x400/5e51ff6161a254079fc6d2ed/group-17971-20240812155217-r6dmk.png");
+        }
+        #IMAGE303,
+        #IMAGE303 > .ladi-image > .ladi-image-background {
+          width: 782.329px;
+          height: 618.931px;
+        }
+        #IMAGE303 {
+          top: 33.4019px;
+          left: 727.676px;
+        }
+        #IMAGE303 > .ladi-image > .ladi-image-background {
+          background-image: url("https://w.ladicdn.com/s1100x950/5e51ff6161a254079fc6d2ed/bvc000971-1-20240812154850-lrjh7.png");
+        }
+        #HEADLINE302 {
+          width: 200px;
+          top: 26px;
+          left: 1251.05px;
+        }
+        #NguyenVietAnhchamNet1836 {
+          height: 821.7px;
+        }
+        #IMAGE310,
+        #IMAGE310 > .ladi-image > .ladi-image-background {
+          width: 79.0487px;
+          height: 85.1px;
+        }
+        #IMAGE310 {
+          top: 75.295px;
+          left: 632px;
+        }
+        #PARAGRAPH321 {
+          width: 540px;
+          top: 119.395px;
+          left: 711.049px;
+        }
+        #PARAGRAPH321 > .ladi-paragraph,
+        #PARAGRAPH322 > .ladi-paragraph,
+        #PARAGRAPH317 > .ladi-paragraph,
+        #PARAGRAPH319 > .ladi-paragraph,
+        #PARAGRAPH333 > .ladi-paragraph,
+        #PARAGRAPH315 > .ladi-paragraph,
+        #PARAGRAPH336 > .ladi-paragraph,
+        #PARAGRAPH338 > .ladi-paragraph {
+          font-size: 35px;
+        }
+        #LIST_PARAGRAPH300 {
+          width: 520px;
+          top: 196.651px;
+          left: 655px;
+        }
+        #LIST_PARAGRAPH300 > .ladi-list-paragraph,
+        #LIST_PARAGRAPH301 > .ladi-list-paragraph {
+          font-size: 18px;
+        }
+        #BOX302 {
+          width: 215.071px;
+          height: 169.746px;
+          top: 53.972px;
+          left: 353.276px;
+        }
+        #IMAGE309,
+        #IMAGE309 > .ladi-image > .ladi-image-background {
+          width: 483.464px;
+          height: 518.274px;
+        }
+        #IMAGE309 {
+          top: 103.66px;
+          left: 26px;
+        }
+        #IMAGE309 > .ladi-image > .ladi-image-background {
+          background-image: url("https://w.ladicdn.com/s800x850/5e51ff6161a254079fc6d2ed/rectangle938-20240812155233-m8ff4.png");
+        }
+        #IMAGE330,
+        #IMAGE330 > .ladi-image > .ladi-image-background {
+          width: 13.0035px;
+          height: 200px;
+        }
+        #IMAGE330 {
+          top: 75.395px;
+          left: -25.5018px;
+        }
+        #IMAGE330 > .ladi-image > .ladi-image-background {
+          background-image: url("https://w.ladicdn.com/s350x550/5e51ff6161a254079fc6d2ed/group-1744-20240812155217-euldb.png");
+        }
+        #IMAGE331,
+        #IMAGE331 > .ladi-image > .ladi-image-background {
+          width: 202px;
+          height: 53.4884px;
+        }
+        #IMAGE331 {
+          top: 621.934px;
+          left: 401px;
+        }
+        #BOX301 {
+          width: 80.8736px;
+          height: 80.8737px;
+          top: 53.972px;
+          left: 88.305px;
+        }
+        #IMAGE333,
+        #IMAGE333 > .ladi-image > .ladi-image-background,
+        #IMAGE344,
+        #IMAGE344 > .ladi-image > .ladi-image-background,
+        #IMAGE332,
+        #IMAGE332 > .ladi-image > .ladi-image-background,
+        #IMAGE348,
+        #IMAGE348 > .ladi-image > .ladi-image-background,
+        #IMAGE349,
+        #IMAGE349 > .ladi-image > .ladi-image-background {
+          width: 206.949px;
+          height: 59.5646px;
+        }
+        #IMAGE333 {
+          top: 690px;
+          left: 673px;
+        }
+        #IMAGE333 > .ladi-image > .ladi-image-background,
+        #IMAGE344 > .ladi-image > .ladi-image-background,
+        #IMAGE332 > .ladi-image > .ladi-image-background,
+        #IMAGE348 > .ladi-image > .ladi-image-background,
+        #IMAGE349 > .ladi-image > .ladi-image-background {
+          background-image: url("https://w.ladicdn.com/s550x400/5e51ff6161a254079fc6d2ed/group-1918-20240813060433-r0vss.png");
+        }
+        #SECTION282 {
+          height: 910.7px;
+        }
+        #SECTION282 > .ladi-section-background {
+          background-image: url("https://w.ladicdn.com/s1440x910/5e51ff6161a254079fc6d2ed/group-1355-20240812155217-rklbu.png");
+        }
+        #GROUP303,
+        #GROUP304 {
+          width: 1200px;
+          height: 133px;
+        }
+        #GROUP303 {
+          top: 35px;
+        }
+        #PARAGRAPH322,
+        #PARAGRAPH317,
+        #PARAGRAPH319,
+        #PARAGRAPH333,
+        #PARAGRAPH315,
+        #PARAGRAPH336,
+        #PARAGRAPH338 {
+          width: 1200px;
+        }
+        #PARAGRAPH322,
+        #PARAGRAPH333 {
+          top: 33px;
+          left: 0px;
+        }
+        #IMAGE334,
+        #IMAGE334 > .ladi-image > .ladi-image-background,
+        #IMAGE350,
+        #IMAGE350 > .ladi-image > .ladi-image-background {
+          width: 71.6176px;
+          height: 77.1px;
+        }
+        #IMAGE334,
+        #IMAGE350 {
+          top: 0px;
+          left: 267px;
+        }
+        #PARAGRAPH323,
+        #PARAGRAPH334 {
+          top: 101px;
+          left: 400px;
+        }
+        #PARAGRAPH323 > .ladi-paragraph,
+        #PARAGRAPH318 > .ladi-paragraph,
+        #PARAGRAPH320 > .ladi-paragraph,
+        #PARAGRAPH334 > .ladi-paragraph,
+        #PARAGRAPH316 > .ladi-paragraph,
+        #PARAGRAPH314 > .ladi-paragraph {
+          font-size: 20px;
+        }
+        #CAROUSEL300 {
+          width: 1199px;
+          height: 493px;
+          top: 204.25px;
+          left: 0.5px;
+        }
+        #CAROUSEL_ITEM305,
+        #CAROUSEL_ITEM306,
+        #CAROUSEL_ITEM307 {
+          height: 493px;
+        }
+        #IMAGE335,
+        #IMAGE335 > .ladi-image > .ladi-image-background,
+        #IMAGE339,
+        #IMAGE339 > .ladi-image > .ladi-image-background,
+        #IMAGE340,
+        #IMAGE340 > .ladi-image > .ladi-image-background {
+          width: 118px;
+          height: 118px;
+        }
+        #IMAGE335,
+        #IMAGE339,
+        #IMAGE340 {
+          left: 13.222px;
+        }
+        #IMAGE335 > .ladi-image > .ladi-image-background {
+          background-image: url("https://w.ladicdn.com/s450x450/5e51ff6161a254079fc6d2ed/ellipse5-20240813071517-qtqx8.png");
+        }
+        #IMAGE339 > .ladi-image > .ladi-image-background {
+          background-image: url("https://w.ladicdn.com/s450x450/5e51ff6161a254079fc6d2ed/ellipse-5-1-20240813071517-eeps7.png");
+        }
+        #IMAGE340 > .ladi-image > .ladi-image-background {
+          background-image: url("https://w.ladicdn.com/s450x450/5e51ff6161a254079fc6d2ed/ellipse5_1-20240813071517-fuple.png");
+        }
+        #IMAGE344 {
+          top: 761.468px;
+          left: 496.525px;
+        }
+        #SECTION304 {
+          height: 869.1px;
+        }
+        #PARAGRAPH317 {
+          top: 67px;
+          left: 0px;
+        }
+        #PARAGRAPH318,
+        #PARAGRAPH320,
+        #PARAGRAPH316,
+        #PARAGRAPH314 {
+          width: 518px;
+        }
+        #PARAGRAPH318,
+        #PARAGRAPH316 {
+          top: 123px;
+          left: 341px;
+        }
+        #IMAGE328,
+        #IMAGE328 > .ladi-image > .ladi-image-background,
+        #IMAGE329,
+        #IMAGE329 > .ladi-image > .ladi-image-background,
+        #IMAGE327,
+        #IMAGE327 > .ladi-image > .ladi-image-background {
+          width: 54.1644px;
+          height: 58.311px;
+        }
+        #IMAGE328 {
+          top: 116px;
+          left: 369px;
+        }
+        #LIST_PARAGRAPH301 {
+          width: 600px;
+          top: 202.311px;
+          left: 573px;
+        }
+        #IMAGE332 {
+          top: 756.93px;
+          left: 762.5px;
+        }
+        #IMAGE347,
+        #IMAGE347 > .ladi-image > .ladi-image-background {
+          width: 521.624px;
+          height: 492.098px;
+        }
+        #IMAGE347 {
+          top: 242.26px;
+          left: 27px;
+        }
+        #IMAGE347 > .ladi-image > .ladi-image-background {
+          background-image: url("https://w.ladicdn.com/s850x800/5e51ff6161a254079fc6d2ed/group1337-20240813062054-dohg7.png");
+        }
+        #SECTION305 {
+          height: 1100.1px;
+        }
+        #SECTION305 > .ladi-section-background {
+          background-image: url("https://w.ladicdn.com/s1440x1100/5e51ff6161a254079fc6d2ed/rectangle926-20240813064507-atgqq.png");
+        }
+        #PARAGRAPH319 {
+          top: 58px;
+          left: 0px;
+        }
+        #PARAGRAPH320 {
+          top: 114px;
+          left: 341px;
+        }
+        #IMAGE329 {
+          top: 107px;
+          left: 369px;
+        }
+        #IMAGE348 {
+          top: 979.668px;
+          left: 496.525px;
+        }
+        #GROUP308 {
+          top: 194.55px;
+          left: 14.7505px;
+        }
+        #SECTION301 {
+          height: 896.1px;
+        }
+        #SECTION301 > .ladi-section-background {
+          background-image: url("https://w.ladicdn.com/s1440x896/5e51ff6161a254079fc6d2ed/group1405-20240812162835-lnmc1.png");
+        }
+        #IMAGE349 {
+          top: 767.57px;
+          left: 496.526px;
+        }
+        #GROUP304 {
+          top: 37px;
+          left: 6.5px;
+        }
+        #GROUP307 {
+          width: 542.75px;
+          height: 139.001px;
+          top: 227.351px;
+          left: 22.5px;
+        }
+        #PARAGRAPH349,
+        #PARAGRAPH354,
+        #PARAGRAPH357,
+        #PARAGRAPH358,
+        #PARAGRAPH361,
+        #PARAGRAPH362,
+        #PARAGRAPH363,
+        #PARAGRAPH364,
+        #PARAGRAPH365,
+        #PARAGRAPH366,
+        #PARAGRAPH367,
+        #PARAGRAPH368 {
+          width: 433px;
+        }
+        #PARAGRAPH349 {
+          top: 62.001px;
+          left: 109.75px;
+        }
+        #PARAGRAPH354,
+        #PARAGRAPH358,
+        #PARAGRAPH362,
+        #PARAGRAPH364,
+        #PARAGRAPH366,
+        #PARAGRAPH368 {
+          left: 109.75px;
+        }
+        #PARAGRAPH354 > .ladi-paragraph,
+        #PARAGRAPH358 > .ladi-paragraph,
+        #PARAGRAPH362 > .ladi-paragraph,
+        #PARAGRAPH364 > .ladi-paragraph,
+        #PARAGRAPH366 > .ladi-paragraph,
+        #PARAGRAPH368 > .ladi-paragraph {
+          font-size: 17px;
+        }
+        #IMAGE365,
+        #IMAGE365 > .ladi-image > .ladi-image-background,
+        #IMAGE366,
+        #IMAGE366 > .ladi-image > .ladi-image-background,
+        #IMAGE367,
+        #IMAGE367 > .ladi-image > .ladi-image-background,
+        #IMAGE368,
+        #IMAGE368 > .ladi-image > .ladi-image-background,
+        #IMAGE369,
+        #IMAGE369 > .ladi-image > .ladi-image-background,
+        #IMAGE370,
+        #IMAGE370 > .ladi-image > .ladi-image-background {
+          width: 97px;
+          height: 97px;
+        }
+        #GROUP309,
+        #GROUP313,
+        #GROUP316 {
+          width: 542.75px;
+          height: 113px;
+        }
+        #GROUP309 {
+          top: 227.351px;
+          left: 628.5px;
+        }
+        #PARAGRAPH357,
+        #PARAGRAPH361,
+        #PARAGRAPH363,
+        #PARAGRAPH365,
+        #PARAGRAPH367 {
+          top: 62px;
+          left: 109.75px;
+        }
+        #GROUP313 {
+          top: 418.351px;
+          left: 22.5px;
+        }
+        #GROUP314,
+        #GROUP315 {
+          width: 542.75px;
+          height: 139px;
+        }
+        #GROUP314 {
+          top: 418.351px;
+          left: 628.5px;
+        }
+        #GROUP315 {
+          top: 584.351px;
+          left: 22.5px;
+        }
+        #GROUP316 {
+          top: 597.351px;
+          left: 628.5px;
+        }
+        #SECTION306 {
+          height: 637.1px;
+        }
+        #PARAGRAPH335 {
+          width: 624px;
+          top: 156.908px;
+          left: 556px;
+        }
+        #IMAGE351,
+        #IMAGE351 > .ladi-image > .ladi-image-background {
+          width: 474.269px;
+          height: 485.908px;
+        }
+        #IMAGE351 {
+          top: 81px;
+          left: 28px;
+        }
+        #IMAGE351 > .ladi-image > .ladi-image-background {
+          background-image: url("https://w.ladicdn.com/s800x800/5e51ff6161a254079fc6d2ed/rectangle1352-20240813062318-jxson.png");
+        }
+        #BUTTON303 {
+          top: 81px;
+          left: 556px;
+        }
+        #BUTTON_TEXT303 {
+          width: 160px;
+        }
+        #do-du {
+          height: 882.1px;
+        }
+        #PARAGRAPH315 {
+          top: 67px;
+        }
+        #IMAGE327 {
+          top: 114px;
+          left: 410px;
+        }
+        #GROUP310 {
+          height: 576px;
+          top: 202.15px;
+          left: 14.5px;
+        }
+        #FRAME309,
+        #FRAME311 {
+          top: 38px;
+        }
+        #SECTION302 {
+          height: 1203.1px;
+        }
+        #SECTION302 > .ladi-section-background {
+          background-image: url("https://w.ladicdn.com/s1440x1203/5e51ff6161a254079fc6d2ed/group2044-20240812162738-pwy-b.png");
+        }
+        #BOX306 {
+          width: 1015px;
+          height: 337px;
+          top: 148.05px;
+          left: 92.5px;
+        }
+        #PARAGRAPH336 {
+          top: 45px;
+          left: 0px;
+        }
+        #IMAGE352,
+        #IMAGE352 > .ladi-image > .ladi-image-background {
+          width: 60.4709px;
+          height: 65.1px;
+        }
+        #IMAGE352 {
+          top: 57.9px;
+          left: 967px;
+        }
+        #PARAGRAPH338 {
+          top: 583px;
+          left: -7px;
+        }
+        #IMAGE353,
+        #IMAGE353 > .ladi-image > .ladi-image-background {
+          width: 63.2576px;
+          height: 68.1px;
+        }
+        #IMAGE353 {
+          top: 591px;
+          left: 243px;
+        }
+        #IMAGE354,
+        #IMAGE354 > .ladi-image > .ladi-image-background {
+          width: 130px;
+          height: 143px;
+        }
+        #IMAGE354 {
+          top: 264px;
+          left: -49px;
+        }
+        #IMAGE354 > .ladi-image > .ladi-image-background {
+          background-image: url("https://w.ladicdn.com/s450x450/5e51ff6161a254079fc6d2ed/asset2411-20240813062734-mutbp.png");
+        }
+        #GROUP306,
+        #BOX307,
+        #GROUP312,
+        #BOX308 {
+          width: 544px;
+          height: 89px;
+        }
+        #GROUP306 {
+          top: 685.1px;
+          left: 33.62px;
+        }
+        #SHAPE300,
+        #SHAPE302,
+        #SHAPE305,
+        #SHAPE306,
+        #SHAPE307,
+        #SHAPE308,
+        #SHAPE310 {
+          width: 47px;
+          height: 47px;
+        }
+        #SHAPE300,
+        #SHAPE302,
+        #SHAPE310 {
+          top: 21px;
+          left: 9.3121px;
+        }
+        #PARAGRAPH339,
+        #PARAGRAPH360,
+        #PARAGRAPH369,
+        #PARAGRAPH370,
+        #PARAGRAPH371,
+        #PARAGRAPH372 {
+          width: 459px;
+        }
+        #PARAGRAPH339,
+        #PARAGRAPH360,
+        #PARAGRAPH375 {
+          top: 19px;
+          left: 75px;
+        }
+        #GROUP311 {
+          width: 387px;
+          height: 74px;
+          top: 178px;
+          left: 158px;
+        }
+        #PARAGRAPH337,
+        #PARAGRAPH340 {
+          width: 387px;
+        }
+        #PARAGRAPH337 > .ladi-paragraph {
+          font-size: 26px;
+        }
+        #PARAGRAPH340 {
+          top: 44px;
+        }
+        #PARAGRAPH340 > .ladi-paragraph,
+        #PARAGRAPH275 > .ladi-paragraph {
+          font-size: 19px;
+        }
+        #PARAGRAPH341 {
+          width: 411px;
+          top: 306px;
+          left: 136.5px;
+        }
+        #PARAGRAPH341 > .ladi-paragraph {
+          font-size: 70px;
+          line-height: 1.1;
+        }
+        #IMAGE356,
+        #IMAGE356 > .ladi-image > .ladi-image-background {
+          width: 464.58px;
+          height: 275.809px;
+        }
+        #IMAGE356 {
+          top: 178.645px;
+          left: 606.256px;
+        }
+        #IMAGE355,
+        #IMAGE355 > .ladi-image > .ladi-image-background {
+          width: 353.831px;
+          height: 151.809px;
+        }
+        #IMAGE355 {
+          top: 426.05px;
+          left: -79.831px;
+        }
+        #IMAGE355 > .ladi-image > .ladi-image-background {
+          background-image: url("https://w.ladicdn.com/s700x500/5e51ff6161a254079fc6d2ed/asset121-20240813062734-15gw1.png");
+        }
+        #PARAGRAPH359 {
+          top: 264px;
+          left: 134px;
+        }
+        #GROUP312 {
+          top: 685.1px;
+          left: 622.376px;
+        }
+        #GROUP317,
+        #BOX309,
+        #GROUP318,
+        #BOX310 {
+          width: 544px;
+          height: 122px;
+        }
+        #GROUP317 {
+          top: 798.1px;
+          left: 33.62px;
+        }
+        #SHAPE305,
+        #SHAPE306 {
+          top: 37.5px;
+          left: 9.3121px;
+        }
+        #PARAGRAPH369 {
+          top: 35.5px;
+          left: 75px;
+        }
+        #GROUP318 {
+          top: 797.1px;
+          left: 622.376px;
+        }
+        #PARAGRAPH370 {
+          top: 10px;
+          left: 77px;
+        }
+        #GROUP319,
+        #BOX311,
+        #GROUP320,
+        #BOX312 {
+          width: 544px;
+          height: 74px;
+        }
+        #GROUP319 {
+          top: 936.1px;
+          left: 33.62px;
+        }
+        #SHAPE307,
+        #SHAPE308 {
+          top: 13.5px;
+          left: 9.3121px;
+        }
+        #PARAGRAPH371,
+        #PARAGRAPH372 {
+          top: 24px;
+          left: 75px;
+        }
+        #GROUP320 {
+          top: 936.1px;
+          left: 622.376px;
+        }
+        #GROUP322,
+        #BOX314 {
+          width: 1132px;
+          height: 89px;
+        }
+        #GROUP322 {
+          top: 1034.1px;
+          left: 33.62px;
+        }
+        #PARAGRAPH375 {
+          width: 1032px;
+        }
+        #SECTION281 {
+          height: 1398.7px;
+        }
+        #PARAGRAPH307 {
+          width: 249px;
+          top: 104.55px;
+          left: 38.5px;
+        }
+        #PARAGRAPH307 > .ladi-paragraph,
+        #PARAGRAPH313 > .ladi-paragraph {
+          font-size: 30px;
+        }
+        #IMAGE317,
+        #IMAGE317 > .ladi-image > .ladi-image-background {
+          width: 95.9644px;
+          height: 103.311px;
+        }
+        #IMAGE317 {
+          top: 152.895px;
+          left: 241px;
+        }
+        #IMAGE317 > .ladi-image > .ladi-image-background {
+          background-image: url("https://w.ladicdn.com/s400x450/5e51ff6161a254079fc6d2ed/image-46-1-20240812155233-e_cjm.png");
+        }
+        #IMAGE318 {
+          top: 286.433px;
+          left: 38.5px;
+        }
+        #FRAME300,
+        #FRAME301,
+        #FRAME302,
+        #FRAME303,
+        #FRAME304 {
+          width: 349px;
+        }
+        #FRAME300 {
+          top: 74.5508px;
+          left: 425.5px;
+        }
+        #PARAGRAPH308,
+        #PARAGRAPH309,
+        #PARAGRAPH310,
+        #PARAGRAPH311,
+        #PARAGRAPH312 {
+          width: 315px;
+          top: 229.999px;
+          left: 17px;
+        }
+        #IMAGE319,
+        #IMAGE319 > .ladi-image > .ladi-image-background,
+        #IMAGE320,
+        #IMAGE320 > .ladi-image > .ladi-image-background,
+        #IMAGE321,
+        #IMAGE321 > .ladi-image > .ladi-image-background,
+        #IMAGE322,
+        #IMAGE322 > .ladi-image > .ladi-image-background,
+        #IMAGE323,
+        #IMAGE323 > .ladi-image > .ladi-image-background {
+          width: 315px;
+          height: 195.409px;
+        }
+        #IMAGE319 > .ladi-image > .ladi-image-background {
+          background-image: url("https://w.ladicdn.com/s650x500/5e51ff6161a254079fc6d2ed/image187-20240812161708-jw2--.png");
+        }
+        #FRAME301 {
+          top: 74.5508px;
+          left: 827.5px;
+        }
+        #IMAGE320 > .ladi-image > .ladi-image-background {
+          background-image: url("https://w.ladicdn.com/s650x500/5e51ff6161a254079fc6d2ed/image188-20240812161708-zo4ri.png");
+        }
+        #FRAME302 {
+          top: 559.551px;
+          left: 23.5px;
+        }
+        #IMAGE321 > .ladi-image > .ladi-image-background {
+          background-image: url("https://w.ladicdn.com/s650x500/5e51ff6161a254079fc6d2ed/image191-20240812161859-wozgq.png");
+        }
+        #FRAME303 {
+          top: 559.551px;
+          left: 425.5px;
+        }
+        #IMAGE322 > .ladi-image > .ladi-image-background {
+          background-image: url("https://w.ladicdn.com/s650x500/5e51ff6161a254079fc6d2ed/image189-20240812161859-r_-ow.png");
+        }
+        #FRAME304 {
+          top: 559.551px;
+          left: 827.5px;
+        }
+        #IMAGE323 > .ladi-image > .ladi-image-background {
+          background-image: url("https://w.ladicdn.com/s650x500/5e51ff6161a254079fc6d2ed/image190-20240812161859-w91si.png");
+        }
+        #BOX300 {
+          width: 1155px;
+          height: 271px;
+          top: 1018.55px;
+          left: 22.5px;
+        }
+        #BOX300 > .ladi-box {
+          background-image: url("https://w.ladicdn.com/s1500x600/5e51ff6161a254079fc6d2ed/rectangle1457-20240812162248-zgkvh.png");
+        }
+        #PARAGRAPH313,
+        #PARAGRAPH303 {
+          width: 469px;
+        }
+        #PARAGRAPH313 {
+          top: 1039.55px;
+          left: 58.5px;
+        }
+        #PARAGRAPH314 {
+          top: 1142.55px;
+          left: 58.5px;
+        }
+        #IMAGE324,
+        #IMAGE324 > .ladi-image > .ladi-image-background {
+          width: 53.7873px;
+          height: 57.905px;
+        }
+        #IMAGE324 {
+          top: 1142.55px;
+          left: 536.018px;
+        }
+        #IMAGE325 {
+          top: 1195.31px;
+          left: 58.5px;
+        }
+        #IMAGE326,
+        #IMAGE326 > .ladi-image > .ladi-image-background {
+          width: 469.177px;
+          height: 200.44px;
+        }
+        #IMAGE326 {
+          top: 1053.83px;
+          left: 671.398px;
+        }
+        #IMAGE326 > .ladi-image > .ladi-image-background {
+          background-image: url("https://w.ladicdn.com/s800x550/5e51ff6161a254079fc6d2ed/group-2076-20240812162307-go3f7.png");
+        }
+        #lien-he {
+          height: 500.29px;
+        }
+        #GROUP241 {
+          height: 36.498px;
+          top: 357px;
+          left: 401px;
+        }
+        #HEADLINE243 {
+          top: 20.498px;
+        }
+        #HEADLINE243 > .ladi-headline {
+          font-size: 13px;
+        }
+        #IMAGE245,
+        #IMAGE245 > .ladi-image > .ladi-image-background {
+          width: 55.1552px;
+          height: 55.1552px;
+        }
+        #IMAGE245 {
+          right: 18px;
+          bottom: 94px;
+        }
+        #GROUP269 {
+          width: 209px;
+          height: 62.6362px;
+          left: 17px;
+          bottom: 15px;
+        }
+        #BOX270 {
+          width: 172.539px;
+          height: 41px;
+          top: 10.818px;
+          left: 36.461px;
+        }
+        #GROUP271,
+        #BOX272 {
+          width: 62.6362px;
+          height: 62.6362px;
+        }
+        #BOX273 {
+          width: 52.7803px;
+          height: 52.7803px;
+          top: 4.92798px;
+          left: 4.92798px;
+        }
+        #SHAPE274 {
+          width: 28.2954px;
+          height: 28.2954px;
+          top: 17.1707px;
+          left: 17.1707px;
+        }
+        #PARAGRAPH275 {
+          width: 140px;
+          top: 16.318px;
+          left: 69px;
+        }
+        #IMAGE279 {
+          right: 15px;
+          bottom: 17px;
+        }
+        #IMAGE316,
+        #IMAGE316 > .ladi-image > .ladi-image-background {
+          width: 200px;
+          height: 52.6882px;
+        }
+        #IMAGE316 {
+          top: 59.5064px;
+          left: 22.5px;
+        }
+        #IMAGE316 > .ladi-image > .ladi-image-background {
+          background-image: url("https://w.ladicdn.com/s550x400/5e51ff6161a254079fc6d2ed/logo-tikmeta-footer-20240812161038-ihukz.png");
+        }
+        #PARAGRAPH305 {
+          width: 308px;
+          top: 134.851px;
+          left: 22.5px;
+        }
+        #PARAGRAPH306 {
+          top: 59.5064px;
+          left: 689px;
+        }
+        #GROUP248 {
+          width: 406.101px;
+          height: 161px;
+          top: 112.195px;
+          left: 689px;
+        }
+        #GROUP249 {
+          width: 368.093px;
+          height: 49px;
+          left: 0px;
+        }
+        #SHAPE250,
+        #SHAPE253,
+        #SHAPE256 {
+          width: 22.6083px;
+        }
+        #HEADLINE251 {
+          width: 334px;
+        }
+        #HEADLINE251,
+        #HEADLINE254,
+        #HEADLINE257 {
+          left: 34.0926px;
+        }
+        #GROUP252 {
+          width: 387.093px;
+          top: 62.3333px;
+          left: 0px;
+        }
+        #HEADLINE254 {
+          width: 353px;
+        }
+        #GROUP255 {
+          width: 391.093px;
+          top: 99.6667px;
+          left: 0px;
+        }
+        #HEADLINE257 {
+          width: 357px;
+        }
+        #GROUP258 {
+          width: 406.101px;
+          top: 137px;
+        }
+        #SHAPE259 {
+          width: 28.8777px;
+        }
+        #HEADLINE260 {
+          width: 369px;
+          left: 37.1008px;
+        }
+        #POPUP301 {
+          width: 501px;
+          height: 561px;
+        }
+        #POPUP301 > .ladi-popup > .ladi-popup-background {
+          background-image: url("https://w.ladicdn.com/s501x561/5e51ff6161a254079fc6d2ed/group1405-20240812162835-lnmc1.png");
+        }
+        #PARAGRAPH303 {
+          top: 26px;
+          left: 16px;
+        }
+        #PARAGRAPH304 {
+          width: 436px;
+          top: 66px;
+          left: 32.5px;
+        }
+        #FORM301 {
+          width: 408px;
+          height: 388px;
+          top: 140.5px;
+          left: 46.5px;
+        }
+        #BUTTON301 {
+          width: 310.155px;
+          height: 53.0909px;
+          top: 334.909px;
+          left: 48.9225px;
+        }
+        #BUTTON_TEXT301 {
+          width: 310px;
+          top: 11.9455px;
+        }
+        #FORM_ITEM301 {
+          width: 408px;
+          height: 47.7818px;
+        }
+        #FORM_ITEM_LABEL301,
+        #FORM_ITEM_LABEL302,
+        #FORM_ITEM_LABEL303,
+        #FORM_ITEM_LABEL305,
+        #FORM_ITEM_LABEL306 {
+          width: 408px;
+        }
+        #FORM_ITEM_LABEL301,
+        #FORM_ITEM_LABEL302,
+        #FORM_ITEM_LABEL303 {
+          top: -25px;
+        }
+        #FORM_ITEM302,
+        #FORM_ITEM303 {
+          width: 408px;
+          height: 46.4545px;
+        }
+        #FORM_ITEM302 {
+          top: 62.3818px;
+        }
+        #FORM_ITEM303 {
+          top: 123.436px;
+        }
+        #FORM_ITEM305,
+        #FORM_ITEM306 {
+          width: 408px;
+          height: 37px;
+        }
+        #FORM_ITEM305 {
+          top: 205.491px;
+        }
+        #FORM_ITEM306 {
+          top: 274.909px;
+        }
+      }
+      @media (max-width: 767px) {
+        #SECTION222 {
+          height: 55.6913px;
+        }
+        #BOX223 {
+          width: 420.638px;
+          height: 55.6913px;
+          top: 0px;
+          left: -0.5px;
+        }
+        #BUTTON_GROUP224 {
+          width: 792px;
+          top: 0px;
+          left: -1020.18px;
+          display: none !important;
+        }
+        #BUTTON_GROUP224
+          > .ladi-button-group
+          > .ladi-element:hover
+          > .ladi-button {
+          transform: scale(1) rotate(0deg) !important;
+        }
+        #BUTTON237 {
+          left: 683px;
+        }
+        #SHAPE299 {
+          width: 23.4287px;
+          height: 28.921px;
+          top: 13.3851px;
+          left: 385px;
+        }
+        #IMAGE300,
+        #IMAGE300 > .ladi-image > .ladi-image-background {
+          width: 156.586px;
+          height: 40.0569px;
+        }
+        #IMAGE300 {
+          top: 9.8173px;
+        }
+        #IMAGE300 > .ladi-image > .ladi-image-background {
+          background-image: url("https://w.ladicdn.com/s500x350/5e51ff6161a254079fc6d2ed/logo-tikmeta-header-20240812154851-8uqrt.png");
+        }
+        #BUTTON302,
+        #BUTTON_TEXT302 {
+          width: 160px;
+        }
+        #BUTTON302 {
+          top: 7.84565px;
+          left: 204.547px;
+        }
+        #BUTTON_TEXT302 > .ladi-headline,
+        #LIST_PARAGRAPH301 > .ladi-list-paragraph {
+          font-size: 14px;
+        }
+        #trang-chu {
+          height: 223.333px;
+        }
+        #PARAGRAPH302 {
+          width: 395px;
+          top: 82.7017px;
+          left: 553px;
+        }
+        #GROUP301,
+        #IMAGE301 {
+          width: 609.126px;
+          height: 223.333px;
+        }
+        #GROUP301 {
+          left: -84.731px;
+        }
+        #HEADLINE83 {
+          width: 51px;
+          top: 8.90131px;
+          left: 516.965px;
+        }
+        #IMAGE301 > .ladi-image > .ladi-image-background {
+          width: 609.126px;
+          height: 253.803px;
+          background-image: url("https://w.ladicdn.com/s950x600/5e51ff6161a254079fc6d2ed/group1799-20240812154851-dohmm.png");
+        }
+        #IMAGE302,
+        #IMAGE302 > .ladi-image > .ladi-image-background {
+          width: 225.307px;
+          height: 110.662px;
+        }
+        #IMAGE302 {
+          top: 37.62px;
+          left: 86.959px;
+        }
+        #IMAGE302 > .ladi-image > .ladi-image-background {
+          background-image: url("https://w.ladicdn.com/s550x450/5e51ff6161a254079fc6d2ed/group1916-20240812154851-vrr5w.png");
+        }
+        #IMAGE304,
+        #IMAGE304 > .ladi-image > .ladi-image-background {
+          width: 90.2053px;
+          height: 28.0701px;
+        }
+        #IMAGE304 {
+          top: 173.552px;
+          left: 127.046px;
+        }
+        #IMAGE304 > .ladi-image > .ladi-image-background {
+          background-image: url("https://w.ladicdn.com/s400x350/5e51ff6161a254079fc6d2ed/group-1763-20240812154850-10d4d.png");
+        }
+        #IMAGE306,
+        #IMAGE306 > .ladi-image > .ladi-image-background {
+          width: 11.3613px;
+          height: 10.9555px;
+        }
+        #IMAGE306 {
+          top: 106.189px;
+          left: 63.3364px;
+        }
+        #IMAGE307,
+        #IMAGE307 > .ladi-image > .ladi-image-background {
+          width: 39.9986px;
+          height: 39.9986px;
+        }
+        #IMAGE307 {
+          top: 103.147px;
+          left: 326.27px;
+        }
+        #IMAGE307 > .ladi-image > .ladi-image-background {
+          background-image: url("https://w.ladicdn.com/s350x350/5e51ff6161a254079fc6d2ed/rectangle-1476-20240812155233-ci1l2.png");
+        }
+        #IMAGE308,
+        #IMAGE308 > .ladi-image > .ladi-image-background {
+          width: 14.3791px;
+          height: 14.3791px;
+        }
+        #IMAGE308 {
+          top: 14.3791px;
+          left: 290.321px;
+        }
+        #IMAGE311,
+        #IMAGE311 > .ladi-image > .ladi-image-background {
+          width: 33.9661px;
+          height: 22.9381px;
+        }
+        #IMAGE311 {
+          left: 83.022px;
+        }
+        #IMAGE311 > .ladi-image > .ladi-image-background {
+          background-image: url("https://w.ladicdn.com/s350x350/5e51ff6161a254079fc6d2ed/group-1940-20240812155217-epupl.png");
+        }
+        #IMAGE312,
+        #IMAGE312 > .ladi-image > .ladi-image-background {
+          width: 21.154px;
+          height: 36.6325px;
+        }
+        #IMAGE312 {
+          top: 173.552px;
+          left: 86.959px;
+        }
+        #IMAGE312 > .ladi-image > .ladi-image-background {
+          background-image: url("https://w.ladicdn.com/s350x350/5e51ff6161a254079fc6d2ed/group-1939-20240812155217-jw94j.png");
+        }
+        #IMAGE314,
+        #IMAGE314 > .ladi-image > .ladi-image-background {
+          width: 42.874px;
+          height: 5.16076px;
+        }
+        #IMAGE314 {
+          top: 183.219px;
+          left: 233.41px;
+        }
+        #IMAGE314 > .ladi-image > .ladi-image-background {
+          background-image: url("https://w.ladicdn.com/s350x350/5e51ff6161a254079fc6d2ed/group-1796-20240812155217-kcp4x.png");
+        }
+        #IMAGE315,
+        #IMAGE315 > .ladi-image > .ladi-image-background {
+          width: 68.4718px;
+          height: 18.3123px;
+        }
+        #IMAGE315 {
+          top: 160.409px;
+          left: 318.052px;
+        }
+        #IMAGE315 > .ladi-image > .ladi-image-background {
+          background-image: url("https://w.ladicdn.com/s400x350/5e51ff6161a254079fc6d2ed/group-1745-20240812155217-dmxvs.png");
+        }
+        #IMAGE313,
+        #IMAGE313 > .ladi-image > .ladi-image-background {
+          width: 35.6055px;
+          height: 33.2089px;
+        }
+        #IMAGE313 {
+          top: 95.0625px;
+          left: 437.194px;
+        }
+        #IMAGE313 > .ladi-image > .ladi-image-background {
+          background-image: url("https://w.ladicdn.com/s350x350/5e51ff6161a254079fc6d2ed/group-17971-20240812155217-r6dmk.png");
+        }
+        #IMAGE303,
+        #IMAGE303 > .ladi-image > .ladi-image-background {
+          width: 267.838px;
+          height: 211.898px;
+        }
+        #IMAGE303 {
+          top: 11.4354px;
+          left: 249.127px;
+        }
+        #IMAGE303 > .ladi-image > .ladi-image-background {
+          background-image: url("https://w.ladicdn.com/s600x550/5e51ff6161a254079fc6d2ed/bvc000971-1-20240812154850-lrjh7.png");
+        }
+        #HEADLINE302 {
+          width: 394px;
+          top: 24.309px;
+          left: 573px;
+        }
+        #NguyenVietAnhchamNet1836 {
+          height: 1078.42px;
+        }
+        #IMAGE310,
+        #IMAGE310 > .ladi-image > .ladi-image-background,
+        #IMAGE334,
+        #IMAGE334 > .ladi-image > .ladi-image-background,
+        #IMAGE350,
+        #IMAGE350 > .ladi-image > .ladi-image-background,
+        #IMAGE352,
+        #IMAGE352 > .ladi-image > .ladi-image-background,
+        #IMAGE353,
+        #IMAGE353 > .ladi-image > .ladi-image-background {
+          width: 53.9686px;
+          height: 58.1px;
+        }
+        #IMAGE310 {
+          top: 444.42px;
+          left: 20px;
+        }
+        #PARAGRAPH321,
+        #FORM_ITEM_LABEL301,
+        #FORM_ITEM_LABEL302,
+        #FORM_ITEM_LABEL303,
+        #FORM_ITEM_LABEL305,
+        #FORM_ITEM_LABEL306 {
+          width: 339px;
+        }
+        #PARAGRAPH321 {
+          top: 462.97px;
+          left: 81px;
+        }
+        #PARAGRAPH321 > .ladi-paragraph {
+          font-size: 22px;
+        }
+        #LIST_PARAGRAPH300,
+        #PARAGRAPH317,
+        #PARAGRAPH319,
+        #PARAGRAPH307 {
+          width: 400px;
+        }
+        #LIST_PARAGRAPH300 {
+          top: 513.424px;
+          left: 10px;
+        }
+        #LIST_PARAGRAPH300 > .ladi-list-paragraph,
+        #PARAGRAPH323 > .ladi-paragraph,
+        #PARAGRAPH334 > .ladi-paragraph,
+        #PARAGRAPH354 > .ladi-paragraph,
+        #PARAGRAPH358 > .ladi-paragraph,
+        #PARAGRAPH362 > .ladi-paragraph,
+        #PARAGRAPH364 > .ladi-paragraph,
+        #PARAGRAPH366 > .ladi-paragraph,
+        #PARAGRAPH368 > .ladi-paragraph,
+        #PARAGRAPH275 > .ladi-paragraph {
+          font-size: 16px;
+        }
+        #BOX302 {
+          width: 148.97px;
+          height: 117.575px;
+          top: 26px;
+          left: 256.363px;
+        }
+        #IMAGE309,
+        #IMAGE309 > .ladi-image > .ladi-image-background {
+          width: 334.874px;
+          height: 358.985px;
+        }
+        #IMAGE309 {
+          top: 60.4166px;
+          left: 29.673px;
+        }
+        #IMAGE309 > .ladi-image > .ladi-image-background {
+          background-image: url("https://w.ladicdn.com/s650x700/5e51ff6161a254079fc6d2ed/rectangle938-20240812155233-m8ff4.png");
+        }
+        #IMAGE330,
+        #IMAGE330 > .ladi-image > .ladi-image-background {
+          width: 9.00695px;
+          height: 138.53px;
+        }
+        #IMAGE330 {
+          top: 40.8387px;
+          left: 8px;
+        }
+        #IMAGE330 > .ladi-image > .ladi-image-background {
+          background-image: url("https://w.ladicdn.com/s350x450/5e51ff6161a254079fc6d2ed/group-1744-20240812155217-euldb.png");
+        }
+        #IMAGE331,
+        #IMAGE331 > .ladi-image > .ladi-image-background {
+          width: 138.532px;
+          height: 37.049px;
+        }
+        #IMAGE331 {
+          top: 403.401px;
+          left: 269.897px;
+        }
+        #IMAGE331 > .ladi-image > .ladi-image-background {
+          background-image: url("https://w.ladicdn.com/s450x350/5e51ff6161a254079fc6d2ed/group-1745-20240812155217-dmxvs.png");
+        }
+        #BOX301 {
+          width: 56.0176px;
+          height: 56.0174px;
+          top: 26px;
+          left: 72.829px;
+        }
+        #IMAGE333,
+        #IMAGE333 > .ladi-image > .ladi-image-background,
+        #IMAGE332,
+        #IMAGE332 > .ladi-image > .ladi-image-background,
+        #IMAGE348,
+        #IMAGE348 > .ladi-image > .ladi-image-background,
+        #IMAGE349,
+        #IMAGE349 > .ladi-image > .ladi-image-background {
+          width: 185.758px;
+          height: 53.4653px;
+        }
+        #IMAGE333 {
+          top: 993.955px;
+          left: 117.121px;
+        }
+        #IMAGE333 > .ladi-image > .ladi-image-background,
+        #IMAGE344 > .ladi-image > .ladi-image-background,
+        #IMAGE332 > .ladi-image > .ladi-image-background,
+        #IMAGE348 > .ladi-image > .ladi-image-background,
+        #IMAGE349 > .ladi-image > .ladi-image-background {
+          background-image: url("https://w.ladicdn.com/s500x400/5e51ff6161a254079fc6d2ed/group-1918-20240813060433-r0vss.png");
+        }
+        #SECTION282 {
+          height: 780.021px;
+        }
+        #SECTION282 > .ladi-section-background {
+          background-image: url("https://w.ladicdn.com/s768x780/5e51ff6161a254079fc6d2ed/group-1355-20240812155217-rklbu.png");
+        }
+        #GROUP303,
+        #GROUP304 {
+          width: 420px;
+          height: 116px;
+        }
+        #GROUP303 {
+          top: 28.056px;
+        }
+        #PARAGRAPH322,
+        #PARAGRAPH333,
+        #PARAGRAPH336,
+        #PARAGRAPH338,
+        #PARAGRAPH313 {
+          width: 374px;
+        }
+        #PARAGRAPH322,
+        #PARAGRAPH333 {
+          top: 0px;
+          left: 23px;
+        }
+        #PARAGRAPH322 > .ladi-paragraph,
+        #PARAGRAPH333 > .ladi-paragraph,
+        #PARAGRAPH336 > .ladi-paragraph,
+        #PARAGRAPH338 > .ladi-paragraph {
+          font-size: 28px;
+        }
+        #IMAGE334,
+        #IMAGE350 {
+          top: 38.8997px;
+          left: 31px;
+        }
+        #PARAGRAPH323,
+        #PARAGRAPH334 {
+          top: 90px;
+          left: 0px;
+        }
+        #CAROUSEL300 {
+          width: 393px;
+          height: 483px;
+          top: 156.056px;
+          left: 10px;
+        }
+        #CAROUSEL_ITEM305,
+        #CAROUSEL_ITEM306,
+        #CAROUSEL_ITEM307 {
+          height: 483px;
+        }
+        #IMAGE335,
+        #IMAGE335 > .ladi-image > .ladi-image-background,
+        #IMAGE339,
+        #IMAGE339 > .ladi-image > .ladi-image-background,
+        #IMAGE340,
+        #IMAGE340 > .ladi-image > .ladi-image-background {
+          width: 90px;
+          height: 90px;
+        }
+        #IMAGE335,
+        #IMAGE339,
+        #IMAGE340 {
+          left: 27.222px;
+        }
+        #IMAGE335 > .ladi-image > .ladi-image-background {
+          background-image: url("https://w.ladicdn.com/s400x400/5e51ff6161a254079fc6d2ed/ellipse5-20240813071517-qtqx8.png");
+        }
+        #IMAGE339 > .ladi-image > .ladi-image-background {
+          background-image: url("https://w.ladicdn.com/s400x400/5e51ff6161a254079fc6d2ed/ellipse-5-1-20240813071517-eeps7.png");
+        }
+        #IMAGE340 > .ladi-image > .ladi-image-background {
+          background-image: url("https://w.ladicdn.com/s400x400/5e51ff6161a254079fc6d2ed/ellipse5_1-20240813071517-fuple.png");
+        }
+        #IMAGE344,
+        #IMAGE344 > .ladi-image > .ladi-image-background {
+          width: 189.258px;
+          height: 53.4653px;
+        }
+        #IMAGE344 {
+          top: 694.056px;
+          left: 113.621px;
+        }
+        #SECTION304 {
+          height: 1135.51px;
+        }
+        #PARAGRAPH317,
+        #PARAGRAPH319 {
+          top: 25.285px;
+          left: 10px;
+        }
+        #PARAGRAPH317 > .ladi-paragraph,
+        #PARAGRAPH319 > .ladi-paragraph,
+        #PARAGRAPH315 > .ladi-paragraph {
+          font-size: 25px;
+        }
+        #PARAGRAPH318,
+        #PARAGRAPH320,
+        #PARAGRAPH316,
+        #PARAGRAPH314 {
+          width: 349px;
+        }
+        #PARAGRAPH318 {
+          top: 110.271px;
+          left: 35.5px;
+        }
+        #PARAGRAPH318 > .ladi-paragraph,
+        #PARAGRAPH320 > .ladi-paragraph,
+        #PARAGRAPH316 > .ladi-paragraph,
+        #PARAGRAPH340 > .ladi-paragraph,
+        #PARAGRAPH314 > .ladi-paragraph {
+          font-size: 18px;
+        }
+        #IMAGE328,
+        #IMAGE328 > .ladi-image > .ladi-image-background,
+        #IMAGE329,
+        #IMAGE329 > .ladi-image > .ladi-image-background,
+        #IMAGE327,
+        #IMAGE327 > .ladi-image > .ladi-image-background {
+          width: 51.3778px;
+          height: 55.311px;
+        }
+        #IMAGE328,
+        #IMAGE329,
+        #IMAGE327 {
+          top: 49.285px;
+          left: 47.719px;
+        }
+        #LIST_PARAGRAPH301,
+        #GROUP252 {
+          width: 396px;
+        }
+        #LIST_PARAGRAPH301 {
+          top: 492.271px;
+          left: 10px;
+        }
+        #IMAGE332 {
+          top: 1043.26px;
+          left: 115.121px;
+        }
+        #IMAGE347,
+        #IMAGE347 > .ladi-image > .ladi-image-background {
+          width: 380.583px;
+          height: 359.041px;
+        }
+        #IMAGE347 {
+          top: 156.271px;
+          left: 19.7085px;
+        }
+        #IMAGE347 > .ladi-image > .ladi-image-background {
+          background-image: url("https://w.ladicdn.com/s700x700/5e51ff6161a254079fc6d2ed/group1337-20240813062054-dohg7.png");
+        }
+        #SECTION305 {
+          height: 1038.75px;
+        }
+        #SECTION305 > .ladi-section-background {
+          background-image: url("https://w.ladicdn.com/s768x1038/5e51ff6161a254079fc6d2ed/rectangle926-20240813064507-atgqq.png");
+        }
+        #PARAGRAPH320 {
+          top: 113.271px;
+          left: 35.5px;
+        }
+        #IMAGE348 {
+          top: 932.27px;
+          left: 117.121px;
+        }
+        #GROUP308 {
+          top: 152.271px;
+          left: 0px;
+        }
+        #SECTION301 {
+          height: 1383.14px;
+        }
+        #SECTION301 > .ladi-section-background {
+          background-image: url("https://w.ladicdn.com/s768x1383/5e51ff6161a254079fc6d2ed/group1405-20240812162835-lnmc1.png");
+        }
+        #IMAGE349 {
+          top: 1278.57px;
+          left: 116.621px;
+        }
+        #GROUP304 {
+          top: 28.7783px;
+          left: 0px;
+        }
+        #GROUP307,
+        #GROUP314 {
+          width: 401.597px;
+          height: 183.143px;
+        }
+        #GROUP307 {
+          top: 165.778px;
+          left: 9.20125px;
+        }
+        #PARAGRAPH349,
+        #PARAGRAPH357,
+        #PARAGRAPH361,
+        #PARAGRAPH363,
+        #PARAGRAPH365,
+        #PARAGRAPH367 {
+          width: 295px;
+          top: 87.1432px;
+          left: 98.5975px;
+        }
+        #PARAGRAPH349 > .ladi-paragraph,
+        #PARAGRAPH357 > .ladi-paragraph,
+        #PARAGRAPH361 > .ladi-paragraph,
+        #PARAGRAPH363 > .ladi-paragraph,
+        #PARAGRAPH365 > .ladi-paragraph,
+        #PARAGRAPH367 > .ladi-paragraph,
+        #PARAGRAPH335 > .ladi-paragraph,
+        #HEADLINE243 > .ladi-headline {
+          font-size: 15px;
+        }
+        #PARAGRAPH354,
+        #PARAGRAPH358,
+        #PARAGRAPH362,
+        #PARAGRAPH364,
+        #PARAGRAPH366,
+        #PARAGRAPH368 {
+          width: 303px;
+          left: 98.5975px;
+        }
+        #IMAGE365,
+        #IMAGE365 > .ladi-image > .ladi-image-background,
+        #IMAGE366,
+        #IMAGE366 > .ladi-image > .ladi-image-background,
+        #IMAGE367,
+        #IMAGE367 > .ladi-image > .ladi-image-background,
+        #IMAGE368,
+        #IMAGE368 > .ladi-image > .ladi-image-background,
+        #IMAGE369,
+        #IMAGE369 > .ladi-image > .ladi-image-background,
+        #IMAGE370,
+        #IMAGE370 > .ladi-image > .ladi-image-background {
+          width: 87.1433px;
+          height: 87.1433px;
+        }
+        #GROUP309,
+        #GROUP315,
+        #GROUP316 {
+          width: 401.597px;
+          height: 159.143px;
+        }
+        #GROUP309 {
+          top: 368.921px;
+          left: 9.20125px;
+        }
+        #GROUP313 {
+          width: 401.597px;
+          height: 135.143px;
+          top: 548.064px;
+          left: 9.20125px;
+        }
+        #GROUP314 {
+          top: 703.208px;
+          left: 9.20125px;
+        }
+        #GROUP315 {
+          top: 906.351px;
+          left: 9.20125px;
+        }
+        #GROUP316 {
+          top: 1085.49px;
+          left: 9.20125px;
+        }
+        #SECTION306 {
+          height: 1104.1px;
+        }
+        #PARAGRAPH335 {
+          width: 392px;
+          top: 493.214px;
+          left: 14.0005px;
+        }
+        #IMAGE351,
+        #IMAGE351 > .ladi-image > .ladi-image-background {
+          width: 369.832px;
+          height: 378.908px;
+        }
+        #IMAGE351 {
+          top: 94.76px;
+          left: 25.084px;
+        }
+        #IMAGE351 > .ladi-image > .ladi-image-background {
+          background-image: url("https://w.ladicdn.com/s700x700/5e51ff6161a254079fc6d2ed/rectangle1352-20240813062318-jxson.png");
+        }
+        #BUTTON303 {
+          top: 23.2135px;
+          left: 9px;
+        }
+        #BUTTON_TEXT303 {
+          width: 402px;
+        }
+        #do-du {
+          height: 742.29px;
+        }
+        #PARAGRAPH315,
+        #PARAGRAPH337,
+        #PARAGRAPH340 {
+          width: 420px;
+        }
+        #PARAGRAPH315 {
+          top: 25.285px;
+        }
+        #PARAGRAPH316 {
+          top: 72.271px;
+          left: 35.5005px;
+        }
+        #GROUP310 {
+          height: 538px;
+          top: 133.271px;
+          left: 0px;
+        }
+        #FRAME309,
+        #FRAME311 {
+          top: 0px;
+        }
+        #SECTION302 {
+          height: 1630.17px;
+        }
+        #SECTION302 > .ladi-section-background {
+          background-image: url("https://w.ladicdn.com/s768x1630/5e51ff6161a254079fc6d2ed/group2044-20240812162738-pwy-b.png");
+        }
+        #BOX306 {
+          width: 386px;
+          height: 483px;
+          top: 144.829px;
+          left: 17px;
+        }
+        #PARAGRAPH336 {
+          top: 27.8288px;
+          left: 23.0002px;
+        }
+        #IMAGE352 {
+          top: 59.7288px;
+          left: 356.032px;
+        }
+        #PARAGRAPH338 {
+          top: 692.33px;
+          left: 30.0002px;
+        }
+        #IMAGE353 {
+          top: 732.008px;
+          left: 16.032px;
+        }
+        #IMAGE354,
+        #IMAGE354 > .ladi-image > .ladi-image-background {
+          width: 81.8182px;
+          height: 90px;
+        }
+        #IMAGE354 {
+          top: 341.329px;
+          left: -273px;
+        }
+        #IMAGE354 > .ladi-image > .ladi-image-background {
+          background-image: url("https://w.ladicdn.com/s400x400/5e51ff6161a254079fc6d2ed/asset2411-20240813062734-mutbp.png");
+        }
+        #GROUP306,
+        #BOX307,
+        #GROUP317,
+        #BOX309,
+        #GROUP319,
+        #BOX311,
+        #GROUP320,
+        #BOX312 {
+          width: 396.588px;
+          height: 77.1584px;
+        }
+        #GROUP306 {
+          top: 805.108px;
+          left: 11.706px;
+        }
+        #SHAPE300,
+        #SHAPE302,
+        #SHAPE305,
+        #SHAPE306,
+        #SHAPE307,
+        #SHAPE308,
+        #SHAPE310 {
+          width: 43.3606px;
+          height: 44.0253px;
+        }
+        #SHAPE300,
+        #SHAPE302,
+        #SHAPE305,
+        #SHAPE307,
+        #SHAPE308 {
+          top: 16.5665px;
+          left: 6.78873px;
+        }
+        #PARAGRAPH339,
+        #PARAGRAPH360,
+        #PARAGRAPH369,
+        #PARAGRAPH370,
+        #PARAGRAPH371,
+        #PARAGRAPH372,
+        #PARAGRAPH375 {
+          width: 335px;
+        }
+        #PARAGRAPH339,
+        #PARAGRAPH360,
+        #PARAGRAPH369,
+        #PARAGRAPH371,
+        #PARAGRAPH372 {
+          top: 13.0792px;
+          left: 54.6766px;
+        }
+        #GROUP311 {
+          width: 420px;
+          height: 67px;
+          top: 165.829px;
+          left: 0px;
+        }
+        #PARAGRAPH337 > .ladi-paragraph {
+          font-size: 24px;
+        }
+        #PARAGRAPH340 {
+          top: 38px;
+        }
+        #PARAGRAPH341 {
+          width: 416px;
+          top: 288.299px;
+          left: 0px;
+        }
+        #PARAGRAPH341 > .ladi-paragraph {
+          font-size: 36px;
+          line-height: 1.2;
+        }
+        #IMAGE356,
+        #IMAGE356 > .ladi-image > .ladi-image-background {
+          width: 359.574px;
+          height: 213.47px;
+        }
+        #IMAGE356 {
+          top: 354.829px;
+          left: 28.213px;
+        }
+        #IMAGE355,
+        #IMAGE355 > .ladi-image > .ladi-image-background {
+          width: 255.939px;
+          height: 109.809px;
+        }
+        #IMAGE355 {
+          top: 544.299px;
+          left: -45.916px;
+        }
+        #IMAGE355 > .ladi-image > .ladi-image-background {
+          background-image: url("https://w.ladicdn.com/s600x450/5e51ff6161a254079fc6d2ed/asset121-20240813062734-15gw1.png");
+        }
+        #PARAGRAPH359 {
+          top: 239.815px;
+          left: 0px;
+        }
+        #GROUP312,
+        #BOX308 {
+          width: 396.588px;
+          height: 98.1584px;
+        }
+        #GROUP312 {
+          top: 893.266px;
+          left: 11.706px;
+        }
+        #GROUP317 {
+          top: 1002.42px;
+          left: 11.706px;
+        }
+        #GROUP318,
+        #BOX310 {
+          width: 396.588px;
+          height: 157.158px;
+        }
+        #GROUP318 {
+          top: 1090.58px;
+          left: 11.706px;
+        }
+        #SHAPE306 {
+          top: 56.5663px;
+          left: 6.78873px;
+        }
+        #PARAGRAPH370 {
+          top: 14.579px;
+          left: 54.6766px;
+        }
+        #GROUP319 {
+          top: 1258.74px;
+          left: 11.706px;
+        }
+        #GROUP320 {
+          top: 1346.9px;
+          left: 11.706px;
+        }
+        #GROUP322,
+        #BOX314 {
+          width: 396.588px;
+          height: 149.158px;
+        }
+        #GROUP322 {
+          top: 1435.06px;
+          left: 11.706px;
+        }
+        #SHAPE310 {
+          top: 52.5663px;
+          left: 6.78873px;
+        }
+        #PARAGRAPH375 {
+          top: 10.579px;
+          left: 54.6766px;
+        }
+        #SECTION281 {
+          height: 3007.62px;
+        }
+        #PARAGRAPH307 {
+          top: 27px;
+          left: 10.0002px;
+        }
+        #PARAGRAPH307 > .ladi-paragraph {
+          font-size: 25px;
+          text-align: center;
+        }
+        #IMAGE317,
+        #IMAGE317 > .ladi-image > .ladi-image-background {
+          width: 66.24px;
+          height: 71.311px;
+        }
+        #IMAGE317 {
+          top: 61px;
+          left: 290.719px;
+        }
+        #IMAGE317 > .ladi-image > .ladi-image-background {
+          background-image: url("https://w.ladicdn.com/s400x400/5e51ff6161a254079fc6d2ed/image-46-1-20240812155233-e_cjm.png");
+        }
+        #IMAGE318,
+        #IMAGE318 > .ladi-image > .ladi-image-background {
+          width: 161.437px;
+          height: 50.2356px;
+        }
+        #IMAGE318 {
+          top: 120.311px;
+          left: 129.282px;
+        }
+        #IMAGE318 > .ladi-image > .ladi-image-background,
+        #IMAGE325 > .ladi-image > .ladi-image-background {
+          background-image: url("https://w.ladicdn.com/s500x400/5e51ff6161a254079fc6d2ed/group-1763-20240812154850-10d4d.png");
+        }
+        #FRAME300,
+        #FRAME301,
+        #FRAME302,
+        #FRAME303,
+        #FRAME304 {
+          width: 388.5px;
+        }
+        #FRAME300 {
+          top: 199px;
+          left: 15.7502px;
+        }
+        #PARAGRAPH308,
+        #PARAGRAPH309,
+        #PARAGRAPH310,
+        #PARAGRAPH311,
+        #PARAGRAPH312 {
+          width: 353px;
+          top: 254.999px;
+          left: 17.75px;
+        }
+        #IMAGE319,
+        #IMAGE319 > .ladi-image > .ladi-image-background,
+        #IMAGE320,
+        #IMAGE320 > .ladi-image > .ladi-image-background,
+        #IMAGE321,
+        #IMAGE321 > .ladi-image > .ladi-image-background,
+        #IMAGE322,
+        #IMAGE322 > .ladi-image > .ladi-image-background,
+        #IMAGE323,
+        #IMAGE323 > .ladi-image > .ladi-image-background {
+          width: 353.688px;
+          height: 219.409px;
+        }
+        #IMAGE319 > .ladi-image > .ladi-image-background {
+          background-image: url("https://w.ladicdn.com/s700x550/5e51ff6161a254079fc6d2ed/image187-20240812161708-jw2--.png");
+        }
+        #FRAME301 {
+          top: 658.313px;
+          left: 15.7502px;
+        }
+        #IMAGE320 > .ladi-image > .ladi-image-background {
+          background-image: url("https://w.ladicdn.com/s700x550/5e51ff6161a254079fc6d2ed/image188-20240812161708-zo4ri.png");
+        }
+        #FRAME302 {
+          top: 1113.55px;
+          left: 15.7502px;
+        }
+        #IMAGE321 > .ladi-image > .ladi-image-background {
+          background-image: url("https://w.ladicdn.com/s700x550/5e51ff6161a254079fc6d2ed/image191-20240812161859-wozgq.png");
+        }
+        #FRAME303 {
+          top: 1566.2px;
+          left: 15.7502px;
+        }
+        #IMAGE322 > .ladi-image > .ladi-image-background {
+          background-image: url("https://w.ladicdn.com/s700x550/5e51ff6161a254079fc6d2ed/image189-20240812161859-r_-ow.png");
+        }
+        #FRAME304 {
+          top: 2021.2px;
+          left: 15.7502px;
+        }
+        #IMAGE323 > .ladi-image > .ladi-image-background {
+          background-image: url("https://w.ladicdn.com/s700x550/5e51ff6161a254079fc6d2ed/image190-20240812161859-w91si.png");
+        }
+        #BOX300 {
+          width: 388.5px;
+          height: 460px;
+          top: 2487.55px;
+          left: 15.7502px;
+        }
+        #BOX300 > .ladi-box {
+          background-image: url("https://w.ladicdn.com/s700x800/5e51ff6161a254079fc6d2ed/rectangle1457-20240812162248-zgkvh.png");
+        }
+        #PARAGRAPH313 {
+          top: 2504.55px;
+          left: 23.0002px;
+        }
+        #PARAGRAPH313 > .ladi-paragraph {
+          font-size: 28px;
+          text-align: center;
+        }
+        #PARAGRAPH314 {
+          top: 2601.43px;
+          left: 35.5px;
+        }
+        #IMAGE324,
+        #IMAGE324 > .ladi-image > .ladi-image-background {
+          width: 55.0933px;
+          height: 59.311px;
+        }
+        #IMAGE324 {
+          top: 2639.12px;
+          left: 266.018px;
+        }
+        #IMAGE325,
+        #IMAGE325 > .ladi-image > .ladi-image-background {
+          width: 180.718px;
+          height: 56.2356px;
+        }
+        #IMAGE325 {
+          top: 2671.43px;
+          left: 35.5px;
+        }
+        #IMAGE326,
+        #IMAGE326 > .ladi-image > .ladi-image-background {
+          width: 367.23px;
+          height: 156.886px;
+        }
+        #IMAGE326 {
+          top: 2754.55px;
+          left: 26.3852px;
+        }
+        #IMAGE326 > .ladi-image > .ladi-image-background {
+          background-image: url("https://w.ladicdn.com/s700x500/5e51ff6161a254079fc6d2ed/group-2076-20240812162307-go3f7.png");
+        }
+        #lien-he {
+          height: 594.102px;
+        }
+        #GROUP241 {
+          height: 42.996px;
+          top: 483.106px;
+          left: 11px;
+        }
+        #HEADLINE243 {
+          top: 24.996px;
+        }
+        #IMAGE245,
+        #IMAGE245 > .ladi-image > .ladi-image-background {
+          width: 54.6698px;
+          height: 54.6698px;
+        }
+        #IMAGE245 {
+          right: 6px;
+          bottom: 68px;
+        }
+        #GROUP269 {
+          width: 179.525px;
+          height: 53.6362px;
+          left: 5px;
+          bottom: 5px;
+        }
+        #BOX270 {
+          width: 148.303px;
+          height: 35.1088px;
+          top: 9.2636px;
+          left: 31.222px;
+        }
+        #GROUP271,
+        #BOX272 {
+          width: 53.6361px;
+          height: 53.6362px;
+        }
+        #BOX273 {
+          width: 45.1964px;
+          height: 45.1965px;
+          top: 4.21989px;
+          left: 4.21989px;
+        }
+        #SHAPE274 {
+          width: 24.2297px;
+          height: 24.2297px;
+          top: 14.7035px;
+          left: 14.7035px;
+        }
+        #PARAGRAPH275 {
+          width: 121px;
+          top: 14.686px;
+          left: 58.0855px;
+        }
+        #IMAGE279 {
+          right: 3px;
+          bottom: 2px;
+        }
+        #IMAGE279 > .ladi-image {
+          border-radius: 3px;
+        }
+        #IMAGE316,
+        #IMAGE316 > .ladi-image > .ladi-image-background {
+          width: 359.428px;
+          height: 94.688px;
+        }
+        #IMAGE316 {
+          top: 30px;
+          left: 30.286px;
+        }
+        #IMAGE316 > .ladi-image > .ladi-image-background {
+          background-image: url("https://w.ladicdn.com/s700x400/5e51ff6161a254079fc6d2ed/logo-tikmeta-footer-20240812161038-ihukz.png");
+        }
+        #PARAGRAPH305 {
+          width: 383px;
+          top: 149.559px;
+          left: 16px;
+        }
+        #PARAGRAPH306 {
+          top: 229.688px;
+          left: 16px;
+        }
+        #GROUP248 {
+          width: 405px;
+          height: 138.453px;
+          top: 281.106px;
+          left: 11px;
+        }
+        #GROUP249 {
+          width: 403px;
+          height: 25px;
+          left: 2px;
+        }
+        #SHAPE250,
+        #SHAPE253,
+        #SHAPE256 {
+          width: 22.5469px;
+        }
+        #HEADLINE251 {
+          width: 369px;
+        }
+        #HEADLINE251,
+        #HEADLINE254,
+        #HEADLINE257 {
+          left: 34px;
+        }
+        #GROUP252 {
+          top: 56.4531px;
+          left: 1.5px;
+        }
+        #HEADLINE254 {
+          width: 362px;
+        }
+        #GROUP255 {
+          width: 399px;
+          top: 85.453px;
+          left: 2px;
+        }
+        #HEADLINE257 {
+          width: 365px;
+        }
+        #GROUP258 {
+          width: 403px;
+          top: 114.453px;
+        }
+        #SHAPE259 {
+          width: 28.7993px;
+        }
+        #HEADLINE260 {
+          width: 366px;
+          left: 37px;
+        }
+        #POPUP301 {
+          width: 413.481px;
+          height: 541px;
+        }
+        #POPUP301 > .ladi-popup > .ladi-popup-background {
+          background-image: url("https://w.ladicdn.com/s413x541/5e51ff6161a254079fc6d2ed/group1405-20240812162835-lnmc1.png");
+        }
+        #PARAGRAPH303 {
+          width: 390px;
+          top: 23px;
+          left: 11.7401px;
+        }
+        #PARAGRAPH304 {
+          width: 363px;
+          top: 63px;
+          left: 25.4608px;
+        }
+        #FORM301 {
+          width: 339.275px;
+          height: 369px;
+          top: 130.5px;
+          left: 37.3233px;
+        }
+        #BUTTON301 {
+          width: 257.911px;
+          height: 47.4347px;
+          top: 321.565px;
+          left: 40.5445px;
+        }
+        #BUTTON_TEXT301 {
+          width: 258px;
+          top: 10.6728px;
+        }
+        #FORM_ITEM301 {
+          width: 339.275px;
+          height: 42.6913px;
+        }
+        #FORM_ITEM_LABEL301,
+        #FORM_ITEM_LABEL302,
+        #FORM_ITEM_LABEL303 {
+          top: -22.3366px;
+        }
+        #FORM_ITEM302,
+        #FORM_ITEM303 {
+          width: 339.275px;
+          height: 41.5054px;
+        }
+        #FORM_ITEM302 {
+          top: 55.7358px;
+        }
+        #FORM_ITEM303 {
+          top: 110.285px;
+        }
+        #FORM_ITEM305 {
+          width: 339px;
+          height: 36px;
+          top: 183.599px;
+        }
+        #FORM_ITEM306 {
+          width: 339px;
+          height: 67px;
+          top: 245.621px;
+        }
+      }
+    
+
+/* ===== NEXT STYLE SECTION ===== */
+
+
+      body.lazyload .ladi-overlay,
+      body.lazyload .ladi-box,
+      body.lazyload .ladi-button-background,
+      body.lazyload .ladi-collection-item:before,
+      body.lazyload .ladi-countdown-background,
+      body.lazyload .ladi-form-item-background,
+      body.lazyload .ladi-form-label-container .ladi-form-label-item.image,
+      body.lazyload .ladi-frame-background,
+      body.lazyload .ladi-gallery-view-item,
+      body.lazyload .ladi-gallery-control-item,
+      body.lazyload .ladi-headline,
+      body.lazyload .ladi-image-background,
+      body.lazyload .ladi-image-compare,
+      body.lazyload .ladi-list-paragraph ul li:before,
+      body.lazyload .ladi-section-background,
+      body.lazyload .ladi-survey-option-background,
+      body.lazyload .ladi-survey-option-image,
+      body.lazyload .ladi-tabs-background,
+      body.lazyload .ladi-video-background,
+      body.lazyload .ladi-banner,
+      body.lazyload .ladi-spin-lucky-screen,
+      body.lazyload .ladi-spin-lucky-start {
+        background-image: none !important;
+      }
+    
+
+/* ===== NEXT STYLE SECTION ===== */
+
+
+      body {
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+    
+
+/* ===== NEXT STYLE SECTION ===== */
+
+
+      @-webkit-keyframes pulse {
+        0% {
+          -webkit-transform: scale(1);
+          transform: scale(1);
+        }
+        50% {
+          -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+        }
+        100% {
+          -webkit-transform: scale(1);
+          transform: scale(1);
+        }
+      }
+      @keyframes pulse {
+        0% {
+          -webkit-transform: scale(1);
+          -ms-transform: scale(1);
+          transform: scale(1);
+        }
+        50% {
+          -webkit-transform: scale(1.1);
+          -ms-transform: scale(1.1);
+          transform: scale(1.1);
+        }
+        100% {
+          -webkit-transform: scale(1);
+          -ms-transform: scale(1);
+          transform: scale(1);
+        }
+      }
+      @-webkit-keyframes shake {
+        0%,
+        100% {
+          -webkit-transform: translateX(0);
+          transform: translateX(0);
+        }
+        10%,
+        30%,
+        50%,
+        70%,
+        90% {
+          -webkit-transform: translateX(-10px);
+          transform: translateX(-10px);
+        }
+        20%,
+        40%,
+        60%,
+        80% {
+          -webkit-transform: translateX(10px);
+          transform: translateX(10px);
+        }
+      }
+      @keyframes shake {
+        0%,
+        100% {
+          -webkit-transform: translateX(0);
+          -ms-transform: translateX(0);
+          transform: translateX(0);
+        }
+        10%,
+        30%,
+        50%,
+        70%,
+        90% {
+          -webkit-transform: translateX(-10px);
+          -ms-transform: translateX(-10px);
+          transform: translateX(-10px);
+        }
+        20%,
+        40%,
+        60%,
+        80% {
+          -webkit-transform: translateX(10px);
+          -ms-transform: translateX(10px);
+          transform: translateX(10px);
+        }
+      }
+    
