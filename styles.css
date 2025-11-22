@@ -3187,6 +3187,12 @@
         #NguyenVietAnhchamNet1836 {
           height: 821.7px;
         }
+        #NguyenVietAnhchamNet1836 > .ladi-container{
+          margin-left: 80px !important;
+        }
+        .video {
+          margin-top: 40px;
+        }
         #IMAGE310,
         #IMAGE310 > .ladi-image > .ladi-image-background {
           width: 79.0487px;
@@ -3199,7 +3205,7 @@
         #PARAGRAPH321 {
           width: 540px;
           top: 119.395px;
-          left: 711.049px;
+          left: 900.049px;
         }
         #PARAGRAPH321 > .ladi-paragraph,
         #PARAGRAPH322 > .ladi-paragraph,
@@ -3213,8 +3219,8 @@
         }
         #LIST_PARAGRAPH300 {
           width: 520px;
-          top: 196.651px;
-          left: 655px;
+          top: 230.651px;
+          left: 860px;
         }
         #LIST_PARAGRAPH300 > .ladi-list-paragraph,
         #LIST_PARAGRAPH301 > .ladi-list-paragraph {
@@ -4450,9 +4456,9 @@
           top: 60.4166px;
           left: 29.673px;
         }
-        #IMAGE309 > .ladi-image > .ladi-image-background {
-          background-image: url("https://w.ladicdn.com/s650x700/5e51ff6161a254079fc6d2ed/rectangle938-20240812155233-m8ff4.png");
-        }
+        /* #IMAGE309 > .ladi-image > .ladi-image-background {
+          source: url("https://w.ladicdn.com/s650x700/5e51ff6161a254079fc6d2ed/rectangle938-20240812155233-m8ff4.png");
+        } */
         #IMAGE330,
         #IMAGE330 > .ladi-image > .ladi-image-background {
           width: 9.00695px;
