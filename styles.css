@@ -1766,7 +1766,7 @@
         font-size: 16px;
         font-weight: bold;
         line-height: 1.6;
-        color: rgb(0, 0, 0);
+        color: #015347;
         text-align: center;
       }
       #BUTTON237,
@@ -1791,7 +1791,13 @@
       #BUTTON302 {
         height: 40px;
       }
-      #BUTTON_TEXT302 > .ladi-headline,
+      #BUTTON_TEXT302 > .ladi-headline{
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 1.6;
+        color: #015347;
+        text-align: center;
+      }
       #PARAGRAPH318 > .ladi-paragraph,
       #PARAGRAPH320 > .ladi-paragraph,
       #PARAGRAPH316 > .ladi-paragraph {
@@ -2953,11 +2959,11 @@
       }
       @media (min-width: 768px) {
         #SECTION222 {
-          height: 70.2165px;
+          height: 120.2165px;
         }
         #BOX223 {
           width: 2866px;
-          height: 70.2134px;
+          height: 20.2165px;
           top: 0.00315px;
           left: -902px;
         }
@@ -2994,18 +3000,21 @@
         }
         #IMAGE300,
         #IMAGE300 > .ladi-image > .ladi-image-background {
-          width: 200px;
-          height: 51.1628px;
+          width: 150px;
+          height: 150.1628px;
         }
         #IMAGE300 {
-          top: 9.52685px;
+          left: 50px;
+          top:  -20px;
+          
         }
         #IMAGE300 > .ladi-image > .ladi-image-background {
-          background-image: url("https://w.ladicdn.com/s550x400/5e51ff6161a254079fc6d2ed/logo-tikmeta-header-20240812154851-8uqrt.png");
+          background-image: url("/image/logo.png");
         }
         #BUTTON302,
         #BUTTON_TEXT302 {
           width: 185px;
+          color:#015347
         }
         #BUTTON302 {
           top: 15.4848px;
@@ -3045,7 +3054,7 @@
         #IMAGE301 > .ladi-image > .ladi-image-background {
           width: 1779.2px;
           height: 741.333px;
-          background-image: url("https://w.ladicdn.com/s2100x1050/5e51ff6161a254079fc6d2ed/group1799-20240812154851-dohmm.png");
+          background-image: url("./image/Thiết\ kế\ chưa\ có\ tên\ \(1\).png");
         }
         #IMAGE302,
         #IMAGE302 > .ladi-image > .ladi-image-background {
@@ -3387,11 +3396,15 @@
           left: 496.525px;
         }
         #SECTION304 {
-          height: 869.1px;
+          height: 900.1px;
         }
+        #SECTION304 >.ladi-container{
+          width: 1500px;
+        }
+        
         #PARAGRAPH317 {
           top: 67px;
-          left: 0px;
+          left: 150px;
         }
         #PARAGRAPH318,
         #PARAGRAPH320,
@@ -3420,7 +3433,7 @@
         #LIST_PARAGRAPH301 {
           width: 600px;
           top: 202.311px;
-          left: 573px;
+          left: 800px;
         }
         #IMAGE332 {
           top: 756.93px;
@@ -3429,14 +3442,15 @@
         #IMAGE347,
         #IMAGE347 > .ladi-image > .ladi-image-background {
           width: 521.624px;
-          height: 492.098px;
+          height: 492.098px; 
+          border-radius: 20px;
         }
         #IMAGE347 {
           top: 242.26px;
-          left: 27px;
+          left: 100px;
         }
         #IMAGE347 > .ladi-image > .ladi-image-background {
-          background-image: url("https://w.ladicdn.com/s850x800/5e51ff6161a254079fc6d2ed/group1337-20240813062054-dohg7.png");
+          background-image: url("/image/anhlong.png");
         }
         #SECTION305 {
           height: 1100.1px;
@@ -4228,6 +4242,9 @@
         #LIST_PARAGRAPH301 > .ladi-list-paragraph {
           font-size: 14px;
         }
+        #LIST_PARAGRAPH301 .ladi-list-paragraph li::before {
+      font-size: 100px !important;
+      }
         #trang-chu {
           height: 223.333px;
         }
@@ -4252,7 +4269,7 @@
         #IMAGE301 > .ladi-image > .ladi-image-background {
           width: 609.126px;
           height: 253.803px;
-          background-image: url("https://w.ladicdn.com/s950x600/5e51ff6161a254079fc6d2ed/group1799-20240812154851-dohmm.png");
+          background-image: url("./image/583323994_1547041499756703_3185682235725771703_n.png");
         }
         #IMAGE302,
         #IMAGE302 > .ladi-image > .ladi-image-background {
@@ -4421,6 +4438,7 @@
         }
         #LIST_PARAGRAPH300,
         #PARAGRAPH317,
+
         #PARAGRAPH319,
         #PARAGRAPH307 {
           width: 400px;
