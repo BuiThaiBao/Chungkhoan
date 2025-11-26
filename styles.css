@@ -1527,6 +1527,70 @@
       }
     
 
+/* === Custom styles for SECTION_CUSTOM_CARDS === */
+.cards-grid .card {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+.cards-grid .card h4 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 26px;
+  color: #ffffff;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  line-height: 1.15;
+}
+.cards-grid .card h4::before {
+  content: "";
+  display: block;
+  width: 72px;
+  height: 2px;
+  background: #e6b400; /* gold line */
+  margin: 0 auto 12px;
+}
+.cards-grid .card ul {
+  list-style: disc inside;
+  padding-left: 18px;
+  margin: 0;
+  color: rgba(255,255,255,0.95);
+}
+.cards-grid .card ul li {
+  margin-bottom: 14px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+.cards-grid .card ul li::marker {
+  color: #ffffff;
+  font-size: 14px;
+}
+
+@media (max-width: 767px) {
+  .cards-grid { grid-template-columns: 1fr !important; padding: 0 16px; }
+  .cards-grid .card h4 { font-size: 20px; }
+  .cards-grid .card ul li { font-size: 15px; }
+}
+
+/* Step label + title styling */
+.cards-grid .card .step-label {
+  display: block;
+  font-size: 24px;
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 1;
+}
+.cards-grid .card .step-title {
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-top: 6px;
+}
+
+@media (max-width: 767px) {
+  .cards-grid .card .step-label { font-size: 24px; }
+  .cards-grid .card .step-title { font-size: 18px; }
+}
+
 /* ===== NEXT STYLE SECTION ===== */
 
 
