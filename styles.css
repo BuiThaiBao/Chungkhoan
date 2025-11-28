@@ -2112,8 +2112,8 @@
       #VIDEO303,
       #VIDEO304 {
         width: 369.778px;
-        height: 208px;
-        top: 10.75px;
+        height: 230px;
+        top: 3px;
         left: 13.222px;
       }
       #VIDEO301 > .ladi-video > .ladi-video-background,
@@ -2142,9 +2142,9 @@
       #PARAGRAPH324,
       #PARAGRAPH325,
       #PARAGRAPH326 {
-        width: 209px;
+        width: 290px;
         top: 287px;
-        left: 131.5px;
+        left: 31.222px;
       }
       #PARAGRAPH324 > .ladi-paragraph,
       #PARAGRAPH325 > .ladi-paragraph,
@@ -2159,7 +2159,7 @@
       #PARAGRAPH329 {
         width: 222px;
         top: 316px;
-        left: 131.5px;
+        left: 31.222px;
       }
       #PARAGRAPH327 > .ladi-paragraph,
       #PARAGRAPH328 > .ladi-paragraph,
@@ -2173,7 +2173,7 @@
       #PARAGRAPH331,
       #PARAGRAPH332 {
         width: 336px;
-        top: 354px;
+        top: 340px;
         left: 31.222px;
       }
       #IMAGE335,
@@ -3447,13 +3447,13 @@
           left: 13.222px;
         }
         #IMAGE335 > .ladi-image > .ladi-image-background {
-          background-image: url("https://w.ladicdn.com/s450x450/5e51ff6161a254079fc6d2ed/ellipse5-20240813071517-qtqx8.png");
+          background-image: url("");
         }
         #IMAGE339 > .ladi-image > .ladi-image-background {
-          background-image: url("https://w.ladicdn.com/s450x450/5e51ff6161a254079fc6d2ed/ellipse-5-1-20240813071517-eeps7.png");
+          background-image: url("");
         }
         #IMAGE340 > .ladi-image > .ladi-image-background {
-          background-image: url("https://w.ladicdn.com/s450x450/5e51ff6161a254079fc6d2ed/ellipse5_1-20240813071517-fuple.png");
+          background-image: url("");
         }
         #IMAGE344 {
           top: 761.468px;
