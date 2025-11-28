@@ -2388,22 +2388,22 @@
         color: rgb(255, 255, 255);
       }
       #IMAGE365 > .ladi-image > .ladi-image-background {
-        background-image: url("../imgdivxanh/1.jpg");
+        background-image: url("https://w.ladicdn.com/s400x400/5e51ff6161a254079fc6d2ed/group1388-20240813064626-yxb6n.png");
       }
       #IMAGE366 > .ladi-image > .ladi-image-background {
-        background-image: url("../imgdivxanh/2.jpg");
+        background-image: url("https://w.ladicdn.com/s400x400/5e51ff6161a254079fc6d2ed/group1359-20240813065226--kth7.png");
       }
       #IMAGE367 > .ladi-image > .ladi-image-background {
-        background-image: url("../imgdivxanh/3.jpg");
+        background-image: url("https://w.ladicdn.com/s400x400/5e51ff6161a254079fc6d2ed/group1357-20240813065225-hqy-r.png");
       }
       #IMAGE368 > .ladi-image > .ladi-image-background {
-        background-image: url("../imgdivxanh/4.jpg");
+        background-image: url("https://w.ladicdn.com/s400x400/5e51ff6161a254079fc6d2ed/group1360-20240813065226-ldgwo.png");
       }
       #IMAGE369 > .ladi-image > .ladi-image-background {
-        background-image: url("../imgdivxanh/5.jpg");
+        background-image: url("https://w.ladicdn.com/s400x400/5e51ff6161a254079fc6d2ed/group1358-20240813065226-yunym.png");
       }
       #IMAGE370 > .ladi-image > .ladi-image-background {
-        background-image: url("../imgdivxanh/6.jpg");
+        background-image: url("https://w.ladicdn.com/s400x400/5e51ff6161a254079fc6d2ed/group1384-20240813065226-ac2gt.png");
       }
       #SECTION306 > .ladi-section-background {
         background-color: rgb(244, 245, 246);
@@ -3610,7 +3610,6 @@
         #IMAGE370 > .ladi-image > .ladi-image-background {
           width: 97px;
           height: 97px;
-          border-radius: 50%;
         }
         #GROUP309,
         #GROUP313,
@@ -3629,10 +3628,6 @@
         #PARAGRAPH367 {
           top: 62px;
           left: 109.75px;
-        }
-        #PARAGRAPH361,
-        #PARAGRAPH363 {
-          top: 33px !important;
         }
         #GROUP313 {
           top: 418.351px;
