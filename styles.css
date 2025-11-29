@@ -5786,6 +5786,7 @@
   font-size: 0.98rem;
   font-weight: 600;
   margin-bottom: 8px;
+  margin-top: 8px;
 }
 .testimonial-card .testimonial-quote {
   color: #444;
@@ -5795,7 +5796,7 @@
 }
 .testimonial-card .testimonial-quote-icon {
   color: #ffe066;
-  font-size: 1.3rem;
+  font-size: 1rem;
 }
 .testimonial-card .testimonial-quote-icon-left {
   color: #ffe066;
