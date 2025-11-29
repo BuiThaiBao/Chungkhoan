@@ -1,5 +1,4 @@
-﻿
-      a,
+﻿a,
       abbr,
       acronym,
       address,
@@ -1229,8 +1228,8 @@
         div.arrow:before {
         content: "";
         --url: url("data:image/svg+xml,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M6.14645%203.14645C6.34171%202.95118%206.65829%202.95118%206.85355%203.14645L11.3536%207.64645C11.5488%207.84171%2011.5488%208.15829%2011.3536%208.35355L6.85355%2012.8536C6.65829%2013.0488%206.34171%2013.0488%206.14645%2012.8536C5.95118%2012.6583%205.95118%2012.3417%206.14645%2012.1464L10.2929%208L6.14645%203.85355C5.95118%203.65829%205.95118%203.34171%206.14645%203.14645Z%22%20fill%3D%22black%22%2F%3E%0A%3C%2Fsvg%3E");
-        -webkit-mask-image: var(--url);
-        mask-image: var(--url);
+        -webkit-mask-image: var (--url);
+        mask-image: var (--url);
         position: absolute;
         width: 20px;
         height: 20px;
@@ -3629,6 +3628,10 @@
           top: 62px;
           left: 109.75px;
         }
+        #PARAGRAPH361,
+        #PARAGRAPH363 {
+          top: 33px !important;
+        }
         #GROUP313 {
           top: 418.351px;
           left: 22.5px;
@@ -3693,6 +3696,7 @@
           left: 14.5px;
         }
         #FRAME309,
+        #FRAME310,
         #FRAME311 {
           top: 38px;
         }
@@ -4181,75 +4185,233 @@
           width: 369px;
           left: 37.1008px;
         }
+        #SECTION_POPUP {
+          height: 0px;
+        }
+        #POPUP {
+          width: 203px;
+          height: 253px;
+          right: auto;
+          bottom: auto;
+          margin: auto;
+        }
+        #POPUP .popup-close {
+          background-image: url("data:image/svg+xml;utf8, %3Csvg%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20fill%3D%22%23fff%22%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M23.4144%202.00015L2.00015%2023.4144L0.585938%2022.0002L22.0002%200.585938L23.4144%202.00015Z%22%3E%3C%2Fpath%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M2.00015%200.585938L23.4144%2022.0002L22.0002%2023.4144L0.585938%202.00015L2.00015%200.585938Z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
+        }
+        #IMAGE371,
+        #IMAGE371 > .ladi-image > .ladi-image-background {
+          width: 150.361px;
+          height: 38.4645px;
+        }
+        #IMAGE371 {
+          top: 12.3181px;
+          left: 22.3195px;
+        }
+        #IMAGE371 > .ladi-image > .ladi-image-background {
+          background-image: url("https://w.ladicdn.com/s500x350/5e51ff6161a254079fc6d2ed/logo-tikmeta-header-20240812154851-8uqrt.png");
+        }
+        #BUTTON_GROUP300 {
+          width: 142px;
+          height: 82.25px;
+          top: 69.875px;
+          left: 26.5px;
+        }
+        #BUTTON_GROUP300
+          > .ladi-button-group
+          > .ladi-element:hover
+          > .ladi-button {
+          opacity: 1 !important;
+          transform: scale(1.03) rotate(0deg) !important;
+          filter: blur(0px) grayscale(0%) !important;
+        }
+        #BUTTON_GROUP300
+          > .ladi-button-group
+          > .ladi-element.selected
+          > .ladi-button {
+          transform: scale(1.03) !important;
+        }
+        #BUTTON312,
+        #BUTTON313 {
+          width: 142px;
+          height: 39.25px;
+        }
+        #BUTTON_TEXT312,
+        #BUTTON_TEXT313 {
+          width: 142px;
+        }
+        #BUTTON313 {
+          top: 43px;
+          left: 0px;
+        }
+        #SHAPE311 {
+          width: 37px;
+          height: 37px;
+          top: 209.5px;
+          left: 159px;
+        }
         #POPUP301 {
-          width: 501px;
-          height: 561px;
+          right: 0px;
+          bottom: 0px;
+          margin: auto;
         }
-        #POPUP301 > .ladi-popup > .ladi-popup-background {
-          background-image: url("https://w.ladicdn.com/s501x561/5e51ff6161a254079fc6d2ed/group1405-20240812162835-lnmc1.png");
+        #POPUP301 > .ladi-popup > .ladi-overlay,
+        #POPUP301 > .ladi-popup > .ladi-popup-background,
+        #POPUP301 > .ladi-popup {
+          border-radius: 18px;
         }
-        #PARAGRAPH303 {
-          top: 26px;
-          left: 16px;
+        #PARAGRAPH303 > .ladi-paragraph {
+          font-size: 20px;
+          font-weight: bold;
+          line-height: 1.6;
+          color: rgb(230, 180, 0);
+          text-align: center;
         }
-        #PARAGRAPH304 {
-          width: 436px;
-          top: 66px;
-          left: 32.5px;
+        #PARAGRAPH304.ladi-animation > .ladi-paragraph {
+          animation-name: pulse;
+          animation-delay: 0s;
+          animation-duration: 2s;
+          animation-iteration-count: 1;
         }
-        #FORM301 {
-          width: 408px;
-          height: 388px;
-          top: 140.5px;
-          left: 46.5px;
+        #FORM301
+          .ladi-form
+          .ladi-form-item.ladi-form-checkbox
+          .ladi-form-checkbox-item
+          span[data-checked="false"],
+        #FORM301
+          .ladi-form
+          .ladi-form-item.ladi-form-checkbox
+          .ladi-form-checkbox-item
+          .ladi-editing,
+        #FORM301
+          .ladi-form
+          .ladi-form-item.ladi-form-checkbox
+          .ladi-form-checkbox-item
+          .ladi-editing::placeholder,
+        #FORM301 .ladi-form .ladi-survey-option .ladi-survey-option-label,
+        #FORM301 .ladi-form-item .ladi-form-control::placeholder,
+        #FORM301 .ladi-form-item select.ladi-form-control[data-selected=""],
+        #FORM301 .ladi-form-checkout-payment-quantity input {
+          color: rgb(0, 0, 0);
         }
-        #BUTTON301 {
-          width: 310.155px;
-          height: 53.0909px;
-          top: 334.909px;
-          left: 48.9225px;
+        #FORM301 .ladi-form-item {
+          padding-left: 5px;
+          padding-right: 5px;
         }
-        #BUTTON_TEXT301 {
-          width: 310px;
-          top: 11.9455px;
+        #FORM301 .ladi-form-item.otp-countdown:before {
+          right: 10px;
         }
-        #FORM_ITEM301 {
-          width: 408px;
-          height: 47.7818px;
+        #FORM301 .ladi-form-item.ladi-form-checkbox {
+          padding-left: 10px;
+          padding-right: 10px;
         }
-        #FORM_ITEM_LABEL301,
-        #FORM_ITEM_LABEL302,
-        #FORM_ITEM_LABEL303,
+        #FORM301
+          .ladi-form
+          [data-form-checkout-item="product"]
+          .ladi-form-checkout-payment-check.multiple.checked,
+        #FORM301
+          .ladi-form
+          [data-form-checkout-item="product"]
+          .ladi-form-checkout-payment-check:not(.multiple).checked:before,
+        #FORM301
+          .ladi-form
+          [data-form-checkout-item="payment"]
+          .ladi-form-checkout-payment-check.checked:before,
+        #FORM301 .ladi-form-checkout-payment-quantity .up:before,
+        #FORM301 .ladi-form-checkout-payment-quantity .down:before,
+        #FORM301
+          [data-form-checkout-item="payment"]
+          .ladi-form-item
+          .ladi-form-checkout-payment-content
+          div:before {
+          background-color: rgb(0, 0, 0);
+        }
+        #FORM301 .ladi-survey-option {
+          text-align: left;
+        }
+        #FORM301 .ladi-form-item-container,
+        #FORM301 .ladi-form-checkout-box,
+        #FORM301 .ladi-form-label-container .ladi-form-label-item {
+          border-width: 1px;
+          border-radius: 9px;
+          border-style: solid;
+          border-color: rgb(241, 243, 244);
+        }
+        #FORM301 .ladi-form-item-container .ladi-form-item.ladi-form-quantity {
+          width: calc(100% + 1px);
+        }
+        #FORM301 .ladi-form-item-container .ladi-form-quantity .button {
+          background-color: rgb(241, 243, 244);
+        }
+        #FORM301 .ladi-form-checkout-payment-quantity input {
+          border-color: rgb(0, 0, 0);
+        }
+        #BUTTON301 > .ladi-button {
+          border-radius: 100px;
+        }
+        #BUTTON301.ladi-animation > .ladi-button {
+          animation-name: pulse;
+          animation-delay: 0s;
+          animation-duration: 1s;
+          animation-iteration-count: infinite;
+        }
+        #BUTTON_TEXT301 > .ladi-headline {
+          font-size: 18px;
+          font-weight: bold;
+          line-height: 1.6;
+          color: rgb(255, 255, 255);
+          text-align: center;
+        }
+        #FORM_ITEM_LABEL301 > .ladi-headline,
+        #FORM_ITEM_LABEL302 > .ladi-headline,
+        #FORM_ITEM_LABEL303 > .ladi-headline {
+          font-size: 16px;
+          line-height: 1.6;
+          text-align: left;
+        }
+        #FORM_ITEM305 .ladi-form-checkbox-item,
+        #FORM_ITEM306 .ladi-form-checkbox-item {
+          margin-top: 5px;
+          margin-bottom: 5px;
+          margin-left: 5px;
+          margin-right: 10px !important;
+        }
+        #FORM_ITEM305 .ladi-form-item.ladi-form-checkbox,
+        #FORM_ITEM306 .ladi-form-item.ladi-form-checkbox {
+          padding-top: 5px;
+          padding-bottom: 5px;
+        }
+        #FORM_ITEM305
+          .ladi-form-item.ladi-form-checkbox
+          .ladi-form-checkbox-item
+          input,
+        #FORM_ITEM306
+          .ladi-form-item.ladi-form-checkbox
+          .ladi-form-checkbox-item
+          input {
+          width: 24px;
+          height: 24px;
+        }
+        #FORM_ITEM305
+          .ladi-form-item.ladi-form-checkbox
+          .ladi-form-checkbox-item
+          span,
+        #FORM_ITEM306
+          .ladi-form-item.ladi-form-checkbox
+          .ladi-form-checkbox-item
+          span {
+          width: calc(100% - 28px);
+        }
         #FORM_ITEM_LABEL305,
         #FORM_ITEM_LABEL306 {
-          width: 408px;
-        }
-        #FORM_ITEM_LABEL301,
-        #FORM_ITEM_LABEL302,
-        #FORM_ITEM_LABEL303 {
           top: -25px;
+          left: 0px;
         }
-        #FORM_ITEM302,
-        #FORM_ITEM303 {
-          width: 408px;
-          height: 46.4545px;
-        }
-        #FORM_ITEM302 {
-          top: 62.3818px;
-        }
-        #FORM_ITEM303 {
-          top: 123.436px;
-        }
-        #FORM_ITEM305,
-        #FORM_ITEM306 {
-          width: 408px;
-          height: 37px;
-        }
-        #FORM_ITEM305 {
-          top: 205.491px;
-        }
-        #FORM_ITEM306 {
-          top: 274.909px;
+        #FORM_ITEM_LABEL305 > .ladi-headline,
+        #FORM_ITEM_LABEL306 > .ladi-headline {
+          font-size: 16px;
+          line-height: 1.6;
+          color: rgb(255, 255, 255);
+          text-align: left;
         }
       }
       @media (max-width: 767px) {
@@ -5572,4 +5734,83 @@
           transform: translateX(10px);
         }
       }
-    
+
+/* Testimonial carousel styles */
+.ladi-carousel-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  gap: 32px;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1100px;
+}
+.testimonial-card {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(0,32,64,0.10);
+  padding: 0 0 22px 0;
+  width: 320px;
+  max-width: 95vw;
+  min-width: 260px;
+  overflow: hidden;
+  border: 1.5px solid #e0e7ef;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.testimonial-card .testimonial-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 18px 18px 0 0;
+  display: block;
+  margin-bottom: 0;
+}
+.testimonial-card .testimonial-content {
+  padding: 18px 20px 0 20px;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: left;
+}
+.testimonial-card .testimonial-name {
+  color: #1a237e;
+  font-weight: 700;
+  font-size: 1.08rem;
+  margin-bottom: 2px;
+}
+.testimonial-card .testimonial-role {
+  color: #222;
+  font-size: 0.98rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.testimonial-card .testimonial-quote {
+  color: #444;
+  font-size: 1rem;
+  margin-bottom: 0;
+  line-height: 1.5;
+}
+.testimonial-card .testimonial-quote-icon {
+  color: #ffe066;
+  font-size: 1.3rem;
+}
+.testimonial-card .testimonial-quote-icon-left {
+  color: #ffe066;
+  font-size: 1.3rem;
+  vertical-align: middle;
+  margin-right: 7px;
+  display: block;
+  margin-bottom: 2px;
+}
+@media (max-width: 1100px) {
+  .ladi-carousel-content {gap: 18px;}
+  .testimonial-card {width: 300px;}
+}
+@media (max-width: 950px) {
+  .ladi-carousel-content {flex-wrap: wrap;}
+  .testimonial-card {width: 90vw; max-width: 400px;}
+}
+
