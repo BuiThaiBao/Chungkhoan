@@ -417,6 +417,9 @@
         width: 100%;
         height: 100%;
         overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
       .ladi-carousel .ladi-carousel-content {
         position: absolute;
@@ -425,6 +428,14 @@
         left: 0;
         top: 0;
         transition: top 350ms ease-in-out, left 350ms ease-in-out;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: stretch;
+        gap: 32px;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        max-width: 1100px;
       }
       .ladi-carousel .ladi-carousel-arrow {
         position: absolute;
@@ -2311,21 +2322,22 @@
       #IMAGE364,
       #IMAGE364 > .ladi-image > .ladi-image-background {
         width: 336.85px;
-        height: 196.664px;
+        height: 81%;
+        border-radius: 8px;
       }
       #IMAGE364,
       #IMAGE363,
       #IMAGE360 {
-        top: 417.889px;
+        top: 235px;
         left: 16.075px;
       }
       #IMAGE364 > .ladi-image > .ladi-image-background {
-        background-image: url("https://w.ladicdn.com/s650x500/5e51ff6161a254079fc6d2ed/desire-3-20240813063935-ddnc-.png");
+        background-image: url("./image/imgdivxanh/div32.jpg");
       }
       #LIST_PARAGRAPH304,
       #LIST_PARAGRAPH302,
       #LIST_PARAGRAPH303 {
-        top: 141.999px;
+        top: 106px;
         left: 26px;
       }
       #LIST_PARAGRAPH304 ul li,
@@ -2348,10 +2360,11 @@
       #IMAGE363,
       #IMAGE363 > .ladi-image > .ladi-image-background {
         width: 336.85px;
-        height: 302.923px;
+        height: 81%;
+        border-radius: 8px;
       }
       #IMAGE363 > .ladi-image > .ladi-image-background {
-        background-image: url("https://w.ladicdn.com/s650x650/5e51ff6161a254079fc6d2ed/desire-2-20240813063935-ticgj.png");
+        background-image: url("./image/imgdivxanh/div31.jpg");
       }
       #FRAME312 {
         top: 2.901px;
@@ -2360,10 +2373,11 @@
       #IMAGE360,
       #IMAGE360 > .ladi-image > .ladi-image-background {
         width: 336.85px;
-        height: 216.471px;
+        height: 81%;
+        border-radius: 8px;
       }
       #IMAGE360 > .ladi-image > .ladi-image-background {
-        background-image: url("https://w.ladicdn.com/s650x550/5e51ff6161a254079fc6d2ed/desire-1-20240813063935-sdhtl.png");
+        background-image: url("./image/imgdivxanh/div33.jpg");
       }
       #PARAGRAPH349 > .ladi-paragraph,
       #PARAGRAPH357 > .ladi-paragraph,
@@ -2387,22 +2401,22 @@
         color: rgb(255, 255, 255);
       }
       #IMAGE365 > .ladi-image > .ladi-image-background {
-        background-image: url("https://w.ladicdn.com/s400x400/5e51ff6161a254079fc6d2ed/group1388-20240813064626-yxb6n.png");
+        background-image: url("./image/imgdivxanh/1.jpg");
       }
       #IMAGE366 > .ladi-image > .ladi-image-background {
-        background-image: url("https://w.ladicdn.com/s400x400/5e51ff6161a254079fc6d2ed/group1359-20240813065226--kth7.png");
+        background-image: url("./image/imgdivxanh/2.jpg");
       }
       #IMAGE367 > .ladi-image > .ladi-image-background {
-        background-image: url("https://w.ladicdn.com/s400x400/5e51ff6161a254079fc6d2ed/group1357-20240813065225-hqy-r.png");
+        background-image: url("./image/imgdivxanh/3.jpg");
       }
       #IMAGE368 > .ladi-image > .ladi-image-background {
-        background-image: url("https://w.ladicdn.com/s400x400/5e51ff6161a254079fc6d2ed/group1360-20240813065226-ldgwo.png");
+        background-image: url("./image/imgdivxanh/4.jpg");
       }
       #IMAGE369 > .ladi-image > .ladi-image-background {
-        background-image: url("https://w.ladicdn.com/s400x400/5e51ff6161a254079fc6d2ed/group1358-20240813065226-yunym.png");
+        background-image: url("./image/imgdivxanh/5.jpg");
       }
       #IMAGE370 > .ladi-image > .ladi-image-background {
-        background-image: url("https://w.ladicdn.com/s400x400/5e51ff6161a254079fc6d2ed/group1384-20240813065226-ac2gt.png");
+        background-image: url("./image/imgdivxanh/6.jpg");
       }
       #SECTION306 > .ladi-section-background {
         background-color: rgb(244, 245, 246);
@@ -3609,6 +3623,7 @@
         #IMAGE370 > .ladi-image > .ladi-image-background {
           width: 97px;
           height: 97px;
+          border-radius: 50%;
         }
         #GROUP309,
         #GROUP313,
