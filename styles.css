@@ -2236,13 +2236,7 @@
       }
       #LIST_PARAGRAPH301 ul li {
         padding-bottom: 8px;
-        padding-left: 23px;
-      }
-      #LIST_PARAGRAPH301 ul li:before {
-        top: -3px;
-        font-size: 23px;
-        color: rgb(26, 57, 132);
-        content: counter(linum);
+        padding-left: 5px;
       }
       #GROUP308 {
         width: 1170.5px;
@@ -3511,7 +3505,7 @@
         }
         #LIST_PARAGRAPH301 {
           width: 600px;
-          top: 202.311px;
+          top: 160px;
           left: 800px;
         }
         #IMAGE332 {
@@ -3529,7 +3523,7 @@
           left: 100px;
         }
         #IMAGE347 > .ladi-image > .ladi-image-background {
-          background-image: url("/image/anhlong.png");
+          background-image: url("./image/anhlong.png");
         }
         #SECTION305 {
           height: 1100.1px;
