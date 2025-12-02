@@ -83,7 +83,7 @@
   <body class="lazyload">
     <header
       id="main-header"
-      class="bg-white shadow-md fixed top-0 w-full h-16 z-50 font-sans transition-transform duration-700 ease-in-out"
+      class="bg-gradient-to-br from-[#0C2FF2] via-[#0583F2] to-[#77B9F2] shadow-md fixed top-0 w-full h-16 z-50 font-sans transition-transform duration-700 ease-in-out"
     >
       <div
         class="container mx-auto px-4 max-w-[1200px] h-full flex justify-center flex-col"
@@ -91,13 +91,13 @@
         <div class="flex justify-between items-center h-20">
           <div class="flex-shrink-0 cursor-pointer">
             <img
-              class="h-16 w-auto object-contain"
+              class="h-16 w-auto object-contain pt-1"
               src="./image/logo.png"
               alt="Logo"
             />
           </div>
 
-          <nav class="hidden md:flex space-x-24">
+          <nav class="text-white hidden md:flex space-x-24">
             <a
               href="#"
               class="text-[#004d40] hover:text-emerald-600 font-bold text-sm uppercase tracking-wide"
@@ -115,7 +115,7 @@
             >
             <a
               href="#"
-              class="text-[#004d40] hover:text-emerald-600 font-bold text-sm uppercase tracking-wide"
+              class="text-white hover:text-sky-300 font-bold text-sm uppercase tracking-wide"
               >Đăng ký</a
             >
           </nav>
@@ -1207,34 +1207,28 @@
         </div>
       </div>
     </div>
-    <div
-      class="w-full h-[600px] bg-cover bg-center bg-no-repeat bg-[url(./image/nenvti.png)] relative"
-    >
+
+    <div class="w-full h-[750px] bg-cover bg-center bg-no-repeat bg-[url(./image/nenvti.png)] relative">
+      <!-- Box image mờ ở dưới chữ ĐĂNG KÝ NGAY -->
       <img src="./image/box.png"
         alt="Hình ảnh trang trí"
-        class="absolute top-14 left-20 w-38 opacity-80 pointer-events-none z-0 md:block hidden"
-    >
-      <div
-        class="container max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center relative"
-      >
-        <div class="space-y-4 relative">
-          <div
-            class="inline-block bg-yellow-400 text-blue-900 font-extrabold text-xl ml-16 relative top-20 -mt-6 px-4 py-2 uppercase transform -skew-x-6"
-          >
-            Cơ hội nhận ưu đãi học phí <br />
-            lên tới 40%
+        class="absolute left-1/2 top-12 -translate-x-1/2 w-72 md:w-[340px] opacity-60 pointer-events-none z-0" />
+      <div class="container max-w-8xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center relative h-full">
+        <div class="space-y-4 relative flex flex-col justify-center h-full">
+          <!-- Dòng chữ ĐĂNG KÝ NGAY -->
+          <div class="text-center z-10 relative mt-8">
+            <h2 class="text-4xl md:text-5xl font-extrabold text-white uppercase tracking-wide drop-shadow-lg">ĐĂNG KÝ NGAY</h2>
+            <div class="text-yellow-400 text-2xl md:text-3xl font-bold mt-2 mb-4 uppercase tracking-wide">Để hưởng ưu đãi hấp dẫn</div>
           </div>
-
-          <div class="relative mt-2">
-            <div
-              class="inline-block text-white font-extrabold text-3xl uppercase font-sans tracking-wide pt-[156px] [-webkit-text-stroke:2px_#fbbf24]"
-            >
+          <div class="text-center inline-block bg-yellow-400 text-blue-900 font-extrabold text-xl ml-16 relative px-4 py-2 uppercase transform -skew-x-6 hidden md:block">
+            Cơ hội nhận ưu đãi học phí lên tới 40%
+          </div>
+          <div class="relative mt-2 z-10">
+            <div class="text-center block text-white font-extrabold text-3xl uppercase font-sans tracking-wide pt-6  [-webkit-text-stroke:2px_#fbbf24]">
               Quyền lợi bạn sẽ nhận được
             </div>
-
-            <div
-              class="border-2 relative bg-[#005DBA] w-[800px] backdrop-blur-sm p-4 rounded-lg -ml-40 mt-5 grid grid-cols-1 xl:grid-cols-2 gap-4"
-            >
+            <div class="border-2 relative bg-[#005DBA] w-full min-w-[800px] backdrop-blur-sm p-4 rounded-lg mt-5 grid grid-cols-1 xl:grid-cols-2 gap-4">
+              <!-- ...existing quyền lợi cards... -->
               <div
                 class="bg-white rounded-xl p-4 flex items-center gap-3 shadow-md h-full"
               >
@@ -1247,7 +1241,7 @@
                   >
                     <path
                       fill-rule="evenodd"
-                      d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2 2a.75.75 0 001.14-.094l3.75-5.25z"
+                      d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365-9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2 2a.75.75 0 001.14-.094l3.75-5.25z"
                       clip-rule="evenodd"
                     />
                   </svg>
@@ -1255,7 +1249,7 @@
                 <p class="text-blue-900 font-semibold text-sm">
                   Học
                   <span class="text-orange-500 font-bold">2 lần</span> khoá học
-                  Affiliate Mastery trị giá
+                  Đầu tư chứng khoán thực chiến trị giá
                   <span class="text-yellow-600 font-bold">17.200.000 VNĐ</span>
                 </p>
               </div>
@@ -1272,13 +1266,13 @@
                   >
                     <path
                       fill-rule="evenodd"
-                      d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2 2a.75.75 0 001.14-.094l3.75-5.25z"
+                      d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365-9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2 2a.75.75 0 001.14-.094l3.75-5.25z"
                       clip-rule="evenodd"
                     />
                   </svg>
                 </div>
                 <p class="text-blue-900 font-semibold text-sm">
-                  Khoá học tìm kiếm sản phẩm win cùng Shoplus trị giá
+                  Khoá học tìm kiếm cổ phiếu tăng trưởng mạnh trị giá
                   <span class="text-yellow-600 font-bold">3.000.000 VNĐ</span>
                 </p>
               </div>
@@ -1295,13 +1289,13 @@
                   >
                     <path
                       fill-rule="evenodd"
-                      d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2 2a.75.75 0 001.14-.094l3.75-5.25z"
+                      d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365-9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2 2a.75.75 0 001.14-.094l3.75-5.25z"
                       clip-rule="evenodd"
                     />
                   </svg>
                 </div>
                 <p class="text-blue-900 font-semibold text-sm">
-                  Hỗ trợ khám kênh, xử lý vi phạm trên kênh & shop
+                  Hỗ trợ kèm cặp, phân tích danh mục & xử lý rủi ro trực tiếp, đội ngũ chuyên gia theo sát, đưa ra nhận định và góp ý.
                 </p>
               </div>
 
@@ -1317,14 +1311,13 @@
                   >
                     <path
                       fill-rule="evenodd"
-                      d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2 2a.75.75 0 001.14-.094l3.75-5.25z"
+                      d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365-9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2 2a.75.75 0 001.14-.094l3.75-5.25z"
                       clip-rule="evenodd"
                     />
                   </svg>
                 </div>
                 <p class="text-blue-900 font-semibold text-sm">
-                  Ưu đãi đặc biệt công cụ hỗ trợ tìm kiếm sản phẩm win và video
-                  trending trị giá
+                  Quyền truy cập công cụ phân tích cổ phiếu & tín hiệu dòng tiền trị giá
                   <span class="text-yellow-600 font-bold">18.000.000 VNĐ</span>
                 </p>
               </div>
@@ -1347,8 +1340,8 @@
                   </svg>
                 </div>
                 <p class="text-blue-900 font-semibold text-sm">
-                  Tham gia cộng đồng XÓM AFFILIATE TIKMETA trị giá
-                  <span class="text-yellow-600 font-bold">24.000.000 VNĐ</span>
+                  Tham gia cộng đồng nhà đầu tư Xóm Chứng khoán trị giá
+                  <span class="text-yellow-600 font-bold">4.000.000 VNĐ</span>
                 </p>
               </div>
 
@@ -1370,7 +1363,7 @@
                   </svg>
                 </div>
                 <p class="text-blue-900 font-semibold text-sm">
-                  Tặng khóa học Affiliate Online trị giá
+                  Tặng khoá học Đầu tư Chứng khoán Online trị giá
                   <span class="text-yellow-600 font-bold">3.999.000 VNĐ</span>
                 </p>
               </div>
@@ -1502,7 +1495,7 @@
         </div>
       </div>
       <div class="max-w-6xl mx-auto mt-8 border-t border-slate-700 pt-4 text-center">
-        <span class="block text-slate-400 text-sm">Copyright © 2024 – Thiết kế bởi Ta Van Long</span>
+        <span class="block text-slate-400 text-sm">Copyright © 2024 – Thiết kế bởi NHOM9-67PM1</span>
       </div>
     </footer>
 

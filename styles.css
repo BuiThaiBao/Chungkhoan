@@ -112,6 +112,7 @@
       }
       a {
         text-decoration: none;
+        color: #fff !important;
       }
       ol,
       ul {
@@ -3277,9 +3278,17 @@
           margin-top: 40px;
         }
         #IMAGE310,
-        #IMAGE310 > .ladi-image > .ladi-image-background {
-          width: 79.0487px;
-          height: 85.1px;
+        #IMAGE310 > .ladi-image > .ladi-image-background,
+        #IMAGE334,
+        #IMAGE334 > .ladi-image > .ladi-image-background,
+        #IMAGE350,
+        #IMAGE350 > .ladi-image > .ladi-image-background,
+        #IMAGE352,
+        #IMAGE352 > .ladi-image > .ladi-image-background,
+        #IMAGE353,
+        #IMAGE353 > .ladi-image > .ladi-image-background {
+          width: 53.9686px;
+          height: 58.1px;
         }
         #IMAGE310 {
           top: 75.295px;
