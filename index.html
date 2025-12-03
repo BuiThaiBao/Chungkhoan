@@ -129,6 +129,7 @@
       </div>
     </header>
 
+    <!-- Banner with CTA Button -->
     <div class="w-full relative object-contain mt-16">
       <img
         src="./image/anhnen.png"
@@ -136,7 +137,99 @@
         class="w-full !h-auto !max-w-none block object-cover"
         style="image-rendering: -webkit-optimize-contrast"
       />
+
+      <!-- Floating CTA Button -->
+      <div class="absolute bottom-20 left-14 md:left-40 transform z-10">
+        <button id="banner-cta-btn" class="group relative">
+          <!-- Arrow left -->
+          <svg
+            class="absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-8 w-7 h-7 text-orange-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+          >
+            <path
+              d="M16.67 0l2.83 2.83L9.5 13l9.99 9.99-2.83 2.83L3.67 13 16.67 0z"
+            />
+          </svg>
+
+          <!-- Main Button -->
+          <div
+            class="bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-orange-600 hover:to-orange-700 rounded-full px-10 md:px-16 py-4 md:py-5 shadow-2xl flex items-center justify-center gap-3 md:gap-4 cursor-pointer transition-all duration-300 transform hover:scale-110 active:scale-95 animate-pulse-scale"
+            style="box-shadow: 0 0 30px rgba(249, 115, 22, 0.6)"
+          >
+            <span
+              class="text-white font-[UZOLVBPUFBJTlMtQkMRCUVEY] text-xl md:text-2xl uppercase tracking-wide"
+            >
+              Đăng Ký Học Thử
+        </span>
+              <path
+                d="M7.33 0l-2.83 2.83L12.5 11 2.5 21l2.83 2.83 10.33-10.33 10.33 10.33 2.83-2.83L15.33 11l10.33-10.33-2.83-2.83-10.33 10.33L7.33 0z"
+              />
+            </svg>
+          </div>
+
+          <!-- Arrow right -->
+          <svg
+            class="absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-6 w-6 h-6 text-orange-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+          >
+            <path
+              d="M7.33 0l2.83 2.83L2.5 13l9.99 9.99-2.83 2.83L0 13 7.33 0z"
+            />
+          </svg>
+        </button>
+      </div>
     </div>
+
+    <style>
+      @keyframes pulse-scale {
+        0%,
+        100% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.05);
+        }
+      }
+
+      @keyframes bounce-right {
+        0%,
+        100% {
+          transform: translateX(0);
+        }
+        50% {
+          transform: translateX(4px);
+        }
+      }
+
+      #banner-cta-btn {
+        animation: pulse-scale 2s infinite;
+      }
+
+      #banner-cta-btn:hover {
+        animation: none;
+      }
+
+      #banner-cta-btn .animate-bounce-right {
+        animation: bounce-right 1s infinite;
+      }
+
+      /* Responsive */
+      @media (max-width: 768px) {
+        #banner-cta-btn {
+          transform: scale(0.85);
+        }
+      }
+
+      @media (max-width: 640px) {
+        #banner-cta-btn {
+          transform: scale(0.7);
+        }
+      }
+    </style>
 
     <div class="background1">
       <div class="max-w-screen-2xl mx-auto px-4 py-12">
@@ -1835,6 +1928,31 @@
             icon.style.animation = "none";
           }, 3000);
         });
+      });
+
+      // Banner CTA Button Click Handler
+      document.addEventListener("DOMContentLoaded", () => {
+        const bannerCtaBtn = document.getElementById("banner-cta-btn");
+        if (bannerCtaBtn) {
+          bannerCtaBtn.addEventListener("click", () => {
+            // Cuộn đến form đăng ký (tìm form gần cuối trang)
+            const formSection = document.querySelector(
+              ".text-center.inline-block.bg-yellow-400"
+            );
+            if (formSection) {
+              formSection.scrollIntoView({
+                behavior: "smooth",
+                block: "center",
+              });
+            } else {
+              // Nếu không tìm thấy, cuộn đến cuối trang
+              window.scrollTo({
+                top: document.body.scrollHeight,
+                behavior: "smooth",
+              });
+            }
+          });
+        }
       });
     </script>
   </body>
