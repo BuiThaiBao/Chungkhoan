@@ -1869,25 +1869,40 @@
 
     <script>
       const header = document.getElementById("main-header");
-      let hasAnimated = false; // Biến cờ: Mặc định là CHƯA chạy hiệu ứng
+      let headerTimeout = null;
+      let isScrolling = false;
+
+      // Ẩn header sau 2 giây nếu không scroll
+      function startHeaderHideTimer() {
+        clearTimeout(headerTimeout);
+        isScrolling = false;
+
+        headerTimeout = setTimeout(() => {
+          if (!isScrolling && window.scrollY > 50) {
+            header.classList.add("-translate-y-full");
+          }
+        }, 2000);
+      }
+
+      // Bắt đầu timer khi trang load xong
+      window.addEventListener("load", () => {
+        if (window.scrollY > 50) {
+          startHeaderHideTimer();
+        }
+      });
 
       window.addEventListener("scroll", () => {
-        // Nếu đã chạy hiệu ứng rồi (hasAnimated = true) thì thoát luôn, không làm gì cả
-        // Điều này đảm bảo các lần cuộn sau Header vẫn giữ nguyên vị trí.
-        if (hasAnimated) return;
+        isScrolling = true;
+        clearTimeout(headerTimeout);
 
-        // Kiểm tra: Nếu chưa chạy hiệu ứng VÀ người dùng cuộn xuống quá 50px
+        // Nếu cuộn xuống quá 50px, hiển thị header
         if (window.scrollY > 50) {
-          // 1. Đánh dấu là ĐÃ chạy để khóa chức năng này lại vĩnh viễn
-          hasAnimated = true;
-
-          // 2. Thêm class ẩn header (dịch chuyển lên trên 100%)
-          header.classList.add("-translate-y-full");
-
-          // 3. Đợi 1 giây (1000ms) sau đó xóa class ẩn để Header trôi xuống lại
-          setTimeout(() => {
-            header.classList.remove("-translate-y-full");
-          }, 1000);
+          header.classList.remove("-translate-y-full");
+          startHeaderHideTimer();
+        } else {
+          // Nếu cuộn lên trên 50px, luôn hiển thị header
+          header.classList.remove("-translate-y-full");
+          clearTimeout(headerTimeout);
         }
       });
 
